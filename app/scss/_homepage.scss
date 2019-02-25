@@ -39,4 +39,25 @@
       }
     }
   }
+  .what-program {
+    text-align: center;
+    padding: 80px;
+    h2 {
+      font-size: 30px;
+    }
+  }
+  .program-grid {
+    display: grid;
+    grid-template-columns: auto auto;
+    text-align: center;
+    border-top: 1.5px solid $lighter-blue;
+    border-bottom: 1.5px solid $lighter-blue;
+  }
+  .program-cell {
+    border: 1.5px solid $lighter-blue;
+    img {
+      max-width: 73px;
+    }
+    padding: 40px;
+  }
 }

@@ -13,15 +13,16 @@
 }
 
 .itls-styled {
-  h1, h2 {
+  h1, h2, h3 {
     font-family: League Spartan;
     font-weight: bold;
     letter-spacing: 0.05em;
+    line-height: 1.7em;
   }
   p {
     font-family: Lato;
     font-size: 18px;
-    line-height: 30px;
+    line-height: 34px;
     margin: 20px 0;
   }
 }
