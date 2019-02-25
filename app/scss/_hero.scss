@@ -1,0 +1,42 @@
+@import "colors";
+
+.itls-styled {
+  .jumbotron {
+    margin: 0;
+    background-color: white;
+  }
+  .jumbotron-welcome {
+    h1 {
+      color: $dark-blue;
+    }
+    h2 {
+      color: $light-blue;
+    }
+    padding: 50px;
+    p {
+      padding-right: 50%;
+    }
+    background-image: url('../img/mountains.png');
+    background-size: 50%;
+    background-position: bottom right;
+    background-repeat: no-repeat;
+  }
+  .jumbotron-usnews {
+    h2 {
+      color: $dark-blue;
+      font-size: 25px;
+    }
+    padding: 50px;
+    p {
+      font-size: 18px;
+      margin: 20px 0;
+    }
+    .usnews-pic {
+      text-align: center;
+      img {
+        width: 100%;
+        max-width: 250px;
+      }
+    }
+  }
+}
