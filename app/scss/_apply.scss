@@ -1,0 +1,83 @@
+.itls-styled {
+  .jumbotron-apply {
+    background-image: url('../img/apply-hero.jpg');
+    background-size: cover;
+    h1, p {
+      color: white;
+    }
+    padding: 50px;
+  }
+
+  .button-apply {
+    text-transform: uppercase;
+    padding: 4px 16px;
+    letter-spacing: 0.15em;
+    border-radius: 5px;
+    display: inline-block;
+    font-size: 13px;
+  }
+  .button-apply-white {
+    color: black;
+    background-color: white;
+  }
+  .button-apply-black {
+    color: white;
+    background-color: black;
+  }
+  .button-apply-outline {
+    color: black;
+    border: 1px solid black;
+  }
+
+  .content-columns {
+    display: flex;
+    flex-direction: row;
+    hr {
+      border: none;
+      border-bottom: 3px solid #E1E9F0;
+    }
+    font-family: Lato;
+    .content-main {
+      flex: 1;
+      padding: 10px 40px;
+    }
+    .content-sidebar {
+      width: 300px;
+      background-color: #F5F6F7;
+      padding: 10px 30px;
+    }
+  }
+
+  .apply-info-packet {
+    float: left;
+    width: 70px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+  }
+
+  .apply-us-news {
+    text-align: center;
+    img {
+      width: 150px;
+    }
+  }
+
+  .apply-collapse-section {
+    article {
+      h4 {
+        background-color: #F5F6F7;
+        color: #0865BF;
+        font-weight: bold;
+        padding: 10px;
+        font-size: 15px;
+        border-radius: 5px;
+        font-family: Lato;
+      }
+      &:not(.apply-collapse-open) {
+        div {
+          display: none;
+        }
+      }
+    }
+  }
+}

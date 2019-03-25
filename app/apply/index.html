@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Apply | ITLS | USU</title>
+    <link rel="stylesheet" type="text/css" href="https://www.usu.edu/style/classic-full-15.min.css">
+    <link rel="stylesheet" type="text/css" href="https://ouresources.usu.edu/_resources/css/global-custom.css">
+    <link rel="stylesheet" type="text/css" href="https://ouresources.usu.edu/_resources/css/profile-page-v0-classic.css">
+    <link rel="stylesheet" href="https://itls.usu.edu/_resources/css/custom.css" type="text/css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+    <script src="https://www.usu.edu/assets/bootstrap/3.3.2/dist/js/bootstrap.min.js"></script>
+    <script src="https://ouresources.usu.edu/_resources/assets/js/bootstrap-tabcollapse/init.js"></script>
+    <script src="https://ouresources.usu.edu/_resources/assets/components/blueimp-gallery/js/jquery.blueimp-gallery.min.js"></script>
+    <script src="https://ouresources.usu.edu/_resources/assets/components/bootstrap-jasny/js/fileinput.min.js"></script>
+    <script src="https://ouresources.usu.edu/_resources/assets/components/bootstrap-select/js/bootstrap-select.min.js"></script>
+    <script src="https://ouresources.usu.edu/_resources/js/passwordProtect.js"></script>
+    <script src="https://ouresources.usu.edu/_resources/js/accordionSnippet.js"></script>
+    <script src="https://ouresources.usu.edu/_resources/js/tabSnippet.js"></script>
+    <script>
+    $(document).ready(function() {
+        $('.selectpicker').selectpicker();
+        $('[data-toggle="tooltip"]').tooltip();
+    });
+    </script>
+    <script>
+    $(".pop").popover({ animation: false })
+        .on("mouseenter", function() {
+            var _this = this;
+            $(this).popover("show");
+            $(".popover").on("mouseleave", function() {
+                $(_this).popover('hide');
+            });
+        }).on("mouseleave", function() {
+            var _this = this;
+            setTimeout(function() {
+                if (!$(".popover:hover").length) {
+                    $(_this).popover("hide");
+                }
+            }, 300);
+        });
+    </script>
+    <script src="https://ouresources.usu.edu/_resources/assets/components/bootstrap-datetimepicker/js/bootstrap-datetimepicker.min.js"></script>
+    <script type="text/javascript">
+    $(".form_datetime").datetimepicker({
+        format: 'mm-dd-yyyy H:ii P',
+        autoclose: 1,
+        showMeridian: 1
+    });
+    $(".form_date").datetimepicker({
+        format: 'mm-dd-yyyy',
+        autoclose: 1,
+        showMeridian: 1,
+        minView: 2,
+        forceParse: 0
+    });
+    $(".form_time").datetimepicker({
+        format: 'H:ii P',
+        autoclose: 1,
+        showMeridian: 1,
+        startView: 1,
+        minView: 0,
+        maxView: 1,
+        forceParse: 0
+    });
+    </script>
+    <script type="text/javascript" src="https://ouresources.usu.edu/_assets/forms/ouforms.js"></script>
+    <script type="text/javascript" src="https://ouresources.usu.edu/_assets/forms/jquery.datetimepicker.full.min.js"></script>
+    <!-- ARIS CSS -->
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <!-- ARIS JS -->
+    <script type="text/javascript">
+        $(function(){
+            var open = 'apply-collapse-open';
+            $('.apply-collapse-header').click(function(e){
+                e.preventDefault();
+                var header = $(e.target);
+                var isOpen = header.parents('article').hasClass(open);
+                header.parents('.apply-collapse-section').find('article').removeClass(open);
+                if (!isOpen) header.parents('article').addClass(open);
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <div id="global-header">
+        <div id="global-header-wrapper">
+            <div class="row">
+                <div class="brand"><a href="/"><img class="img-responsive" src="https://itls.usu.edu/_resources/includes/itls@2x.png" alt="ITLS Logo" /></a>
+                </div>
+                <div class="header-right">
+                    <div class="row">
+                        <div class="header-navigation pull-right" role="navigation">
+                            <ul class="header-links">
+                                <li><a href="http://www.usu.edu/"><span class="fa fa-home fa-lg"></span><span class="sr-only">USU Home</span></a></li>
+                                <li><a href="http://usu.edu/azindex/">A-Z Index</a></li>
+                                <li><a href="http://usu.edu/myusu/">MyUSU</a></li>
+                                <li><a href="http://directory.usu.edu/">Directory</a></li>
+                            </ul>
+                        </div>
+                        <div class="header-search pull-right">
+                            <form method="get" role="form" name="search" id="search" action="https://www.usu.edu/search/">
+                                <div class="input-group pull-right"><label class="sr-only" for="gsearch">Search</label><input id="gsearch" name="q" type="text" class="form-control" placeholder="" value="">
+                                    <div class="input-group-btn"><button type="submit" class="btn" tabindex="-1"><span class="glyphicon glyphicon-search"></span><span class="sr-only">Search USU</span></button></div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="header-support pull-right"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="main-container-wide">
+        <div class="itls-styled">
+            <!-- ARIS section -->
+            <div class="jumbotron jumbotron-apply">
+                <h1>Apply to ITLS</h1>
+                <p>We've made the application process easy</p>
+                <p>
+                    <a href="#" class="button-apply button-apply-white">Apply online</a>
+                </p>
+            </div>
+            <div class="content-columns">
+                <div class="content-main">
+                    <h2>How to Apply</h2>
+                    <hr>
+                    <section>
+                        <h3>Application</h3>
+                        <p>To apply, create an account and start your application at the School of Graduate Studies website. See below for ITLS department-specific requirements.</p>
+                        <p>
+                            <a href="#" class="button-apply button-apply-black">Apply now</a>
+                        </p>
+                    </section>
+                    <hr>
+                    <section class="apply-collapse-section">
+                        <h3>Admission Requirements</h3>
+                        <article>
+                            <a href="#" class="apply-collapse-header">
+                                <h4>A bachelor's or master's degree before the program starts</h4>
+                            </a>
+                            <div>
+                                Lorem ipsum blah blah blah
+                            </div>
+                        </article>
+                        <article>
+                            <a href="#" class="apply-collapse-header">
+                                <h4>GPA: 3.0 or higher</h4>
+                            </a>
+                            <div>
+                                Lorem ipsum blah blah blah
+                            </div>
+                        </article>
+                        <article>
+                            <a href="#" class="apply-collapse-header">
+                                <h4>Admissions tests: 40th percentile</h4>
+                            </a>
+                            <div>
+                                Lorem ipsum blah blah blah
+                            </div>
+                        </article>
+                        <article>
+                            <a href="#" class="apply-collapse-header">
+                                <h4>TOEFL and IELTS: International Students</h4>
+                            </a>
+                            <div>
+                                Lorem ipsum blah blah blah
+                            </div>
+                        </article>
+                        <article>
+                            <a href="#" class="apply-collapse-header">
+                                <h4>Multimedia TOEFL or IELTS (international students only)</h4>
+                            </a>
+                            <div>
+                                Lorem ipsum blah blah blah
+                            </div>
+                        </article>
+                        <article>
+                            <a href="#" class="apply-collapse-header">
+                                <h4>Three letters of recommendation</h4>
+                            </a>
+                            <div>
+                                Lorem ipsum blah blah blah
+                            </div>
+                        </article>
+                        <article>
+                            <a href="#" class="apply-collapse-header">
+                                <h4>A writing sample</h4>
+                            </a>
+                            <div>
+                                <ul>
+                                    <li>PhD and MS: Choose a writing sample that demonstrates your academic writing skills, such as a research paper, honors thesis, or theory paper. An ideal sample should cite references that support your claim. Writing samples that include a research design, data collection, and analysis with presentation of results or findings are even better, though not required.</li>
+                                    <li>MA, MEd and EdS: Choose a writing sample that demonstrates your skill or potential in academic writing. Examples of ideal writing samples are academic papers, lesson plans, design documents, evaluation reports or other professional documents.</li>
+                                </ul>
+                            </div>
+                        </article>
+                        <article>
+                            <a href="#" class="apply-collapse-header">
+                                <h4>A statement of purpose</h4>
+                            </a>
+                            <div>
+                                Lorem ipsum blah blah blah
+                            </div>
+                        </article>
+                    </section>
+                    <hr>
+                    <section>
+                        <h3>Cost & Funding</h3>
+                        <p>Tuition and fees vary from year to year and are determined by the Utah legislature. The following links will help you determine the costs associated with a degree at Utah State University:</p>
+                        <ul>
+                            <li>On campus fee schedule: <a href="#">Tuition and Fees (Registrar's Office)</a>. This includes information for undergraduate, graduate and regional campus students. Scroll down to see the Tuition and Fees Schedule for the current year (PDF).</li>
+                            <li>Online students have different rates from on-campus students. The current tuition-only rate for all ITLS online courses is $459.62 per credit.</li>
+                        </ul>
+                        <p>Go to the <a href="#">Funding Page</a> for more information.</p>
+                    </section>
+                    <hr>
+                    <section>
+                        <h3>ITLS Orientation</h3>
+                        <p>Fall 2018 dates:</p>
+                        <ul>
+                            <li>Section 1: Aug 6-8, 2018</li>
+                            <li>Section 2: Aug 22-24, 2018</li>
+                        </ul>
+                        <p>Orientation for the ITLS department graduate programs is held each fall on the USU Logan campus. There are two sections offered. All incoming graduate students are required to attend one of the sections. Section 1 is held the Monday, Tuesday and Wednesday of the first full week of August. Section 2 is held the Wednesday, Thursday, & Friday right before the official first day of fall semester. Orientation is held primarily in the Emma Eccles Jones Education (EDUC) building on the USU Logan campus.</p>
+                        <p>Topics covered during the orientation include general information and expectations, programs of study details and options, the library and other available resources, working with the School of Graduate Studies, and meeting the faculty. Experiential learning activities are a major part of the orientation. These are held outside at the USU Ropes Course location. There is a reading assignment connected to group discussion. Further details of the orientation experience are sent to all newly admitted students.</p>
+                        <p>Lodging and transportation, including campus parking, are the responsibility of the student. Meals are included in the orientation experience.</p>
+                        <p>Note: For international students, there is an additional USU orientation coordinated through the Office of International Students Services (OISS). This is not part of the ITLS orientation.</p>
+                    </section>
+                    <hr>
+                    <section class="apply-collapse-section">
+                        <h3>Frequently Asked Questions</h3>
+                        <article>
+                            <a href="#" class="apply-collapse-header">
+                                <h4>Where can I find more information about your programs?</h4>
+                            </a>
+                            <div>
+                                Lorem ipsum blah blah blah
+                            </div>
+                        </article>
+                        <article>
+                            <a href="#" class="apply-collapse-header">
+                                <h4>Do you offer degrees online?</h4>
+                            </a>
+                            <div>
+                                Lorem ipsum blah blah blah
+                            </div>
+                        </article>
+                        <article>
+                            <a href="#" class="apply-collapse-header">
+                                <h4>Do you offer undergraduate degrees?</h4>
+                            </a>
+                            <div>
+                                Lorem ipsum blah blah blah
+                            </div>
+                        </article>
+                        <article>
+                            <a href="#" class="apply-collapse-header">
+                                <h4>Can I meet or talk with professors directly before applying?</h4>
+                            </a>
+                            <div>
+                                Lorem ipsum blah blah blah
+                            </div>
+                        </article>
+                        <article>
+                            <a href="#" class="apply-collapse-header">
+                                <h4>How soon can I start?</h4>
+                            </a>
+                            <div>
+                                Lorem ipsum blah blah blah
+                            </div>
+                        </article>
+                        <article>
+                            <a href="#" class="apply-collapse-header">
+                                <h4>What type of degree do I need to apply to the ITLS graduate program?</h4>
+                            </a>
+                            <div>
+                                Lorem ipsum blah blah blah
+                            </div>
+                        </article>
+                        <article>
+                            <a href="#" class="apply-collapse-header">
+                                <h4>How long do your graduate programs take?</h4>
+                            </a>
+                            <div>
+                                Lorem ipsum blah blah blah
+                            </div>
+                        </article>
+                    </section>
+                    <hr>
+                    <section>
+                        <h3>Join the ITLS Mailing List</h3>
+                        <p>
+                            ITLS students can get information from faculty, students, and alumni on job postings, current department news, announcements, and other relevant information. We encourage students, prospective students, alumni, and friends to join.
+                            <br>
+                            <a href="#">Join the List</a>
+                        </p>
+                        <p>
+                            Send your messages to the list at:
+                            <a href="mailto:itls@lists.usu.edu"></a>
+                        </p>
+                        <p>
+                            Subscription info and archives for the department mailing list are located at
+                            <br>
+                            <a href="http://lists.usu.edu/mailman/listinfo/inst">http://lists.usu.edu/mailman/listinfo/inst</a>
+                        </p>
+                    </section>
+                </div>
+                <div class="content-sidebar">
+                    <p>
+                        <a href="#" class="button-apply button-apply-black">Apply online</a>
+                    </p>
+                    <hr>
+                    <ul>
+                        <li>
+                            <a href="#">How to Apply</a>
+                        </li>
+                        <li>
+                            <a href="#">Application Deadline</a>
+                        </li>
+                        <li>
+                            <a href="#">Admission Requirements</a>
+                        </li>
+                        <li>
+                            <a href="#">Cost & Funding</a>
+                        </li>
+                        <li>
+                            <a href="#">ITLS Orientation</a>
+                        </li>
+                        <li>
+                            <a href="#">FAQ</a>
+                        </li>
+                        <li>
+                            <a href="#">Join the ITLS Mailing List</a>
+                        </li>
+                    </ul>
+                    <hr>
+                    <section>
+                        <h3>Information Packet</h3>
+                        <p>
+                            <img src="../img/info-packet.png" class="apply-info-packet">
+                            Looking for more information about courses, offerings, and life in Logain?
+                        </p>
+                        <p>
+                            <a href="#" class="button-apply button-apply-outline">Get an info packet</a>
+                        </p>
+                    </section>
+                    <hr>
+                    <section>
+                        <p class="apply-us-news">
+                            <img src="../img/usnews-grad.png">
+                        </p>
+                        <p>
+                            Our master's programs are available fully online. Students enrolled in our online courses are highly satisified. According to the 2018 U.S. News and World Report, USU’s online graduate programs in education were ranked 5th in the nation <a href="#">(CEHS News)</a>.
+                        </p>
+                        <p>
+                            For more information (funding, courses, paths), see our <a href="#">prospective students page</a>.
+                        </p>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="footer">
+        <div id="footer-wrapper">
+            <div class="contentFooter">
+                <!-- Footer Navigation -->
+                <div class="footer-navigation">
+                    <div class="col-nav" style="position: static;"><a href="https://www.facebook.com/usuitls" target="_blank"><img class="img-border" style="margin: 3px 2.5px;" src="https://itls.usu.edu/images/logos-icons/socialmedia/white/facebook.png" alt="Facebook icon" width="35" height="35" /></a> <a href="http://www.linkedin.com/groups/USU-Instructional-Technology-Learning-Sciences-4204328" target="_blank"><img class="img-border" style="margin: 3px 2.5px;" src="https://itls.usu.edu/images/logos-icons/socialmedia/white/linkedin.png" alt="LinkedIn icon" height="35" /></a> <a href="http://www.youtube.com/user/UtahStateITLS?feature=watch" target="_blank"><img class="img-border" style="margin: 3px 2.5px;" src="https://itls.usu.edu/images/logos-icons/socialmedia/white/youtube.png" alt="YouTube icon" height="35" /></a> <a href="https://twitter.com/utahstateITLS" target="_blank"><img class="img-border" style="margin: 3px 2.5px;" src="https://itls.usu.edu/images/logos-icons/socialmedia/white/twitter.png" alt="Twitter icon" height="35" /></a> <a href="/news/index.php" target="_blank"><img class="img-border" style="margin: 3px 2.5px;" src="https://itls.usu.edu/images/logos-icons/socialmedia/white/news.png" alt="news icon" width="35" height="35" /></a>
+                        <div class="clearfix">&nbsp;</div>
+                        <div class="clearfix"></div>
+                        <a href="http://cehs.usu.edu/giving/?area=Instructional%20Technology%20&amp;%20Learning%20Sciences" target="_blank"><img class="img-border" src="https://itls.usu.edu/images/logos-icons/socialmedia/white/donate.png" alt="donate button" height="35" /></a>
+                    </div>
+                    <div class="col-nav" style="position: static;">
+                        <h4>Academic Programs</h4>
+                        <ul>
+                            <li><a href="/programs/online.php">Online Programs</a></li>
+                            <li><a href="/programs/phd.php">Doctor of Philosophy</a></li>
+                            <li><a href="/programs/eds.php">Education Specialist</a></li>
+                            <li><a href="/programs/ms.php">Master of Science</a></li>
+                            <li><a href="/programs/med.php">Master of Education</a></li>
+                            <li><a href="/programs/ma.php">Master of Arts</a></li>
+                            <li><a href="/programs/undergrad.php">Undergraduate Offerings</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-nav" style="position: static;">
+                        <h4>Other Links</h4>
+                        <ul>
+                            <li><a href="/faculty/index.php">Faculty Profiles</a></li>
+                            <li><a href="/research/index.php">Research</a></li>
+                            <li><a href="/about/organizations.php">Professional Organizations</a></li>
+                            <li><a href="/current/itsa.php">ITSA (Instructional Technology Student Association)</a></li>
+                            <li><a href="/current/labs.php">Computer Labs</a></li>
+                            <li><a href="/current/index.php">Additional Resources</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-nav" style="position: static;">
+                        <h4>Contact or Questions</h4>
+                        <ul>
+                            <li><a href="/about/contact.php">Contact Us</a></li>
+                            <li><a href="/about/faq.php">FAQ</a></li>
+                            <li><a href="http://cehs.usu.edu/">College of Education and Human Services</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- /Footer Navigation -->
+                <div class="global-footer">
+                    <div class="col-xs-12">
+                        <ul>
+                            <li>Instructional Technology and Learning Sciences | 2830 Old Main Hill, Logan, UT 84322-2830 | Phone: 435 797-2694 | Fax: 435 797-2693</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="global-footer">
+                <div class="col-xs-12">
+                    <ul>
+                        <li><a href="https://www.usu.edu/copyright">© Utah State University</a></li>
+                        <li><a href="https://www.usu.edu/privacy/">Privacy</a></li>
+                        <li><a href="https://www.usu.edu/campus-life/safety">Safety</a></li>
+                        <li><a href="https://accessibility.usu.edu/">Accessibility</a></li>
+                        <li><a href="https://aaeo.usu.edu/non-discrimination">Non-discrimination</a></li>
+                        <li><a href="https://it.usu.edu/web/feedback">Website Feedback</a></li>
+                        <li>
+                            <a id="de" href="http://a.cms.omniupdate.com/10?skin=usu&amp;account=usu&amp;site=ITLS&amp;action=de&amp;path=/index.pcf">Admin</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
