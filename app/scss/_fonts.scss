@@ -21,8 +21,16 @@
   }
   p {
     font-family: Lato;
-    font-size: 18px;
+    font-size: 17px;
     line-height: 34px;
     margin: 20px 0;
+    letter-spacing: 0.03em;
+  }
+  ul, ol {
+    font-family: Lato;
+    font-size: 15px;
+    line-height: 28px;
+    margin: 20px 0;
+    letter-spacing: 0.03em;
   }
 }

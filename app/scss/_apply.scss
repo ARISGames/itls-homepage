@@ -40,11 +40,50 @@
     .content-main {
       flex: 1;
       padding: 10px 40px;
+      ul li {
+        list-style-type: none;
+        &:before {
+          /* Unicode bullet symbol */
+          content: '\2022';
+          color: #9DACBA;
+          display: inline-block;
+          width: 40px;
+          font-size: 30px;
+        }
+      }
+
+      /*
+        styled `ol` numbers using technique from
+        https://www.456bereastreet.com/archive/201105/styling_ordered_list_numbers/
+      */
+      ol {
+        counter-reset: li; /* Initiate a counter */
+        li {
+          position: relative; /* Create a positioning context */
+          list-style: none;
+          &:before {
+            content: counter(li); /* Use the counter as content */
+            counter-increment: li; /* Increment the counter by 1 */
+            font-family: League Spartan;
+            color: #93AEC5;
+            font-size: 18px;
+            width: 40px;
+            display: inline-block;
+          }
+          margin: 20px 0;
+        }
+      }
+
     }
     .content-sidebar {
       width: 300px;
       background-color: #F5F6F7;
       padding: 10px 30px;
+      ul li {
+        list-style-type: none;
+        margin: 10px 0;
+        font-weight: bold;
+      }
     }
   }
 
@@ -77,6 +116,17 @@
         div {
           display: none;
         }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .itls-styled {
+    .content-columns {
+      flex-direction: column;
+      .content-sidebar {
+        width: auto;
       }
     }
   }
