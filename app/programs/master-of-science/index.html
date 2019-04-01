@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Master of Science | ITLS | USU</title>
+    <link rel="stylesheet" type="text/css" href="https://www.usu.edu/style/classic-full-15.min.css">
+    <link rel="stylesheet" type="text/css" href="https://ouresources.usu.edu/_resources/css/global-custom.css">
+    <link rel="stylesheet" type="text/css" href="https://ouresources.usu.edu/_resources/css/profile-page-v0-classic.css">
+    <link rel="stylesheet" href="https://itls.usu.edu/_resources/css/custom.css" type="text/css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+    <script src="https://www.usu.edu/assets/bootstrap/3.3.2/dist/js/bootstrap.min.js"></script>
+    <script src="https://ouresources.usu.edu/_resources/assets/js/bootstrap-tabcollapse/init.js"></script>
+    <script src="https://ouresources.usu.edu/_resources/assets/components/blueimp-gallery/js/jquery.blueimp-gallery.min.js"></script>
+    <script src="https://ouresources.usu.edu/_resources/assets/components/bootstrap-jasny/js/fileinput.min.js"></script>
+    <script src="https://ouresources.usu.edu/_resources/assets/components/bootstrap-select/js/bootstrap-select.min.js"></script>
+    <script src="https://ouresources.usu.edu/_resources/js/passwordProtect.js"></script>
+    <script src="https://ouresources.usu.edu/_resources/js/accordionSnippet.js"></script>
+    <script src="https://ouresources.usu.edu/_resources/js/tabSnippet.js"></script>
+    <script>
+    $(document).ready(function() {
+        $('.selectpicker').selectpicker();
+        $('[data-toggle="tooltip"]').tooltip();
+    });
+    </script>
+    <script>
+    $(".pop").popover({ animation: false })
+        .on("mouseenter", function() {
+            var _this = this;
+            $(this).popover("show");
+            $(".popover").on("mouseleave", function() {
+                $(_this).popover('hide');
+            });
+        }).on("mouseleave", function() {
+            var _this = this;
+            setTimeout(function() {
+                if (!$(".popover:hover").length) {
+                    $(_this).popover("hide");
+                }
+            }, 300);
+        });
+    </script>
+    <script src="https://ouresources.usu.edu/_resources/assets/components/bootstrap-datetimepicker/js/bootstrap-datetimepicker.min.js"></script>
+    <script type="text/javascript">
+    $(".form_datetime").datetimepicker({
+        format: 'mm-dd-yyyy H:ii P',
+        autoclose: 1,
+        showMeridian: 1
+    });
+    $(".form_date").datetimepicker({
+        format: 'mm-dd-yyyy',
+        autoclose: 1,
+        showMeridian: 1,
+        minView: 2,
+        forceParse: 0
+    });
+    $(".form_time").datetimepicker({
+        format: 'H:ii P',
+        autoclose: 1,
+        showMeridian: 1,
+        startView: 1,
+        minView: 0,
+        maxView: 1,
+        forceParse: 0
+    });
+    </script>
+    <script type="text/javascript" src="https://ouresources.usu.edu/_assets/forms/ouforms.js"></script>
+    <script type="text/javascript" src="https://ouresources.usu.edu/_assets/forms/jquery.datetimepicker.full.min.js"></script>
+    <!-- ARIS CSS -->
+    <link rel="stylesheet" type="text/css" href="../../css/style.css">
+</head>
+
+<body>
+    <div id="global-header">
+        <div id="global-header-wrapper">
+            <div class="row">
+                <div class="brand"><a href="/"><img class="img-responsive" src="https://itls.usu.edu/_resources/includes/itls@2x.png" alt="ITLS Logo" /></a>
+                </div>
+                <div class="header-right">
+                    <div class="row">
+                        <div class="header-navigation pull-right" role="navigation">
+                            <ul class="header-links">
+                                <li><a href="http://www.usu.edu/"><span class="fa fa-home fa-lg"></span><span class="sr-only">USU Home</span></a></li>
+                                <li><a href="http://usu.edu/azindex/">A-Z Index</a></li>
+                                <li><a href="http://usu.edu/myusu/">MyUSU</a></li>
+                                <li><a href="http://directory.usu.edu/">Directory</a></li>
+                            </ul>
+                        </div>
+                        <div class="header-search pull-right">
+                            <form method="get" role="form" name="search" id="search" action="https://www.usu.edu/search/">
+                                <div class="input-group pull-right"><label class="sr-only" for="gsearch">Search</label><input id="gsearch" name="q" type="text" class="form-control" placeholder="" value="">
+                                    <div class="input-group-btn"><button type="submit" class="btn" tabindex="-1"><span class="glyphicon glyphicon-search"></span><span class="sr-only">Search USU</span></button></div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="header-support pull-right"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="main-container-wide">
+        <div class="itls-styled">
+            <!-- ARIS section -->
+            <div class="jumbotron jumbotron-course">
+                <h1>Master of Science</h1>
+                <p class="jumbotron-breadcrumbs">
+                    <a href="..">Programs</a>
+                    <span class="breadcrumb-arrow">»</span>
+                    <span>Master of Science</span>
+                </p>
+            </div>
+            <div class="content-columns">
+                <div class="content-main">
+                    <h2>Master of Science (Plan A)</h2>
+                    <p>The focus of the MS program is Instructional Design and Development. You will explore core knowledge, best practices, current theories, and research.</p>
+                    <p>MS students are admitted into a cohort the fall semester of each year. The anticipated timeline for finishing the degree requirements is 2-3 years or 5 semesters of full time registration (9 credits per semester). Students can take up to 6 years to complete the degree.</p>
+                    <p>The Master of Science degree is available on campus at Utah State University or online.</p>
+                    <section>
+                        <h3>Degree Requirements</h3>
+                        <ul>
+                            <li>1-credit (3 day) required orientation in August on the Logan campus (before beginning other course work.)</li>
+                            <li>33 credit hours of coursework (39 credits total with thesis)*</li>
+                            <li>A thesis research (6 credits)</li>
+                        </ul>
+                        <p>*typically completed in six semesters or less, but students have up to six years to complete the degree requirements. To complete the required coursework in two years, students must take the requisite classes when offered.</p>
+                    </section>
+                    <section>
+                        <h3>Program Pathway</h3>
+                        <ol>
+                            <li>Acceptance to the program</li>
+                            <li>Register online through <a href="http://banner.usu.edu/">Banner/Access</a>.</li>
+                            <li>Temporary Advisor: Upon acceptance to the program, you’ll be assigned a temporary advisor.</li>
+                            <li>Choose your Major Professor: Near the end of your first year, you’ll choose a major professor from the department faculty. You and your major professor will decide upon a problem or subject for the thesis study by the end of your second semester of graduate study.</li>
+                            <li>Form your three-member Supervisory Committee.</li>
+                        </ol>
+                    </section>
+                </div>
+                <div class="content-sidebar">
+                    <section>
+                        <h3>Additional Info</h3>
+                        <ul>
+                            <li>
+                                <a href="https://itls.usu.edu/files/students/plan_sheets/ms.pdf">
+                                    Planning Sheet
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://itls.usu.edu/files/students/handbooks/thesis.pdf">
+                                    MS Thesis Handbook
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://itls.usu.edu/files/students/plan_sheets/9-steps.pdf">
+                                    9 Steps to Completion
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://itls.usu.edu/files/students/contracts/independent-study.pdf">
+                                    Independent Study Contract
+                                </a>
+                            </li>
+                            <li>
+                                <a href="http://rgs.usu.edu/graduateschool/htm/forms">
+                                    Graduate School Forms
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://itls.usu.edu/files/students/other/incomplete.pdf">
+                                    Incomplete Grade Documentation
+                                </a>
+                            </li>
+                            <li>
+                                <a href="http://digitalcommons.usu.edu/itls_stures/">
+                                    Recent electronic theses from ITLS Master and PhD students
+                                </a>
+                            </li>
+                        </ul>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="footer">
+        <div id="footer-wrapper">
+            <div class="contentFooter">
+                <!-- Footer Navigation -->
+                <div class="footer-navigation">
+                    <div class="col-nav" style="position: static;"><a href="https://www.facebook.com/usuitls" target="_blank"><img class="img-border" style="margin: 3px 2.5px;" src="https://itls.usu.edu/images/logos-icons/socialmedia/white/facebook.png" alt="Facebook icon" width="35" height="35" /></a> <a href="http://www.linkedin.com/groups/USU-Instructional-Technology-Learning-Sciences-4204328" target="_blank"><img class="img-border" style="margin: 3px 2.5px;" src="https://itls.usu.edu/images/logos-icons/socialmedia/white/linkedin.png" alt="LinkedIn icon" height="35" /></a> <a href="http://www.youtube.com/user/UtahStateITLS?feature=watch" target="_blank"><img class="img-border" style="margin: 3px 2.5px;" src="https://itls.usu.edu/images/logos-icons/socialmedia/white/youtube.png" alt="YouTube icon" height="35" /></a> <a href="https://twitter.com/utahstateITLS" target="_blank"><img class="img-border" style="margin: 3px 2.5px;" src="https://itls.usu.edu/images/logos-icons/socialmedia/white/twitter.png" alt="Twitter icon" height="35" /></a> <a href="/news/index.php" target="_blank"><img class="img-border" style="margin: 3px 2.5px;" src="https://itls.usu.edu/images/logos-icons/socialmedia/white/news.png" alt="news icon" width="35" height="35" /></a>
+                        <div class="clearfix">&nbsp;</div>
+                        <div class="clearfix"></div>
+                        <a href="http://cehs.usu.edu/giving/?area=Instructional%20Technology%20&amp;%20Learning%20Sciences" target="_blank"><img class="img-border" src="https://itls.usu.edu/images/logos-icons/socialmedia/white/donate.png" alt="donate button" height="35" /></a>
+                    </div>
+                    <div class="col-nav" style="position: static;">
+                        <h4>Academic Programs</h4>
+                        <ul>
+                            <li><a href="/programs/online.php">Online Programs</a></li>
+                            <li><a href="/programs/phd.php">Doctor of Philosophy</a></li>
+                            <li><a href="/programs/eds.php">Education Specialist</a></li>
+                            <li><a href="/programs/ms.php">Master of Science</a></li>
+                            <li><a href="/programs/med.php">Master of Education</a></li>
+                            <li><a href="/programs/ma.php">Master of Arts</a></li>
+                            <li><a href="/programs/undergrad.php">Undergraduate Offerings</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-nav" style="position: static;">
+                        <h4>Other Links</h4>
+                        <ul>
+                            <li><a href="/faculty/index.php">Faculty Profiles</a></li>
+                            <li><a href="/research/index.php">Research</a></li>
+                            <li><a href="/about/organizations.php">Professional Organizations</a></li>
+                            <li><a href="/current/itsa.php">ITSA (Instructional Technology Student Association)</a></li>
+                            <li><a href="/current/labs.php">Computer Labs</a></li>
+                            <li><a href="/current/index.php">Additional Resources</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-nav" style="position: static;">
+                        <h4>Contact or Questions</h4>
+                        <ul>
+                            <li><a href="/about/contact.php">Contact Us</a></li>
+                            <li><a href="/about/faq.php">FAQ</a></li>
+                            <li><a href="http://cehs.usu.edu/">College of Education and Human Services</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- /Footer Navigation -->
+                <div class="global-footer">
+                    <div class="col-xs-12">
+                        <ul>
+                            <li>Instructional Technology and Learning Sciences | 2830 Old Main Hill, Logan, UT 84322-2830 | Phone: 435 797-2694 | Fax: 435 797-2693</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="global-footer">
+                <div class="col-xs-12">
+                    <ul>
+                        <li><a href="https://www.usu.edu/copyright">© Utah State University</a></li>
+                        <li><a href="https://www.usu.edu/privacy/">Privacy</a></li>
+                        <li><a href="https://www.usu.edu/campus-life/safety">Safety</a></li>
+                        <li><a href="https://accessibility.usu.edu/">Accessibility</a></li>
+                        <li><a href="https://aaeo.usu.edu/non-discrimination">Non-discrimination</a></li>
+                        <li><a href="https://it.usu.edu/web/feedback">Website Feedback</a></li>
+                        <li>
+                            <a id="de" href="http://a.cms.omniupdate.com/10?skin=usu&amp;account=usu&amp;site=ITLS&amp;action=de&amp;path=/index.pcf">Admin</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
