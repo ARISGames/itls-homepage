@@ -21,12 +21,12 @@
   }
   p {
     font-family: Lato;
-    font-size: 17px;
+    font-size: 16px;
     line-height: 34px;
     margin: 20px 0;
     letter-spacing: 0.03em;
   }
-  ul, ol {
+  ul, ol:not(.carousel-indicators) {
     font-family: Lato;
     font-size: 15px;
     line-height: 28px;
