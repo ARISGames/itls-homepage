@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Assessment | ITLS | USU</title>
+    <link rel="stylesheet" type="text/css" href="https://www.usu.edu/style/classic-full-15.min.css">
+    <link rel="stylesheet" type="text/css" href="https://ouresources.usu.edu/_resources/css/global-custom.css">
+    <link rel="stylesheet" type="text/css" href="https://ouresources.usu.edu/_resources/css/profile-page-v0-classic.css">
+    <link rel="stylesheet" href="https://itls.usu.edu/_resources/css/custom.css" type="text/css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+    <script src="https://www.usu.edu/assets/bootstrap/3.3.2/dist/js/bootstrap.min.js"></script>
+    <script src="https://ouresources.usu.edu/_resources/assets/js/bootstrap-tabcollapse/init.js"></script>
+    <script src="https://ouresources.usu.edu/_resources/assets/components/blueimp-gallery/js/jquery.blueimp-gallery.min.js"></script>
+    <script src="https://ouresources.usu.edu/_resources/assets/components/bootstrap-jasny/js/fileinput.min.js"></script>
+    <script src="https://ouresources.usu.edu/_resources/assets/components/bootstrap-select/js/bootstrap-select.min.js"></script>
+    <script src="https://ouresources.usu.edu/_resources/js/passwordProtect.js"></script>
+    <script src="https://ouresources.usu.edu/_resources/js/accordionSnippet.js"></script>
+    <script src="https://ouresources.usu.edu/_resources/js/tabSnippet.js"></script>
+    <script>
+    $(document).ready(function() {
+        $('.selectpicker').selectpicker();
+        $('[data-toggle="tooltip"]').tooltip();
+    });
+    </script>
+    <script>
+    $(".pop").popover({ animation: false })
+        .on("mouseenter", function() {
+            var _this = this;
+            $(this).popover("show");
+            $(".popover").on("mouseleave", function() {
+                $(_this).popover('hide');
+            });
+        }).on("mouseleave", function() {
+            var _this = this;
+            setTimeout(function() {
+                if (!$(".popover:hover").length) {
+                    $(_this).popover("hide");
+                }
+            }, 300);
+        });
+    </script>
+    <script src="https://ouresources.usu.edu/_resources/assets/components/bootstrap-datetimepicker/js/bootstrap-datetimepicker.min.js"></script>
+    <script type="text/javascript">
+    $(".form_datetime").datetimepicker({
+        format: 'mm-dd-yyyy H:ii P',
+        autoclose: 1,
+        showMeridian: 1
+    });
+    $(".form_date").datetimepicker({
+        format: 'mm-dd-yyyy',
+        autoclose: 1,
+        showMeridian: 1,
+        minView: 2,
+        forceParse: 0
+    });
+    $(".form_time").datetimepicker({
+        format: 'H:ii P',
+        autoclose: 1,
+        showMeridian: 1,
+        startView: 1,
+        minView: 0,
+        maxView: 1,
+        forceParse: 0
+    });
+    </script>
+    <script type="text/javascript" src="https://ouresources.usu.edu/_assets/forms/ouforms.js"></script>
+    <script type="text/javascript" src="https://ouresources.usu.edu/_assets/forms/jquery.datetimepicker.full.min.js"></script>
+    <!-- ARIS CSS -->
+    <link rel="stylesheet" type="text/css" href="../../css/style.css">
+    <!-- ARIS JS -->
+    <script type="text/javascript">
+    $(function() {
+        var open = 'apply-collapse-open';
+        $('.apply-collapse-header').click(function(e) {
+            e.preventDefault();
+            var header = $(e.target);
+            var isOpen = header.parents('article').hasClass(open);
+            header.parents('.apply-collapse-section').find('article').removeClass(open);
+            if (!isOpen) header.parents('article').addClass(open);
+        });
+    });
+    </script>
+</head>
+
+<body>
+    <div id="global-header">
+        <div id="global-header-wrapper">
+            <div class="row">
+                <div class="brand"><a href="/"><img class="img-responsive" src="https://itls.usu.edu/_resources/includes/itls@2x.png" alt="ITLS Logo" /></a>
+                </div>
+                <div class="header-right">
+                    <div class="row">
+                        <div class="header-navigation pull-right" role="navigation">
+                            <ul class="header-links">
+                                <li><a href="http://www.usu.edu/"><span class="fa fa-home fa-lg"></span><span class="sr-only">USU Home</span></a></li>
+                                <li><a href="http://usu.edu/azindex/">A-Z Index</a></li>
+                                <li><a href="http://usu.edu/myusu/">MyUSU</a></li>
+                                <li><a href="http://directory.usu.edu/">Directory</a></li>
+                            </ul>
+                        </div>
+                        <div class="header-search pull-right">
+                            <form method="get" role="form" name="search" id="search" action="https://www.usu.edu/search/">
+                                <div class="input-group pull-right"><label class="sr-only" for="gsearch">Search</label><input id="gsearch" name="q" type="text" class="form-control" placeholder="" value="">
+                                    <div class="input-group-btn"><button type="submit" class="btn" tabindex="-1"><span class="glyphicon glyphicon-search"></span><span class="sr-only">Search USU</span></button></div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="header-support pull-right"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="main-container-wide">
+        <div class="itls-styled">
+            <!-- ARIS section -->
+            <nav class="top-nav">
+                <div class="top-nav-left">
+                    <a href="#">Research</a>
+                    <a href="../../people">People</a>
+                    <a href="#">Student Resources</a>
+                    <a href="#">Courses</a>
+                    <a href="../../programs">Programs</a>
+                    <a href="#">Businesses</a>
+                </div>
+                <div class="top-nav-right">
+                    <a href="../../apply" class="button-apply button-apply-black">Apply</a>
+                </div>
+            </nav>
+            <div class="jumbotron jumbotron-apply">
+                <h1>Assessment</h1>
+                <p class="jumbotron-breadcrumbs">
+                    <a href="..">About</a>
+                    <span class="breadcrumb-arrow">»</span>
+                    <span>Assessment</span>
+                </p>
+            </div>
+            <div class="content-columns">
+                <div class="content-main">
+                    <section>
+                        <h2>Assessment Plan</h2>
+                        <p>The Department of Instructional Technology and Learning Sciences uses several methods to evaluate its effectiveness and collect evaluation data on an ongoing basis in order to engage in iterative improvements of its programs and services.</p>
+                        <ol>
+                            <li>
+                                <p>Students</p>
+                                <ul>
+                                    <li>Graduating doctoral students complete an exit survey made available in their graduation packet. These are returned to the department for analysis.</li>
+                                    <li>Periodically, the website is used to administer online surveys to current and/or graduate students.</li>
+                                    <li>All Master’s students complete a culminating experience. These are periodically reviewed by the faculty to help inform program changes.</li>
+                                    <li>All PhD students are reviewed annually by the faculty.</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <p>Faculty</p>
+                                <ul>
+                                    <li>ITLS faculty members participate in bi-monthly faculty meetings, in which departmental changes may be initiated.</li>
+                                    <li>ITLS faculty members participate in yearly retreats, in which departmental changes may be initiated.</li>
+                                    <li>The curriculum committee initiates changes in programs and requirements.</li>
+                                    <li>The curriculum committee maintains program planning sheets. These are linked from the website. [<a href="https://itls.usu.edu/current/forms.php">link</a>]</li>
+                                    <li>As part of the University’s P&T process, courses are periodically subject to peer review.</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <p>Other</p>
+                                <ul>
+                                    <li>The department maintains a dashboard file, tracking important indicators every year. These include student credit hours, student residency, enrollment by degree, ethnic background of students, number of FTE students, number of degrees conferred, number of faculty, total program costs, student mean GPA, number of applications, and % acceptance. The dashboard is linked below.</li>
+                                    <li>A regents review involving outside reviewers is completed periodically.</li>
+                                    <li>Studies directed at assessing needs of students are conducted in the context of classes.</li>
+                                    <li>Web site traffic is carefully monitored using Google Analytics. This provides a view of student and outsider interests in our programs.</li>
+                                    <li>Taken together, these data provide information to the faculty as it deliberates and structures programmatic offerings to keep current with demands from the field of practice and from the discipline.</li>
+                                </ul>
+                            </li>
+                        </ol>
+                    </section>
+                    <section>
+                        <h2>Learning Objectives</h2>
+                        <p>Association for Educational Communications and Technology standards were developed in conjunction with NCATE and Educational Communications and Instructional Technologies standards. They provide initial standards (for undergraduate programs) and advanced standards (for graduate programs). All standards used here are for advanced or graduate programs.</p>
+                        <p>At the conclusion of ITLS programs, all students will be able to:</p>
+                        <ul>
+                            <li>understand learning theory</li>
+                            <li>execute and understand research evaluation</li>
+                            <li>perform hands-on instructional design</li>
+                            <li>and will be exposed to ITLS foundations</li>
+                        </ul>
+                        <p>In addition to the above mentioned general learning objectives for all programs, there are certain more specific objectives per program:</p>
+                        <ol>
+                            <li>
+                                <p>PhD students will be able to:</p>
+                                <ul>
+                                    <li>fulfill roles as college and university researchers</li>
+                                    <li>fulfill roles as teachers in education and corporate training fields</li>
+                                    <li>conduct and direct research and development activities in public or private educational agencies or in the corporate sector</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <p>Master of Arts will be able to:</p>
+                                <ul>
+                                    <li>perform indepth and hands-on instructional design</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <p>Master of Education will be able to:</p>
+                                <ul>
+                                    <li>understand the role of technology and its appropriate implementation in the teaching and learning process</li>
+                                    <li>deal with issues in schooling</li>
+                                    <li>work in a school library media centers or design and deliver instruction at a distance</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <p>Master of Science (Plan A) will be able to:</p>
+                                <ul>
+                                    <li>perform research</li>
+                                </ul>
+                            </li>
+                        </ol>
+                    </section>
+                </div>
+                <div class="content-sidebar">
+                    <h3>Documents</h3>
+                    <h4>Competencies and Indicators</h4>
+                    <p><strong><a title="Competencies and Indicators" href="/about/competencies.php">Competences and Indicators</a></strong></p>
+                    <h4>Mapping</h4>
+                    <p><strong><span data-toggle="tooltip" data-placement="bottom auto" aria-haspopup="true" data-html="true" title="" class="classic-tooltip" data-original-title="This link will open in a new window."><a xmlns:ouc="http://omniupdate.com/XSL/Variables" title="Curriculum and Program Learning Objectives" href="/files/assessments/core-revisions2017.pdf" target="_blank">Master’s and PhD Core 2017 [PDF]</a></span></strong></p>
+                    <p><strong><span data-toggle="tooltip" data-placement="bottom auto" aria-haspopup="true" data-html="true" title="" class="classic-tooltip" data-original-title="This link will open in a new window."><a xmlns:ouc="http://omniupdate.com/XSL/Variables" title="Curriculum and Program Learning Objectives" href="/files/assessments/curriculum-program-learning-objectives.pdf" target="_blank">Curriculum and Program Learning Objectives [PDF]</a></span></strong></p>
+                    <p><strong><span data-toggle="tooltip" data-placement="bottom auto" aria-haspopup="true" data-html="true" title="" class="classic-tooltip" data-original-title="This link will open in a new window."><a xmlns:ouc="http://omniupdate.com/XSL/Variables" title="Curriculum and Program Learning Objectives" href="/files/assessments/curriculum-program-learning-objectives.xls" target="_blank">Curriculum and Program Learning Objectives [Excel Chart]</a></span><br><br></strong></p>
+                    <h4 class="contact_title"><em>Outcomes Data</em></h4>
+                    <p><strong><span data-toggle="tooltip" data-placement="bottom auto" aria-haspopup="true" data-html="true" title="" class="classic-tooltip" data-original-title="This link will open in a new window."><a xmlns:ouc="http://omniupdate.com/XSL/Variables" title="Outcomes data" href="/files/assessments/outcomes-data.pdf" target="_blank">Outcomes Data [PDF]</a></span></strong></p>
+                    <p>2017 data integrated into decisions below</p>
+                    <p><strong><span data-toggle="tooltip" data-placement="bottom auto" aria-haspopup="true" data-html="true" title="" class="classic-tooltip" data-original-title="This link will open in a new window."><a xmlns:ouc="http://omniupdate.com/XSL/Variables" title="ITLS dashboard 2016" href="/files/assessments/ints-dashboard_2016.pdf" target="_blank">Dashboard 2016 [PDF]</a></span></strong></p>
+                    <p><strong><span data-toggle="tooltip" data-placement="bottom auto" aria-haspopup="true" data-html="true" title="" class="classic-tooltip" data-original-title="This link will open in a new window."><a xmlns:ouc="http://omniupdate.com/XSL/Variables" title="ITLS dashboard 2015" href="/files/assessments/ints-dashboard_2015.pdf" target="_blank">Dashboard 2015 [PDF]</a></span></strong></p>
+                    <p><strong><span data-toggle="tooltip" data-placement="bottom auto" aria-haspopup="true" data-html="true" title="" class="classic-tooltip" data-original-title="This link will open in a new window."><a xmlns:ouc="http://omniupdate.com/XSL/Variables" title="ITLS dashboard 2014" href="/files/assessments/ints-dashboard2014.pdf" target="_blank">Dashboard 2014 [PDF]</a></span></strong></p>
+                    <p><strong><span data-toggle="tooltip" data-placement="bottom auto" aria-haspopup="true" data-html="true" title="" class="classic-tooltip" data-original-title="This link will open in a new window."><a xmlns:ouc="http://omniupdate.com/XSL/Variables" title="Dashboard 2013" href="/files/assessments/inst_dashboard2013.pdf" target="_blank">Dashboard 2013 [PDF]</a></span></strong></p>
+                    <p><strong><span data-toggle="tooltip" data-placement="bottom auto" aria-haspopup="true" data-html="true" title="" class="classic-tooltip" data-original-title="This link will open in a new window."><a xmlns:ouc="http://omniupdate.com/XSL/Variables" title="Dashboard 2012" href="/files/assessments/ints-dashboard2012.pdf" target="_blank">Dashboard 2012 [PDF]</a></span></strong></p>
+                    <p><strong><span data-toggle="tooltip" data-placement="bottom auto" aria-haspopup="true" data-html="true" title="" class="classic-tooltip" data-original-title="This link will open in a new window."><a xmlns:ouc="http://omniupdate.com/XSL/Variables" title="Dashboard 2010" href="/files/assessments/ints-dashboard2010.pdf" target="_blank">Dashboard 2010 [PDF]</a></span></strong></p>
+                    <p><strong><span data-toggle="tooltip" data-placement="bottom auto" aria-haspopup="true" data-html="true" title="" class="classic-tooltip" data-original-title="This link will open in a new window."><a xmlns:ouc="http://omniupdate.com/XSL/Variables" title="Dashboard 2009" href="/files/assessments/inst-dashboard.pdf" target="_blank">Dashboard 2009 [PDF]</a></span></strong></p>
+                    <h4>Instructional Technology Needs Assessment Study</h4>
+                    <p><strong><span data-toggle="tooltip" data-placement="bottom auto" aria-haspopup="true" data-html="true" title="" class="classic-tooltip" data-original-title="This link will open in a new window."><a xmlns:ouc="http://omniupdate.com/XSL/Variables" title="Marketing Report 2014" href="/files/assessments/marketing2014.pdf" target="_blank">2014 Marketing Survey Results (short version)</a></span></strong></p>
+                    <p><strong><span data-toggle="tooltip" data-placement="bottom auto" aria-haspopup="true" data-html="true" title="" class="classic-tooltip" data-original-title="This link will open in a new window."><a xmlns:ouc="http://omniupdate.com/XSL/Variables" title="Performance Systems Report 2009" href="/files/assessments/final-report2009.pdf" target="_blank">2009 Performance Systems Report [PDF]</a></span></strong></p>
+                    <p><strong><span data-toggle="tooltip" data-placement="bottom auto" aria-haspopup="true" data-html="true" title="" class="classic-tooltip" data-original-title="This link will open in a new window."><a xmlns:ouc="http://omniupdate.com/XSL/Variables" title="The multimedia minor 2009" href="/files/assessments/multmedia-minor2009.pdf" target="_blank">2009 Self-Review of the Multimedia Minor program at USU [PDF]</a></span></strong></p>
+                    <p><strong><span data-toggle="tooltip" data-placement="bottom auto" aria-haspopup="true" data-html="true" title="" class="classic-tooltip" data-original-title="This link will open in a new window."><a xmlns:ouc="http://omniupdate.com/XSL/Variables" title="Executive Summary 2004" href="/files/assessments/executive-summary2004.pdf" target="_blank">2004 Executive Summary</a></span></strong></p>
+                    <p><strong><span data-toggle="tooltip" data-placement="bottom auto" aria-haspopup="true" data-html="true" title="" class="classic-tooltip" data-original-title="This link will open in a new window."><a xmlns:ouc="http://omniupdate.com/XSL/Variables" title="Appendix 2004" href="/files/assessments/appendix2004.pdf" target="_blank">2004 Appendix 1 [PDF] - Questions from Alumni Survey 2004</a></span></strong></p>
+                    <p><strong><span data-toggle="tooltip" data-placement="bottom auto" aria-haspopup="true" data-html="true" title="" class="classic-tooltip" data-original-title="This link will open in a new window."><a xmlns:ouc="http://omniupdate.com/XSL/Variables" title="Final Report Needs Assessment 2014" href="/files/assessments/final-report2004.pdf" target="_blank">2004 Assessment (full version) [PDF]</a></span></strong></p>
+                    <p><strong><span data-toggle="tooltip" data-placement="bottom auto" aria-haspopup="true" data-html="true" title="" class="classic-tooltip" data-original-title="This link will open in a new window."><a xmlns:ouc="http://omniupdate.com/XSL/Variables" title="External Regents Review" href="/files/assessments/external-regents-review2001.pdf" target="_blank">2001 External Regents Review (full version) [PDF]</a></span><br><br></strong></p>
+                    <h4>Data-based Decisions</h4>
+                    <p><strong><span data-toggle="tooltip" data-placement="bottom auto" aria-haspopup="true" data-html="true" title="" class="classic-tooltip" data-original-title="This link will open in a new window."><a xmlns:ouc="http://omniupdate.com/XSL/Variables" title="2017 Data Based Decision Making" href="/files/assessments/data-informed-changes-curriculum2017.pdf" target="_blank">Data Informed Curriculum Memo 2017 [PDF]</a></span></strong></p>
+                    <p><strong><span data-toggle="tooltip" data-placement="bottom auto" aria-haspopup="true" data-html="true" title="" class="classic-tooltip" data-original-title="This link will open in a new window."><a xmlns:ouc="http://omniupdate.com/XSL/Variables" title="2016 Data Based Decision Making" href="/files/assessments/data-based-decision-making2016.pdf" target="_blank">2016 Data Based Decision Making [PDF]</a></span></strong></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="footer">
+        <div id="footer-wrapper">
+            <div class="contentFooter">
+                <!-- Footer Navigation -->
+                <div class="footer-navigation">
+                    <div class="col-nav" style="position: static;"><a href="https://www.facebook.com/usuitls" target="_blank"><img class="img-border" style="margin: 3px 2.5px;" src="https://itls.usu.edu/images/logos-icons/socialmedia/white/facebook.png" alt="Facebook icon" width="35" height="35" /></a> <a href="http://www.linkedin.com/groups/USU-Instructional-Technology-Learning-Sciences-4204328" target="_blank"><img class="img-border" style="margin: 3px 2.5px;" src="https://itls.usu.edu/images/logos-icons/socialmedia/white/linkedin.png" alt="LinkedIn icon" height="35" /></a> <a href="http://www.youtube.com/user/UtahStateITLS?feature=watch" target="_blank"><img class="img-border" style="margin: 3px 2.5px;" src="https://itls.usu.edu/images/logos-icons/socialmedia/white/youtube.png" alt="YouTube icon" height="35" /></a> <a href="https://twitter.com/utahstateITLS" target="_blank"><img class="img-border" style="margin: 3px 2.5px;" src="https://itls.usu.edu/images/logos-icons/socialmedia/white/twitter.png" alt="Twitter icon" height="35" /></a> <a href="/news/index.php" target="_blank"><img class="img-border" style="margin: 3px 2.5px;" src="https://itls.usu.edu/images/logos-icons/socialmedia/white/news.png" alt="news icon" width="35" height="35" /></a>
+                        <div class="clearfix">&nbsp;</div>
+                        <div class="clearfix"></div>
+                        <a href="http://cehs.usu.edu/giving/?area=Instructional%20Technology%20&amp;%20Learning%20Sciences" target="_blank"><img class="img-border" src="https://itls.usu.edu/images/logos-icons/socialmedia/white/donate.png" alt="donate button" height="35" /></a>
+                    </div>
+                    <div class="col-nav" style="position: static;">
+                        <h4>Academic Programs</h4>
+                        <ul>
+                            <li><a href="/programs/online.php">Online Programs</a></li>
+                            <li><a href="/programs/phd.php">Doctor of Philosophy</a></li>
+                            <li><a href="/programs/eds.php">Education Specialist</a></li>
+                            <li><a href="/programs/ms.php">Master of Science</a></li>
+                            <li><a href="/programs/med.php">Master of Education</a></li>
+                            <li><a href="/programs/ma.php">Master of Arts</a></li>
+                            <li><a href="/programs/undergrad.php">Undergraduate Offerings</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-nav" style="position: static;">
+                        <h4>Other Links</h4>
+                        <ul>
+                            <li><a href="/faculty/index.php">Faculty Profiles</a></li>
+                            <li><a href="/research/index.php">Research</a></li>
+                            <li><a href="/about/organizations.php">Professional Organizations</a></li>
+                            <li><a href="/current/itsa.php">ITSA (Instructional Technology Student Association)</a></li>
+                            <li><a href="/current/labs.php">Computer Labs</a></li>
+                            <li><a href="/current/index.php">Additional Resources</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-nav" style="position: static;">
+                        <h4>Contact or Questions</h4>
+                        <ul>
+                            <li><a href="/about/contact.php">Contact Us</a></li>
+                            <li><a href="/about/faq.php">FAQ</a></li>
+                            <li><a href="http://cehs.usu.edu/">College of Education and Human Services</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- /Footer Navigation -->
+                <div class="global-footer">
+                    <div class="col-xs-12">
+                        <ul>
+                            <li>Instructional Technology and Learning Sciences | 2830 Old Main Hill, Logan, UT 84322-2830 | Phone: 435 797-2694 | Fax: 435 797-2693</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="global-footer">
+                <div class="col-xs-12">
+                    <ul>
+                        <li><a href="https://www.usu.edu/copyright">© Utah State University</a></li>
+                        <li><a href="https://www.usu.edu/privacy/">Privacy</a></li>
+                        <li><a href="https://www.usu.edu/campus-life/safety">Safety</a></li>
+                        <li><a href="https://accessibility.usu.edu/">Accessibility</a></li>
+                        <li><a href="https://aaeo.usu.edu/non-discrimination">Non-discrimination</a></li>
+                        <li><a href="https://it.usu.edu/web/feedback">Website Feedback</a></li>
+                        <li>
+                            <a id="de" href="http://a.cms.omniupdate.com/10?skin=usu&amp;account=usu&amp;site=ITLS&amp;action=de&amp;path=/index.pcf">Admin</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

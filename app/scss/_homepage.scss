@@ -4,6 +4,22 @@
   .jumbotron {
     margin: 0;
     background-color: white;
+    position: relative;
+  }
+  .jumbotron-breadcrumbs {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-family: League Spartan;
+    font-size: 15px;
+    letter-spacing: 0.07em;
+    margin: 15px;
+    a {
+      color: white;
+    }
+    .breadcrumb-arrow {
+      margin: 0 8px;
+    }
   }
   .jumbotron-welcome {
     h1 {

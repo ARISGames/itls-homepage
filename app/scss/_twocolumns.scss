@@ -26,7 +26,7 @@
         styled `ol` numbers using technique from
         https://www.456bereastreet.com/archive/201105/styling_ordered_list_numbers/
       */
-      ol {
+      ol.fancy-ol {
         counter-reset: li; /* Initiate a counter */
         li {
           position: relative; /* Create a positioning context */
