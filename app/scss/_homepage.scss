@@ -55,6 +55,19 @@
       }
     }
   }
+  .itls-carousel-image {
+    height: 500px;
+    background-size: cover;
+    background-position: center;
+  }
+  .carousel-caption {
+    text-shadow: none;
+    h2 {
+      color: white;
+    }
+    text-align: left;
+    bottom: 100px;
+  }
   .what-program {
     text-align: center;
     padding: 40px;
