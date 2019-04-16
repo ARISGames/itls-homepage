@@ -70,6 +70,21 @@
     <script type="text/javascript" src="https://ouresources.usu.edu/_assets/forms/jquery.datetimepicker.full.min.js"></script>
     <!-- ARIS CSS -->
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <!-- ARIS JS -->
+    <script type="text/javascript">
+        $(function(){
+            $('.career-options article').each(function(i, path){
+                path = $(path);
+                var details = path.find('.career-details');
+                details.hide();
+                path.find('.career-button').click(function(e){
+                    e.preventDefault();
+                    $('.career-details').hide();
+                    details.show();
+                });
+            });
+        });
+    </script>
 </head>
 
 <body>
@@ -186,7 +201,7 @@
                         </div>
                     </div>
                     <div class="item">
-                        <div class="itls-carousel-image" style="background-color: gray;"></div>
+                        <div class="itls-carousel-image" style="background-image: url(img/carousel-people.jpg);"></div>
                         <div class="carousel-caption">
                             <h2>Career Trajectories</h2>
                             <p><a href="https://itls.usu.edu/faculty/feldon">Dr. David Feldon</a> was awarded over $2.4 million from NSF on to study the factors that influence career trajectories of PhD students in the biological sciences.</p>
@@ -264,6 +279,9 @@
                                 <h3>Corporate, Tech Sector, and Government</h3>
                                 <h4>Whitney: Instructional / Learning Designer at Intuit</h4>
                                 <p>Despite having a writing degree, Whitney feared she wouldn’t easily find a job outside of marketing. She wanted further training where she could also create a top-notch portfolio. Her interest in teaching, design, and creative problem solving made the ITLS track a logical choice.</p>
+                                <p>
+                                    <a href="#" class="career-button button-apply button-apply-white">Learn more</a>
+                                </p>
                             </div>
                         </div>
                         <div class="career-person">
@@ -296,6 +314,9 @@
                                 <h3>Research</h3>
                                 <h4>Brooke: Assessment Librarian at Oregon State University; PhD in ITLS</h4>
                                 <p>As a peace activist, Brooke knew she also needed to find a stable yet meaningful job. She wanted to use Instructional Technology tools to make the world a better place. At USU, she developed a deep love for statistics and data, which she now uses to further her own academic interests as well as graduate students and other members of the Oregon State University community.</p>
+                                <p>
+                                    <a href="#" class="career-button button-apply button-apply-white">Learn more</a>
+                                </p>
                             </div>
                         </div>
                         <div class="career-person">
@@ -328,6 +349,9 @@
                                 <h3>Schools and Universities</h3>
                                 <h4>Matt: Instructor at Bridgerland Technical College & AM STEM Coordinator</h4>
                                 <p>In charge of developing a hands-on STEM curriculum that's delivered daily to high school students across northern Utah, Matt wanted to be confident he was making the best research-backed decisions. He needed a deeper understanding of the learning process. But as a father of 4 with a full-time job, going to campus every day was out of the question. Matt completed the online ITLS program at USU, while applying his course projects to the curriculum development.</p>
+                                <p>
+                                    <a href="#" class="career-button button-apply button-apply-white">Learn more</a>
+                                </p>
                             </div>
                         </div>
                         <div class="career-person">
@@ -360,6 +384,9 @@
                                 <h3>Museums, Libraries, and Community Sites</h3>
                                 <h4>Stephanie: STEAM educator at Hands-On Museum (The Leonardo Museum, Salt Lake City)</h4>
                                 <p>Stephanie always wanted to be a teacher—just not in a traditional classroom. She didn’t know how else she could teach. She studied Instructional Design within the ITLS program while enjoying the freedom to tailor her electives. As a research assistant at the nature center, she discovered she loved Informal Education.</p>
+                                <p>
+                                    <a href="#" class="career-button button-apply button-apply-white">Learn more</a>
+                                </p>
                             </div>
                         </div>
                         <div class="career-person">

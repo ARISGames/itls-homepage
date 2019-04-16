@@ -64,6 +64,12 @@
     text-shadow: none;
     h2 {
       color: white;
+      font-size: 30px;
+    }
+    p a:not(.button-apply) {
+      color: white;
+      font-weight: bold;
+      text-decoration: underline;
     }
     text-align: left;
     bottom: 100px;
@@ -189,6 +195,9 @@
             color: white;
           }
           margin: 30px;
+        }
+        .career-details-hidden {
+          display: none;
         }
       }
     }
