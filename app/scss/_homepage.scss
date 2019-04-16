@@ -132,32 +132,63 @@
       font-size: 25px;
     }
     article {
-      display: flex;
-      flex-direction: row;
-      padding: 50px;
-      & > * {
+      .career-option {
         display: flex;
         flex-direction: row;
-        flex: 1;
-      }
-      h4 {
-        font-family: Lato;
-        font-size: 16px;
-        color: #72767D;
-        font-style: italic;
-      }
-      .career-icon {
-        img {
-          width: 50px;
-          margin: 10px;
+        padding: 50px;
+        & > * {
+          display: flex;
+          flex-direction: row;
+          flex: 1;
+        }
+        h4 {
+          font-family: Lato;
+          font-size: 16px;
+          color: #72767D;
+          font-style: italic;
+        }
+        .career-icon {
+          img {
+            width: 50px;
+            margin: 10px;
+          }
+        }
+        .career-person {
+          flex: 0.8;
+          img {
+            width: 100%;
+            object-fit: contain;
+            padding-left: 40px;
+          }
         }
       }
-      .career-person {
-        flex: 0.8;
-        img {
-          width: 100%;
-          object-fit: contain;
-          padding-left: 40px;
+      .career-details {
+        background-image: url('../img/mountain-background-dark.png');
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        flex-direction: row;
+        .career-quote {
+          flex: 1;
+          color: white;
+          font-family: League Spartan;
+          letter-spacing: 0.1em;
+          font-size: 25px;
+          line-height: 50px;
+          padding: 60px;
+          border: none;
+          background-image: url('../img/quote.png');
+          background-repeat: no-repeat;
+          background-position: 30px 30px;
+          background-size: 120px;
+        }
+        .career-details-main {
+          flex: 1;
+          color: white;
+          h3 {
+            color: white;
+          }
+          margin: 30px;
         }
       }
     }
