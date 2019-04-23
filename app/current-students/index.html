@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>School Library Media Administration | ITLS | USU</title>
+    <title>Current Students | ITLS | USU</title>
     <link rel="stylesheet" type="text/css" href="https://www.usu.edu/style/classic-full-15.min.css">
     <link rel="stylesheet" type="text/css" href="https://ouresources.usu.edu/_resources/css/global-custom.css">
     <link rel="stylesheet" type="text/css" href="https://ouresources.usu.edu/_resources/css/profile-page-v0-classic.css">
@@ -69,7 +69,20 @@
     <script type="text/javascript" src="https://ouresources.usu.edu/_assets/forms/ouforms.js"></script>
     <script type="text/javascript" src="https://ouresources.usu.edu/_assets/forms/jquery.datetimepicker.full.min.js"></script>
     <!-- ARIS CSS -->
-    <link rel="stylesheet" type="text/css" href="../../css/style.css">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <!-- ARIS JS -->
+    <script type="text/javascript">
+        $(function(){
+            var open = 'apply-collapse-open';
+            $('.apply-collapse-header').click(function(e){
+                e.preventDefault();
+                var header = $(e.target);
+                var isOpen = header.parents('article').hasClass(open);
+                header.parents('.apply-collapse-section').find('article').removeClass(open);
+                if (!isOpen) header.parents('article').addClass(open);
+            });
+        });
+    </script>
 </head>
 
 <body>
@@ -106,134 +119,172 @@
             <!-- ARIS section -->
             <nav class="top-nav">
                 <div class="top-nav-left">
-                    <a href="../../about">About</a>
-                    <a href="../../people">People</a>
-                    <a href="../../programs">Programs</a>
+                    <a href="../about">About</a>
+                    <a href="../people">People</a>
+                    <a href="../programs">Programs</a>
                     <a href="#">Courses</a>
-                    <a href="../../current-students">Current Students</a>
+                    <a href="../current-students">Current Students</a>
                     <a href="#">News</a>
                 </div>
                 <div class="top-nav-right">
-                    <a href="../../apply" class="button-apply button-apply-black">Apply</a>
+                    <a href="../apply" class="button-apply button-apply-black">Apply</a>
                 </div>
             </nav>
-            <div class="jumbotron jumbotron-course">
-                <h1>School Library Media Administration</h1>
-                <p class="jumbotron-breadcrumbs">
-                    <a href="..">Programs</a>
-                    <span class="breadcrumb-arrow">»</span>
-                    <span>School Library Media Administration</span>
-                </p>
+            <div class="jumbotron jumbotron-apply">
+                <h1>Current Students</h1>
+                <p>Learn more about the ITLS graduate student organization, the listserv, and all the perks for on-campus and online students.</p>
             </div>
             <div class="content-columns">
                 <div class="content-main">
-                    <h2>School Library Media Administration Emphasis or Minor or Endorsement</h2>
-                    <p>The School Library Media Administration (SLMA) program at <a href="http://usu.edu/">Utah State University (USU)</a> is designed for those interested in working in a school library media center, public or private. The program includes all the course work and practicum experiences necessary to apply for the <a href="http://teal.usu.edu/">Utah State Board of Education (USBE)</a> library media K-12 endorsement. Those seeking the USBE endorsement must have, or be working toward, a current and valid Utah teaching license. This program is offered through the Department of Instructional Technology and Learning Sciences (ITLS) in the <a href="http://cehs.usu.edu/">Emma Eccles Jones College of Education and Human Services (CEHS)</a>.</p>
                     <section>
-                        <h3>What the Program is About</h3>
-                        <ul>
-                            <li>a USBE library media K-12 endorsement</li>
-                            <li>a USU undergraduate minor</li>
-                            <li>an emphasis in the ITLS Master of Education (MEd) degree</li>
-                            <li>professional development - not seeking an endorsement or degree</li>
-                            <li>personal interest as a lifelong learner</li>
-                        </ul>
-                        <p>Courses are taught via broadcast (IVC) on Tuesday evenings. Check with your local USU Regional Campus or Distance Education Center for the receive site nearest you. There is also an online component for each course.</p>
+                        <h2 id="graduation">Get to Graduation</h2>
+                        <h3>Dates and Deadlines</h3>
+                        <h3>Pick the Right Program</h3>
+                        <h3>Planning Sheets</h3>
+                        <h3>Registration Forms</h3>
+                        <h3>Choose Your Courses</h3>
+                        <section>
+                            <h3>Internships and Creative Projects</h3>
+                            <h4>Internships</h4>
+                            <p>Get hands-on experience and prepare for your career! After two or more semesters in your program, you’ll likely be ready to intern as an instructional technologist or learning scientist. <a href="https://careers.intuit.com/job-category/21/university">Intuit</a> has offered great internships for past students.</p>
+                            <ul>
+                                <li>
+                                    <a href="https://cidi.usu.edu/internship.php">CIDI Internship</a>
+                                </li>
+                                <li>
+                                    <a href="https://itls.usu.edu/files/students/contracts/internship-agreement.pdf">Internship Agreement (MA, MEd)</a>
+                                </li>
+                                <li>
+                                    <a href="https://itls.usu.edu/files/students/handbooks/internship.pdf">Internship Handbook</a>
+                                </li>
+                            </ul>
+                            <h4>Student Projects</h4>
+                            <p>Build your portfolio with a creative project! You’ll apply your skills, develop a unique style, and get input from professionals along the way.</p>
+                            <ul>
+                                <li>
+                                    <a href="#">Student Projects</a>
+                                </li>
+                                <li>
+                                    <a href="https://itls.usu.edu/files/students/handbooks/creative-project.pdf">Creative Project Handbook (MA, MEd)</a>
+                                </li>
+                                <li>
+                                    <a href="http://itls.usu.edu/files/students/contracts/independent-study.pdf">Independent Study Contract</a>
+                                </li>
+                            </ul>
+                        </section>
                     </section>
                     <section>
-                        <h3>Program Requirements</h3>
-                        <p>The program is designed for students to begin the course work fall semester and complete in summer semester. Students can complete in one year if they take 2 courses each semester (fall, spring, summer) or complete in two years if they take 1 course each semester. For a list of the courses and the recommended sequence, consult the <a href="https://itls.usu.edu/files/students/plan_sheets/slma.pdf">SLMA planning sheet</a>. The SLMA program is eighteen (18) semester credit hours. A minimum of fifteen (15) of the eighteen (18) total credit hours must be taken through USU to count as the minor or for USU to recommend endorsement through the USBE. All coursework must be completed within six (6) years of the date of acceptance. To work toward the USBE library media endorsement, applicant must have, or be working toward, a current and valid Utah Educator License with an Elementary or Secondary area of concentration. Completion of the course work does not automatically guarantee a recommendation by the ITLS department for the USBE endorsement in library media K-12. A recommendation for endorsement will be made when the student has:</p>
-                        <ul>
-                            <li>successfully completed all coursework, including the SLMA practicum (ITLS 5090 or ITLS 6090)</li>
-                            <li>completed a minimum of 15 credits through USU</li>
-                            <li>demonstrated competency in course work</li>
-                            <li>demonstrated potential to work effectively with both students and teachers</li>
-                            <li>maintained a grade point average (GPA) of 3.0 or higher</li>
-                            <li>the approval of the practicum advisor and course instructors</li>
-                            <li>a current and valid Utah teaching license</li>
-                            <li>completed the appropriate forms and submitted the required fees</li>
-                        </ul>
+                        <h2 id="connected">Get Connected</h2>
+                        <h3>Community</h3>
                     </section>
                     <section>
-                        <h3>Admission Process</h3>
-                        <p>You must first be admitted as a student to USU. If you have not been admitted, start with the <a href="http://usu.edu/apply/">undergraduate online application process</a> or the <a href="https://rgs.usu.edu/gradguide/htm/apply">graduate online application process</a>.</p>
-                        <p>If you already have a degree (including a graduate degree) and only want the USBE endorsement, apply to USU as an undergraduate. Do not use the graduate school application unless you are seeking a graduate degree. One of the items on the undergraduate application asks for the reason you are applying to USU. If you choose the certificate/endorsement option, the application fee is waived.</p>
-                        <p>Once you are admitted, if you are:</p>
-                        <ul>
-                            <li>
-                                <strong>working on the endorsement only</strong>
-                                <br>
-                                work with your local USU Regional Campus or Distance Education Center to register for courses each semester.
-                            </li>
-                            <li>
-                                <strong>working on a minor in the teacher education program or other USU major</strong>
-                                <br>
-                                work with your advisor to schedule and register for courses each semester.
-                            </li>
-                            <li>
-                                <strong>using the coursework for the emphasis in the ITLS MEd degree</strong>
-                                <br>
-                                work with the ITLS advisor for program schedules and concerns, but work with your local USU Regional Campus or Distance  Education Center to register for courses each semester.
-                            </li>
-                            <li>
-                                <strong>taking any of the courses for professional development or personal interest</strong>
-                                <br>
-                                work with your local USU Regional Campus or Distance Education Center to register for courses each semester.
-                            </li>
-                        </ul>
+                        <h2 id="funded">Get Funded</h2>
+                        <h3>Funding</h3>
+                        <h3>Graduate Student Travel Award</h3>
+                    </section>
+                    <section>
+                        <h2 id="building">Building Resources</h2>
+                        <h3>ITLS Design Lab</h3>
+                        <h3>Room Reservation</h3>
+                        <section>
+                            <h3>Student Desk Space</h3>
+                            <h4>Graduate Students</h4>
+                            <p>Talk with your advisor about a potential office space.</p>
+                            <h4>EDUC room 271 - The “Think Tank”</h4>
+                            <p>For student use. Includes desk space, a whiteboard, reference materials, a mini fridge, and a microwave. Desk space is available on a first-come, first-served basis with priority noted below:</p>
+                            <ol>
+                                <li>Students with outreach assistantships: webmaster, marketing, TAs.</li>
+                                <li>Students with department or college assistantships who don't have desk space elsewhere.</li>
+                                <li>Other students in the department.</li>
+                            </ol>
+                            <p>If you would like to request desk space in the Think Tank, please contact <a href="#">Sheri Haderlie</a>.</p>
+                        </section>
+                        <section>
+                            <h3>Computer Labs</h3>
+                            <h4>Overview</h4>
+                            <p>
+                                The computer lab is used as a classroom. When class is not scheduled, the lab is open to ITLS registered students. *All computers run <strong>Mac OS</strong>.
+                            </p>
+                            <h4>Door Access Codes</h4>
+                            <ul>
+                                <li>ITLS graduate students: contact the ITLS office (room 215) or your faculty advisor.</li>
+                                <li>Students enrolled in an ITLS course: contact your instructor.</li>
+                            </ul>
+                            <h4>Guidelines & Security</h4>
+                            <ul>
+                                <li>Do not give out door codes or prop doors open.</li>
+                                <li>The ITLS labs are not part of USU's open access computer lab system.</li>
+                                <li>Do not bring food or drink into labs.</li>
+                                <li>Save backup copies of your work. Hard drives may be reformatted at any time, without notice.</li>
+                                <li>Use headphones for audio.</li>
+                                <li>Shut down your computer after use.</li>
+                                <li>Be considerate of others.</li>
+                            </ul>
+                            <h4>Contact Information</h4>
+                            <p>
+                                Kris Borecki<br>
+                                kris.borecki@usu.edu<br>
+                                EDUC 283<br>
+                                ITLS System Administrator<br>
+                                (435) 760-3692
+                            </p>
+                        </section>
+                        <section>
+                            <h3>Equipment Checkout</h3>
+                            <p>Equipment is available at the <strong>ITLS main office (EDUC 215)</strong>. ITLS enrolled students can check out video cameras, digital cameras, computers, headphones (mini-jack connector or USB connector,) 1 apple iPad, Video Recorder tripods, 3D printer, and more.</p>
+                            <h4>Guidelines</h4>
+                            <ul>
+                                <li>You must be enrolled in an ITLS course.</li>
+                                <li>Equipment must be used on work for an ITLS course.</li>
+                                <li>You are responsible to pay for damage or loss.</li>
+                                <li>SD cards must be returned with the camera.</li>
+                                <li>2 day checkout period (depending on current demand.)</li>
+                                <li>Return to ITLS main office (EDUC 215).</li>
+                            </ul>
+                            <h4>Check Out</h4>
+                            <ul>
+                                <li>Valid USU ID or Driver's License</li>
+                                <li>No Reservations (first-come, first-served.)</li>
+                                <li>ITLS Main office (EDUC 215)</li>
+                            </ul>
+                        </section>
+                        <section>
+                            <h3>Server Space</h3>
+                            <p>
+                                <a href="https://itls.usu.edu/current/form.php">Server Space Request form</a>
+                            </p>
+                            <h4>ITLS Server Address</h4>
+                            <p>itls.usu.edu</p>
+                            <h4>Server Space</h4>
+                            <p>Students may request server space for a personal website. Your account will remain active for up to one year after graduation. To connect to the server, you may use Fetch, Fugu, (Mac) or <a href="http://winscp.net/eng/download.php">WinSCP</a> (Windows).</p>
+                            <h4>Box Account</h4>
+                            <p>For space to store, share, and access your files online, ITLS students receive a <a href="https://usu.app.box.com/login">Box account</a> free of charge.</p>
+                        </section>
                     </section>
                 </div>
                 <div class="content-sidebar">
-                    <section>
-                        <h3>Additional Information</h3>
-                        <ul>
-                            <li>
-                                <a href="https://itls.usu.edu/apply/how.php">
-                                    How to Apply
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://itls.usu.edu/files/students/other/slma-practicum.pdf">
-                                    SLMA Practicum Handbook
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://itls.usu.edu/files/students/plan_sheets/slma.pdf">
-                                    SLMA Planning Sheet
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://itls.usu.edu/files/students/plan_sheets/med-slma.pdf">
-                                    SLMA Planning Sheet (MEd)
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://itls.usu.edu/files/students/other/ala-aasl-standards.pdf">
-                                    ALA/AASL SLMA Preparation Guide
-                                </a>
-                            </li>
-                            <li>
-                                <a href="http://distance.usu.edu/locations.cfm">
-                                    Regional Campuses
-                                </a>
-                            </li>
-                            <li>
-                                <a href="http://distance.usu.edu/">
-                                    USU Distance Education
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://itls.usu.edu/files/students/other/slma-signature.pdf">
-                                    Signature Form
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://itls.usu.edu/files/students/other/incomplete.pdf">
-                                    Incomplete Grade Documentation
-                                </a>
-                            </li>
-                        </ul>
-                    </section>
+                    <ul>
+                        <li>
+                            <a href="#graduation">Get to Graduation</a>
+                        </li>
+                        <li>
+                            <a href="#connected">Get Connected</a>
+                        </li>
+                        <li>
+                            <a href="#funded">Get Funded</a>
+                        </li>
+                        <li>
+                            <a href="#building">Building Resources</a>
+                        </li>
+                    </ul>
+                    <h3>System Administrator Contact</h3>
+                    <p>
+                        Kris Borecki<br>
+                        kris.borecki@usu.edu<br>
+                        ITLS System Administrator<br>
+                        (435) 760-3692<br>
+                        EDUC 283
+                    </p>
                 </div>
             </div>
         </div>
