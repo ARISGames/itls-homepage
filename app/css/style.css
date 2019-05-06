@@ -1,0 +1,371 @@
+@import url("https://fonts.googleapis.com/css?family=Lato");
+@font-face {
+  font-family: 'League Spartan';
+  src: url("../fonts/leaguespartan-bold.eot");
+  src: url("../fonts/leaguespartan-bold.eot?#iefix") format("embedded-opentype"), url("../fonts/leaguespartan-bold.woff2") format("woff2"), url("../fonts/leaguespartan-bold.woff") format("woff"), url("../fonts/leaguespartan-bold.ttf") format("truetype"), url("../fonts/leaguespartan-bold.svg#league_spartanbold") format("svg");
+  font-weight: bold;
+  font-style: normal; }
+
+.itls-styled h1, .itls-styled h2, .itls-styled h3, .itls-styled h4 {
+  font-family: League Spartan;
+  font-weight: bold;
+  letter-spacing: 0.05em;
+  line-height: 1.7em; }
+
+.itls-styled h4 {
+  font-size: 15px;
+  font-family: Lato;
+  margin-top: 20px; }
+
+.itls-styled p {
+  font-family: Lato;
+  font-size: 16px;
+  line-height: 34px;
+  margin: 20px 0;
+  letter-spacing: 0.03em; }
+
+.itls-styled ul, .itls-styled ol:not(.carousel-indicators) {
+  font-family: Lato;
+  font-size: 15px;
+  line-height: 28px;
+  margin: 20px 0;
+  letter-spacing: 0.03em; }
+
+.itls-styled .top-nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: stretch; }
+  .itls-styled .top-nav a {
+    font-family: Futura;
+    letter-spacing: 0.15em;
+    font-size: 13px; }
+  .itls-styled .top-nav .top-nav-left, .itls-styled .top-nav .top-nav-right {
+    display: flex;
+    flex-direction: row;
+    align-items: center; }
+  .itls-styled .top-nav .top-nav-left a {
+    text-transform: uppercase;
+    color: black;
+    padding: 20px;
+    display: inline-block; }
+  .itls-styled .top-nav .top-nav-right a {
+    margin: 5px; }
+  .itls-styled .top-nav .top-nav-right {
+    margin-right: 10px; }
+  .itls-styled .top-nav.top-nav-shadow {
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    margin-bottom: 15px; }
+
+.itls-styled .content-columns {
+  display: flex;
+  flex-direction: row;
+  font-family: Lato; }
+  .itls-styled .content-columns hr {
+    border: none;
+    border-bottom: 3px solid #E1E9F0; }
+  .itls-styled .content-columns .content-main {
+    flex: 1;
+    padding: 10px 40px;
+    /*
+        styled `ol` numbers using technique from
+        https://www.456bereastreet.com/archive/201105/styling_ordered_list_numbers/
+      */ }
+    .itls-styled .content-columns .content-main ul li {
+      list-style-type: none; }
+      .itls-styled .content-columns .content-main ul li:before {
+        /* Unicode bullet symbol */
+        content: '\2022';
+        color: #9DACBA;
+        display: inline-block;
+        width: 40px;
+        font-size: 30px; }
+    .itls-styled .content-columns .content-main ol.fancy-ol {
+      counter-reset: li;
+      /* Initiate a counter */ }
+      .itls-styled .content-columns .content-main ol.fancy-ol li {
+        position: relative;
+        /* Create a positioning context */
+        list-style: none;
+        margin: 20px 0; }
+        .itls-styled .content-columns .content-main ol.fancy-ol li:before {
+          content: counter(li);
+          /* Use the counter as content */
+          counter-increment: li;
+          /* Increment the counter by 1 */
+          font-family: League Spartan;
+          color: #93AEC5;
+          font-size: 18px;
+          width: 40px;
+          display: inline-block; }
+  .itls-styled .content-columns .content-sidebar {
+    width: 300px;
+    background-color: #F5F6F7;
+    padding: 10px 30px; }
+    .itls-styled .content-columns .content-sidebar ul {
+      padding: 0; }
+      .itls-styled .content-columns .content-sidebar ul li {
+        list-style-type: none;
+        margin: 10px 0;
+        font-weight: bold; }
+
+@media screen and (max-width: 800px) {
+  .itls-styled .content-columns {
+    flex-direction: column; }
+    .itls-styled .content-columns .content-sidebar {
+      width: auto; } }
+
+.itls-styled .jumbotron {
+  margin: 0;
+  background-color: white;
+  position: relative; }
+
+.itls-styled .jumbotron-breadcrumbs {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-family: League Spartan;
+  font-size: 15px;
+  letter-spacing: 0.07em;
+  margin: 15px; }
+  .itls-styled .jumbotron-breadcrumbs a {
+    color: white; }
+  .itls-styled .jumbotron-breadcrumbs .breadcrumb-arrow {
+    margin: 0 8px; }
+
+.itls-styled .jumbotron-welcome {
+  padding: 50px;
+  background-image: url("../img/mountains.png");
+  background-size: 50%;
+  background-position: bottom right;
+  background-repeat: no-repeat; }
+  .itls-styled .jumbotron-welcome h1 {
+    color: #0e2439; }
+  .itls-styled .jumbotron-welcome h2 {
+    color: #93abc2; }
+  .itls-styled .jumbotron-welcome p {
+    padding-right: 50%; }
+
+.itls-styled .jumbotron-usnews {
+  padding: 50px; }
+  .itls-styled .jumbotron-usnews h2 {
+    color: #0e2439;
+    font-size: 25px; }
+  .itls-styled .jumbotron-usnews p {
+    font-size: 18px;
+    margin: 20px 0; }
+  .itls-styled .jumbotron-usnews .usnews-pic {
+    text-align: center; }
+    .itls-styled .jumbotron-usnews .usnews-pic img {
+      width: 100%;
+      max-width: 250px; }
+
+.itls-styled .itls-carousel-image {
+  height: 500px;
+  background-size: cover;
+  background-position: center; }
+
+.itls-styled .carousel-caption {
+  text-shadow: none;
+  text-align: left;
+  bottom: 100px; }
+  .itls-styled .carousel-caption h2 {
+    color: white;
+    font-size: 30px; }
+  .itls-styled .carousel-caption p a:not(.button-apply) {
+    color: white;
+    font-weight: bold;
+    text-decoration: underline; }
+
+.itls-styled .what-program {
+  text-align: center;
+  padding: 40px; }
+  .itls-styled .what-program h2 {
+    font-size: 30px; }
+
+.itls-styled .program-grid {
+  display: grid;
+  grid-template-columns: auto auto;
+  text-align: center; }
+
+.itls-styled .program-cell {
+  padding: 40px; }
+  .itls-styled .program-cell img {
+    max-width: 200px; }
+  .itls-styled .program-cell h3 {
+    font-size: 20px; }
+
+.itls-styled .application-deadlines {
+  margin: 50px 100px;
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.2); }
+  .itls-styled .application-deadlines h2 {
+    background-image: url("../img/mountain-background.png");
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+    padding: 150px 20px 50px 20px;
+    color: white;
+    text-align: center; }
+  .itls-styled .application-deadlines p {
+    padding: 40px; }
+  .itls-styled .application-deadlines .deadlines-apply {
+    text-align: center; }
+  .itls-styled .application-deadlines table {
+    margin: 40px;
+    width: calc(100% - 80px); }
+    .itls-styled .application-deadlines table th {
+      font-family: League Spartan;
+      font-weight: bold;
+      font-size: 17px; }
+    .itls-styled .application-deadlines table th, .itls-styled .application-deadlines table td {
+      padding: 20px 10px; }
+    .itls-styled .application-deadlines table tr:not(:nth-child(1)) {
+      border-top: 2px solid #D8D8D8; }
+
+.itls-styled .career-options h2 {
+  text-align: center;
+  margin: 15px;
+  font-size: 25px; }
+
+.itls-styled .career-options article .career-option {
+  display: flex;
+  flex-direction: row;
+  padding: 50px; }
+  .itls-styled .career-options article .career-option > * {
+    display: flex;
+    flex-direction: row;
+    flex: 1; }
+  .itls-styled .career-options article .career-option h4 {
+    font-family: Lato;
+    font-size: 16px;
+    color: #72767D;
+    font-style: italic; }
+  .itls-styled .career-options article .career-option .career-icon img {
+    width: 50px;
+    margin: 10px; }
+  .itls-styled .career-options article .career-option .career-person {
+    flex: 0.8; }
+    .itls-styled .career-options article .career-option .career-person img {
+      width: 100%;
+      object-fit: contain;
+      padding-left: 40px; }
+
+.itls-styled .career-options article .career-details {
+  background-image: url("../img/mountain-background-dark.png");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: row; }
+  .itls-styled .career-options article .career-details .career-quote {
+    flex: 1;
+    color: white;
+    font-family: League Spartan;
+    letter-spacing: 0.1em;
+    font-size: 25px;
+    line-height: 50px;
+    padding: 60px;
+    border: none;
+    background-image: url("../img/quote.png");
+    background-repeat: no-repeat;
+    background-position: 30px 30px;
+    background-size: 120px; }
+  .itls-styled .career-options article .career-details .career-details-main {
+    flex: 1;
+    color: white;
+    margin: 30px; }
+    .itls-styled .career-options article .career-details .career-details-main h3 {
+      color: white; }
+  .itls-styled .career-options article .career-details .career-details-hidden {
+    display: none; }
+
+@media screen and (max-width: 800px) {
+  .itls-styled .program-grid {
+    grid-template-columns: auto; } }
+
+.itls-styled .jumbotron-apply {
+  background-image: url("../img/apply-hero.jpg");
+  background-size: cover;
+  padding: 50px; }
+  .itls-styled .jumbotron-apply h1, .itls-styled .jumbotron-apply p {
+    color: white; }
+
+.itls-styled .button-apply {
+  text-transform: uppercase;
+  padding: 4px 16px;
+  letter-spacing: 0.15em;
+  border-radius: 5px;
+  display: inline-block;
+  font-size: 13px; }
+
+.itls-styled .button-apply-white {
+  color: black;
+  background-color: white;
+  border: 1px solid black; }
+
+.itls-styled .button-apply-black {
+  color: white;
+  background-color: black; }
+
+.itls-styled .button-apply-outline {
+  color: black;
+  border: 1px solid black; }
+
+.itls-styled .apply-info-packet {
+  float: left;
+  width: 70px;
+  margin-right: 20px;
+  margin-bottom: 20px; }
+
+.itls-styled .apply-us-news {
+  text-align: center; }
+  .itls-styled .apply-us-news img {
+    width: 150px; }
+
+.itls-styled .apply-collapse-section article h4 {
+  background-color: #F5F6F7;
+  color: #0865BF;
+  font-weight: bold;
+  padding: 10px;
+  font-size: 15px;
+  border-radius: 5px;
+  font-family: Lato; }
+
+.itls-styled .apply-collapse-section article:not(.apply-collapse-open) div {
+  display: none; }
+
+.itls-styled .jumbotron-course {
+  background-image: url("../img/course-hero.jpg");
+  background-size: cover;
+  padding: 50px; }
+  .itls-styled .jumbotron-course h1, .itls-styled .jumbotron-course p {
+    color: white; }
+
+.itls-styled .jumbotron-people {
+  background-image: url("../img/people-hero.jpg");
+  background-size: cover;
+  padding: 50px; }
+  .itls-styled .jumbotron-people h1, .itls-styled .jumbotron-people p {
+    color: white; }
+
+.itls-styled .people-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); }
+  .itls-styled .people-grid .person {
+    border: 2px solid #E8E8E8;
+    border-radius: 5px;
+    margin: 10px;
+    text-align: center; }
+    .itls-styled .people-grid .person hr {
+      border: none;
+      border-bottom: 1px solid #E7E7E7;
+      width: 100%;
+      margin: 5px; }
+    .itls-styled .people-grid .person h3, .itls-styled .people-grid .person p {
+      margin: 5px; }
+    .itls-styled .people-grid .person p {
+      font-size: 13px; }
+    .itls-styled .people-grid .person .person-image {
+      background-color: #ddd;
+      max-width: 150px;
+      margin: 10px;
+      border-radius: 5px; }
