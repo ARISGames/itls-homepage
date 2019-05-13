@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Master of Arts | ITLS | USU</title>
+    <title>Student Projects | ITLS | USU</title>
     <link rel="stylesheet" type="text/css" href="https://www.usu.edu/style/classic-full-15.min.css">
     <link rel="stylesheet" type="text/css" href="https://ouresources.usu.edu/_resources/css/global-custom.css">
     <link rel="stylesheet" type="text/css" href="https://ouresources.usu.edu/_resources/css/profile-page-v0-classic.css">
@@ -70,6 +70,19 @@
     <script type="text/javascript" src="https://ouresources.usu.edu/_assets/forms/jquery.datetimepicker.full.min.js"></script>
     <!-- ARIS CSS -->
     <link rel="stylesheet" type="text/css" href="../../css/style.css">
+    <!-- ARIS JS -->
+    <script type="text/javascript">
+        $(function(){
+            var open = 'apply-collapse-open';
+            $('.apply-collapse-header').click(function(e){
+                e.preventDefault();
+                var header = $(e.target);
+                var isOpen = header.parents('article').hasClass(open);
+                header.parents('.apply-collapse-section').find('article').removeClass(open);
+                if (!isOpen) header.parents('article').addClass(open);
+            });
+        });
+    </script>
 </head>
 
 <body>
@@ -117,88 +130,159 @@
                     <a href="../../apply" class="button-apply button-apply-black">Apply</a>
                 </div>
             </nav>
-            <div class="jumbotron jumbotron-course">
-                <h1>Master of Arts</h1>
+            <div class="jumbotron jumbotron-apply">
+                <h1>Student Projects</h1>
                 <p class="jumbotron-breadcrumbs">
-                    <a href="..">Programs</a>
+                    <a href="..">Current Students</a>
                     <span class="breadcrumb-arrow">»</span>
-                    <span>Master of Arts</span>
+                    <span>Student Projects</span>
                 </p>
             </div>
             <div class="content-columns">
                 <div class="content-main">
-                    <h2>Master of Arts</h2>
-                    <p>The focus of the MA program is educational technology and instructional design. Students come into the MA degree with a background in education, educational design, graphic design, and more.</p>
-                    <p>MA students are admitted into a cohort the fall semester of each year. The anticipated timeline for finishing the degree requirements is two to three years, or five semesters of full time registration (9 credits per semester). Students can take up to six years to complete the degree.</p>
-                    <p>The Master of Arts degree is available on campus at Utah State University or online.</p>
-                    <section>
-                        <h3>Degree Requirements</h3>
-                        <ul>
-                            <li>1-credit required orientation in August on the Logan campus</li>
-                            <li>36 semester hour program of course work*</li>
-                            <li>a culminating experience: a creative project or an internship.**</li>
-                        </ul>
-                        <p>*typically completed in six semesters or less, but students have up to six years to complete degree requirements. To complete the required coursework in two years, students must take the requisite classes when offered.</p>
-                        <p>**Students typically complete their culminating experience during the spring semester of the second academic year.</p>
-                    </section>
-                    <section>
-                        <h3>Program Pathway</h3>
-                        <ol class="fancy-ol">
-                            <li>Acceptance to the program.</li>
-                            <li>Register online through <a href="http://banner.usu.edu/">Banner/Access</a>.</li>
-                            <li>Temporary Advisor: Upon acceptance to the program, you’ll be assigned a temporary advisor.</li>
-                            <li>Choose your Major Professor: Near the end of your first year, you’ll choose a major professor from the department faculty. You and your major professor will decide upon a problem or subject for the thesis study by the end of your second semester of graduate study.</li>
-                            <li>Your chairperson will serve as your advisor and mentor throughout your culminating experience and portfolio.</li>
-                            <li>Form your three-member Supervisory Committee.</li>
-                        </ol>
-                    </section>
+                    <ul>
+                        <li>
+                            <a href="https://www.instructables.com/id/Desk-Light-Ornament-and-Door-Light-Sign/">Desk Light Ornament and Door Light Sign</a>
+                            <ul>
+                                <li>Instructable</li>
+                                <li><strong>Author</strong>: Whitney Lewis</li>
+                                <li><strong>Date</strong>: 2018 Spring</li>
+                                <li><strong>Course</strong>: ITLS 5270/6270 Digital Making and Learning</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="https://www.instructables.com/id/CoffeeCade-Arcade-Coffee-Table/">Coffeecade (Arcade Coffee Table)</a>
+                            <ul>
+                                <li>Instructable</li>
+                                <li><strong>Author</strong>: Mason Boden</li>
+                                <li><strong>Date</strong>: 2018 Spring</li>
+                                <li><strong>Course</strong>: ITLS 5270/6270 Digital Making and Learning</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="https://www.youtube.com/watch?v=f6IHOYBBbyc&feature=youtu.be">Quickhelp Ad</a>
+                            <ul>
+                                <li><strong>Author</strong>: Jim Anderson</li>
+                                <li><strong>Date</strong>: 2018 Spring</li>
+                                <li><strong>Course</strong>: INST 5215/6215 Digital Video Production</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="https://itls.usu.edu/files/students/projects/brown_final-presentation.pdf">It’s In Your Tote</a>
+                            <ul>
+                                <li><strong>Author</strong>: Myra Brown</li>
+                                <li><strong>Date</strong>: 2017 Fall</li>
+                                <li><strong>Course</strong>: ITLS 6535 Design Thinking</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="https://itls.usu.edu/files/students/projects/blaylock_design-thinking-poster.pdf">Design Thinking Course</a>
+                            <ul>
+                                <li><strong>Author</strong>: Nathan Blaylock and Breanne Litts</li>
+                                <li><strong>Date</strong>: 2017 Spring</li>
+                                <li><strong>Course</strong>: ITLS 6960 Creative Project</li>
+                                <li>Additional materials including final report are available upon request to   Dr. Litts.</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="https://thaderlie.weebly.com/projects.html">The Graduation Game</a>
+                            <ul>
+                                <li><strong>Author</strong>: Tressa Haderlie</li>
+                                <li><strong>Date</strong>: 2016 Fall</li>
+                                <li><strong>Course</strong>: ITLS 6870/7870 Mobile Technologies & Learning</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="https://youtu.be/GWmYP2YG5ig">Better Than HD TV</a>
+                            <ul>
+                                <li><strong>Author</strong>: Ford Rasmussen</li>
+                                <li><strong>Date</strong>: 2017 Fall</li>
+                                <li><strong>Course</strong>: INST 5215/6215 Digital Video Production</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="http://www.instructables.com/id/Speed-Campus-Board/">Speed Campus Board</a>
+                            <ul>
+                                <li><strong>Author</strong>: Jacob Lyman</li>
+                                <li><strong>Date</strong>: 2018 Spring</li>
+                                <li><strong>Course</strong>: ITLS 5270/6270 Digital Making and Learning</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="https://youtu.be/o45ox_jUwnU">Stranger Things</a>
+                            <ul>
+                                <li><strong>Author</strong>: Nick Menendez</li>
+                                <li><strong>Date</strong>: 2017 Fall</li>
+                                <li><strong>Course</strong>: INST 5215/6215 Digital Video Production</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="https://youtu.be/XCJVXgVM-bs">Collaborative Canvas Writing</a>
+                            <ul>
+                                <li><strong>Author</strong>: Kristi Marriott</li>
+                                <li><strong>Date</strong>: 2017 Fall</li>
+                                <li><strong>Course</strong>: ITLS 6535 Design Thinking</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="https://youtu.be/t48Uu5mI0rE">Chupacabra Special</a>
+                            <ul>
+                                <li><strong>Author</strong>: Ethan Smitha and Meredith Richards</li>
+                                <li><strong>Date</strong>: 2017 Spring</li>
+                                <li><strong>Course</strong>: INST 5215/6215 Digital Video Production</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="https://sztempleton.wixsite.com/windriver-education">Learning Mental Health Skills for Addiction Recovery</a>
+                            <ul>
+                                <li><strong>Author</strong>: Susan Templeton</li>
+                                <li><strong>Date</strong>: 2016 Spring</li>
+                                <li><strong>Course</strong>: ITLS 6960 Creative Project</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="https://itls.usu.edu/files/students/projects/e-textiles-lily-tiny-guide.pdf">Electronic Textile Guide: LilyTiny Project Student Guide</a>
+                            <ul>
+                                <li><strong>Author</strong>: Anna Strommer and Deborah Fields</li>
+                                <li><strong>Date</strong>: 2014 Spring</li>
+                                <li><strong>Course</strong>: ITLS 5285/6285 Craft Technologies</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="https://itls.usu.edu/files/students/projects/e-textiles-bracelet-guide.pdf">Electronic Textile Guide: Light-Up Bracelet Student Guide</a>
+                            <ul>
+                                <li><strong>Author</strong>: Anna Strommer and Deborah Fields</li>
+                                <li><strong>Date</strong>: 2014 Spring</li>
+                                <li><strong>Course</strong>: ITLS 5285/6285 Craft Technologies</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="https://itls.usu.edu/files/students/projects/first-principles_i-book.pdf">First Principles of Instruction - iBook Textbook Creative Project</a>
+                            <ul>
+                                <li><strong>Author</strong>: Tomas Villegas</li>
+                                <li><strong>Date</strong>: 2013 Spring</li>
+                                <li><strong>Course</strong>: ITLS 6960 Creative Project</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="https://itls.usu.edu/files/students/projects/elevator-speech.pdf">Elevator Speech</a>
+                            <ul>
+                                <li><strong>Author</strong>: Margo Tackett, Sidney Miller, Zach Poulter, Leslee Hurd, and Pam Oles</li>
+                                <li><strong>Date</strong>: 2012 Fall</li>
+                                <li><strong>Course</strong>: ITLS 5000/6060 School Library Media Foundations and Information Management</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="https://itls.usu.edu/files/students/projects/search-engine.pdf">Search Engine Review</a>
+                            <ul>
+                                <li><strong>Author</strong>: Sydney James, Elizabeth Scholes, and Brad Butcher</li>
+                                <li><strong>Date</strong>: 2012/2013 Spring</li>
+                                <li><strong>Course</strong>: ITLS 5030/6030 Information Access and Technology</li>
+                            </ul>
+                        </li>
+                    </ul>
                 </div>
                 <div class="content-sidebar">
-                    <section>
-                        <h3>Additional Info</h3>
-                        <ul>
-                            <li>
-                                <a href="https://itls.usu.edu/files/students/plan_sheets/ma.pdf">
-                                    Planning Sheet
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://itls.usu.edu/files/students/handbooks/internship.pdf">
-                                    Internship Handbook
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://itls.usu.edu/files/students/handbooks/creative-project.pdf">
-                                    Creative Project Handbook
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://itls.usu.edu/files/students/plan_sheets/9-steps.pdf">
-                                    9 Steps to Completion
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://itls.usu.edu/files/students/contracts/independent-study.pdf">
-                                    Independent Study Contract
-                                </a>
-                            </li>
-                            <li>
-                                <a href="http://rgs.usu.edu/graduateschool/htm/forms">
-                                    Graduate School Forms
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://itls.usu.edu/files/students/other/incomplete.pdf">
-                                    Incomplete Grade Documentation
-                                </a>
-                            </li>
-                            <li>
-                                <a href="http://digitalcommons.usu.edu/itls_stures/">
-                                    Recent electronic theses from ITLS Master and PhD students
-                                </a>
-                            </li>
-                        </ul>
-                    </section>
                 </div>
             </div>
         </div>

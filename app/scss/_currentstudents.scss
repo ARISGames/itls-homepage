@@ -1,0 +1,17 @@
+@import "colors";
+
+.itls-styled {
+  .table-deadlines {
+    width: 100%;
+    td {
+      padding: 15px;
+      background-color: $table-odd;
+      border: 3px solid white;
+    }
+    tr:nth-child(2) {
+      td {
+        background-color: $table-even;
+      }
+    }
+  }
+}

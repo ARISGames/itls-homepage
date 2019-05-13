@@ -369,3 +369,12 @@
       max-width: 150px;
       margin: 10px;
       border-radius: 5px; }
+
+.itls-styled .table-deadlines {
+  width: 100%; }
+  .itls-styled .table-deadlines td {
+    padding: 15px;
+    background-color: #e9eef1;
+    border: 3px solid white; }
+  .itls-styled .table-deadlines tr:nth-child(2) td {
+    background-color: #cfe2f3; }
