@@ -70,6 +70,15 @@
     <script type="text/javascript" src="https://ouresources.usu.edu/_assets/forms/jquery.datetimepicker.full.min.js"></script>
     <!-- ARIS CSS -->
     <link rel="stylesheet" type="text/css" href="../../../css/style.css">
+    <!-- ARIS JS -->
+    <script type="text/javascript">
+        $(function(){
+            var toc = $('#table-of-contents');
+            $('.itls-styled').find('h2').each(function(i, x){
+                toc.append(`<li><a href="#${x.id}">${$(x).text()}</a></li>`);
+            });
+        });
+    </script>
 </head>
 
 <body>
@@ -142,11 +151,11 @@
                         </span>
                     </section>
                     <section>
-                        <h2>Bio</h2>
+                        <h2 id="bio">Bio</h2>
                         <p>Deborah Fields’ research focuses on the relationship between learning and engagement at the intersections of kids’ lives, those places where home, school, friends, family, and community connect. These interests have guided her studies in virtual worlds and STEM (science, technology, engineering & math) education in and across classrooms, clubs, and digital social environments. In 2013 she recently published a book with MIT Press on kids’ online play: <a href="http://www.amazon.com/Connected-Play-Catherine-MacArthur-Foundation/dp/0262019930">Connected Play: Tween Life in a Virtual World</a>. Related, she recently co-authored a critical review of children’s participation in social networking sites for the <a href="http://www.joanganzcooneycenter.org/wp-content/uploads/2012/11/jgcc_kidsonline.pdf">Joan Ganz Cooney Center</a>. Current interests include breaking down stereotypes about who can create with digital media by creating educational opportunities to design with sewable electronics or the popular programming environment, Scratch. This interest carries over into the growing phenomenon of child-generated digital content in online environments, focusing on what this development means for children's cultural rights, learning opportunities, and industry best practices.</p>
                     </section>
                     <section>
-                        <h2>Research Interests</h2>
+                        <h2 id="research-interests">Research Interests</h2>
                         <ul>
                             <li>Identity</li>
                             <li>Connective ethnography</li>
@@ -155,7 +164,7 @@
                         </ul>
                     </section>
                     <section>
-                        <h2>Education</h2>
+                        <h2 id="education">Education</h2>
                         <ul>
                             <li>Ph.D. Psychological Studies in Education, University of California, Los Angeles 2010</li>
                             <li>M.S. Curriculum and Instruction: Multicultural Education, University of Wisconsin-Madison 2002</li>
@@ -163,7 +172,7 @@
                         </ul>
                     </section>
                     <section>
-                        <h2>Resources: Electronic Textile Guides</h2>
+                        <h2 id="resources">Resources: Electronic Textile Guides</h2>
                         <img src="https://itls.usu.edu/images/others/student-projects/fields_etextile.jpg" style="float: right;">
                         <ul>
                             <li>
@@ -175,7 +184,7 @@
                         </ul>
                     </section>
                     <section>
-                        <h2>Books, Book Chapters and Reports</h2>
+                        <h2 id="books">Books, Book Chapters and Reports</h2>
                         <a title="go to the book" href="https://mitpress.mit.edu/books/connected-play" target="_blank" style="float: right;">
                             <img src="https://itls.usu.edu/images/others/student-projects/fields_connected-play-book.jpg" alt="book cover">
                         </a>
@@ -185,7 +194,7 @@
                         <p><strong>Fields, D. A.</strong> Kafai, Y. B. (2012). Navigating life as an avatar: The shifting identities-in-practice of a girl player in a tween virtual world. In C. C. Ching B. Foley (Eds.) Constructing the self in a digital world, Cambridge, UK: Cambridge University Press, 222-250.</p>
                     </section>
                     <section>
-                        <h2>Selected Publications</h2>
+                        <h2 id="publications">Selected Publications</h2>
                         <p>**Please feel free to contact me if you are seeking a copy of a paper but are unable to find it.</p>
                         <p><strong>Fields, D. A.</strong>, Kafai, Y. B., &amp; Giang, M. T. (2017). <a href="https://doi.org/10.1145/3123815" target="_blank">Youth computational participation in the online Scratch community: Problematizing experience and equity in participation and programming</a>. <em>Transactions of Computing Education</em>, 17(3), Article 15 doi&gt; 10.1145/3123815</p>
                         <p><strong>Fields, D. A.</strong>, Vasudevan, V., Kafai, Y.B. (2015). <a href="https://www.researchgate.net/profile/Deborah_Fields/publication/282803062_The_programmers'_collective_fostering_participatory_culture_by_making_music_videos_in_a_high_school_Scratch_coding_workshop/links/562a510a08aef25a243ff9e6.pdf" target="_blank">The programmers' collective: Fostering participatory culture by making music videos in a high school Scratch coding workshop</a>. <em>Interactive Learning Environments</em>, 23(5), 1-21.</p>
@@ -202,7 +211,7 @@
                         <p><strong>Fields, D. A.</strong> (2009). What do students gain from a week at science camp? Youth perceptions and the design of an immersive research-oriented astronomy camp. International Journal of Science Education, 31(2), 151-171.</p>
                     </section>
                     <section>
-                        <h2>Recent Referred Presentations</h2>
+                        <h2 id="presentations">Recent Referred Presentations</h2>
                         <p><strong>Fields, D. A.</strong> TEDx Talk (Oct 29, 2014). <a href="http://tedx.usu.edu/event/deborah-fields/" target="_blank">Tween activism in a virtual world.</a></p>
                         <p>Kafai, Y. B. <strong>Fields, D. A.</strong> (2014, June). Connected play: Mischievous cheating for serious gaming. Invited keynote presentation at the combined NSF Cyberlearning Summit and the Playful Learning Summit (at the Games + Learning + Society conference). <a href="http://learningtimesevents.org/circl/" target="_blank">Video available</a>.</p>
                         <p><strong>Fields, D. A.</strong>, Giang, M. T., Kafai, Y. B. (2014, March). Broad trends in <a href="http://scratch.mit.edu/" target="_blank">scratch.mit.edu</a>. Invited presentation at the Scratch Data Summit. MIT Media Lab, Cambridge, MA.</p>
@@ -210,7 +219,7 @@
                         <p><strong>Fields, D. A.</strong> (2013, September). Cheating, Gaming, and Kids’ Online Communities. Invited guest lecture for MOOC course on Coursera by Constance Steinkuehler Kurt Squire. 10,000 estimated participants. <a href="https://uwmadison.app.box.com/s/b9ks4vixoi41kuq2358c" target="_blank">Video available.</a></p>
                     </section>
                     <section>
-                        <h2>Awards and Honors</h2>
+                        <h2 id="awards">Awards and Honors</h2>
                         <ul>
                             <li><i>Journal of the Learning Sciences</i>, Early Career Reviewer of the Year, 2015</li>
                             <li>CONNECT Fellowship (UCLA Lab School), 2009</li>
@@ -221,12 +230,12 @@
                         </ul>
                     </section>
                     <section>
-                        <h2>Projects</h2>
+                        <h2 id="projects">Projects</h2>
                         <p><strong><a href="http://semaphore.utoronto.ca/diymedia/" target="new">Kids DIY Media</a></strong></p>
                         <p><strong>FUN! Automated Assessment of Computational Thinking in Scratch<br>Teton County STEM/Digital Fabrication Lab<br>Craft Technologies</strong></p>
                     </section>
                     <section>
-                        <h2>Teaching</h2>
+                        <h2 id="teaching">Teaching</h2>
                         <ul>
                             <li>ITLS 6540: Learning Theory</li>
                             <li>ITLS 6870/7870: Special Topics: Sociocultural Perspectives in Education</li>
@@ -236,6 +245,7 @@
                     </section>
                 </div>
                 <div class="content-sidebar">
+                    <ul id="table-of-contents"></ul>
                 </div>
             </div>
         </div>
