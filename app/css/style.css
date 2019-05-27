@@ -324,12 +324,14 @@
 
 .itls-styled .apply-collapse-section article h4 {
   background-color: #F5F6F7;
-  color: #0865BF;
   font-weight: bold;
   padding: 10px;
   font-size: 15px;
   border-radius: 5px;
   font-family: Lato; }
+
+.itls-styled .apply-collapse-section article a h4 {
+  color: #0865BF; }
 
 .itls-styled .apply-collapse-section article:not(.apply-collapse-open) div {
   display: none; }
