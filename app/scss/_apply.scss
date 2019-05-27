@@ -64,4 +64,18 @@
       }
     }
   }
+
+  .registration-codes {
+    width: 100%;
+    th {
+      border-bottom: 2px solid #ccc;
+    }
+    td {
+      border-top: 1px solid #ccc;
+    }
+    th, td {
+      padding: 5px;
+    }
+    margin: 20px;
+  }
 }

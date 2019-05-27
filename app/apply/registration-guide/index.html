@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Programs | ITLS | USU</title>
+    <title>Registration Guide | ITLS | USU</title>
     <link rel="stylesheet" type="text/css" href="https://www.usu.edu/style/classic-full-15.min.css">
     <link rel="stylesheet" type="text/css" href="https://ouresources.usu.edu/_resources/css/global-custom.css">
     <link rel="stylesheet" type="text/css" href="https://ouresources.usu.edu/_resources/css/profile-page-v0-classic.css">
@@ -69,7 +69,20 @@
     <script type="text/javascript" src="https://ouresources.usu.edu/_assets/forms/ouforms.js"></script>
     <script type="text/javascript" src="https://ouresources.usu.edu/_assets/forms/jquery.datetimepicker.full.min.js"></script>
     <!-- ARIS CSS -->
-    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <link rel="stylesheet" type="text/css" href="../../css/style.css">
+    <!-- ARIS JS -->
+    <script type="text/javascript">
+        $(function(){
+            var open = 'apply-collapse-open';
+            $('.apply-collapse-header').click(function(e){
+                e.preventDefault();
+                var header = $(e.target);
+                var isOpen = header.parents('article').hasClass(open);
+                header.parents('.apply-collapse-section').find('article').removeClass(open);
+                if (!isOpen) header.parents('article').addClass(open);
+            });
+        });
+    </script>
 </head>
 
 <body>
@@ -106,53 +119,122 @@
             <!-- ARIS section -->
             <nav class="top-nav">
                 <div class="top-nav-left">
-                    <a href="../about">About</a>
-                    <a href="../people">People</a>
-                    <a href="../programs">Programs</a>
-                    <a href="../courses">Courses</a>
-                    <a href="../current-students">Current Students</a>
+                    <a href="../../about">About</a>
+                    <a href="../../people">People</a>
+                    <a href="../../programs">Programs</a>
+                    <a href="../../courses">Courses</a>
+                    <a href="../../current-students">Current Students</a>
                     <a href="#">News</a>
                 </div>
                 <div class="top-nav-right">
-                    <a href="../apply" class="button-apply button-apply-black">Apply</a>
+                    <a href="../../apply" class="button-apply button-apply-black">Apply</a>
                 </div>
             </nav>
-            <div class="jumbotron jumbotron-course">
-                <h1>Programs</h1>
+            <div class="jumbotron jumbotron-apply">
+                <h1>Registration Guide</h1>
+                <p class="jumbotron-breadcrumbs">
+                    <a href="..">Apply</a>
+                    <span class="breadcrumb-arrow">»</span>
+                    <span>Registration Guide</span>
+                </p>
             </div>
             <div class="content-columns">
                 <div class="content-main">
-                    <p>We offer a unique program that bridges the gap between research and practice. We teach theory, technology, and design cores in all our programs.</p>
-                    <h4>Part time or full time</h4>
-                    <p>We love our working students! They bring depth to classroom discussions with real work experiences. We’ll help you figure out the details with your company and schedule.</p>
-                    <h4>On campus or online</h4>
-                    <p>Master’s students can study online to help accommodate full or part time jobs. Our online students benefit from our close-knit community, even while abroad.</p>
-                    <p>Our online graduate program is ranked third in the nation by the 2019 <i>U.S. News and World Report</i>.</p>
-                    <section>
-                        <h3>ITLS Degree Comparison</h3>
-                        <p>
-                            <a href="doctor-of-philosophy/">Doctor of Philosophy</a>
-                        </p>
-                        <p>We offer four years of guaranteed funding to highly qualified PhD students. Ask a faculty advisor about our Doctoral Scholars Program.</p>
-                        <p><a href="education-specialist/">Education Specialist</a> - The Education Specialist (EdS) program furnishes students with advanced skills in instructional technology and learning sciences beyond those acquired with the master's degree.</p>
-                        <h4>Masters Progams:</h4>
-                        <p><a href="master-of-arts/">Master of Arts</a> - The goal of the Master of Arts program is to prepare individuals for careers in instructional design and development.</p>
-                        <p><a href="master-of-education/">Master of Education</a> - The Master of Education program is a degree program specifically designed for classroom teachers, educators, school librarians and administrators.</p>
-                        <p><a href="master-of-science/">Master of Science</a> - Students in the Master of Science program do research on a topic of their choice and write a thesis.</p>
-                        <h4>Minors and Undergraduate:</h4>
-                        <p><a href="slma-minor">School Library Media Administration Minor (SLMA)</a></p>
-                        <p><a href="bachelor-of-science">Bachelor of Science</a></p>
-                        <p><a href="multimedia-development">Multimedia Development Minor</a></p>
-                    </section>
+                    <p>When registering, the section designation is a three letter code, with the first letter corresponding to the local Utah center or out-of-state section. Here is a list of the USU Regional Campuses and codes:</p>
+                    <table class="registration-codes">
+                        <tr>
+                            <th>RCDE Center</th>
+                            <th>Address</th>
+                            <th>Phone</th>
+                            <th>Code</th>
+                        </tr>
+                        <tr>
+                            <td>Blanding</td>
+                            <td> 639 W  100 S  1-A   Blanding</td>
+                            <td>435-678-8500</td>
+                            <td> A**</td>
+                        </tr>
+                        <tr>
+                            <td>Brigham City</td>
+                            <td> 265 W  1100 S   Brigham City</td>
+                            <td>435-919-1200</td>
+                            <td> B**</td>
+                        </tr>
+                        <tr>
+                            <td>Kaysville</td>
+                            <td> 80 E Sego Lilly Dr   Kaysville</td>
+                            <td>801-499-5120</td>
+                            <td> K**</td>
+                        </tr>
+                        <tr>
+                            <td>Logan</td>
+                            <td> 246 Student Center   Logan</td>
+                            <td>435-797-3104</td>
+                            <td> L**</td>
+                        </tr>
+                        <tr>
+                            <td>Moab</td>
+                            <td> 125 W   200 S     Moab</td>
+                            <td>435-259-7432</td>
+                            <td> E**</td>
+                        </tr>
+                        <tr>
+                            <td>Orem</td>
+                            <td> 1875 S State  #1010   Orem</td>
+                            <td>801-226-9045</td>
+                            <td> N**</td>
+                        </tr>
+                        <tr>
+                            <td>Out of State</td>
+                            <td> 246 Student Center   Logan</td>
+                            <td>800-233-2137</td>
+                            <td> Z**</td>
+                        </tr>
+                        <tr>
+                            <td>Price</td>
+                            <td> 451 E  400 N   Price</td>
+                            <td>435-613-5000</td>
+                            <td> P**</td>
+                        </tr>
+                        <tr>
+                            <td>Salt Lake City</td>
+                            <td> 2500 S State St   SLC</td>
+                            <td>385-646-5570</td>
+                            <td> S**</td>
+                        </tr>
+                        <tr>
+                            <td>Southwest</td>
+                            <td> 325 W  100 N    Ephraim</td>
+                            <td>435-283-7529</td>
+                            <td> C**</td>
+                        </tr>
+                        <tr>
+                            <td>Southwest</td>
+                            <td> 800 W  200 S  B   Richfield</td>
+                            <td>435-893-2266</td>
+                            <td> C**</td>
+                        </tr>
+                        <tr>
+                            <td>Tooele</td>
+                            <td> 1021 W Vine St    Tooele</td>
+                            <td>435-882-6611</td>
+                            <td> T**</td>
+                        </tr>
+                        <tr>
+                            <td>Uintah Basin</td>
+                            <td> 987 E Lagoon St   Roosevelt</td>
+                            <td>435-722-2294</td>
+                            <td> U**</td>
+                        </tr>
+                        <tr>
+                            <td>Uintah Basin</td>
+                            <td> 320 N Aggie Blvd    Vernal</td>
+                            <td>435-789-6100</td>
+                            <td> U**</td>
+                        </tr>
+                    </table>
                 </div>
                 <div class="content-sidebar">
-                    <ul>
-                        <li>
-                            <a href="../apply/registration-guide">
-                                Registration Guide
-                            </a>
-                        </li>
-                    </ul>
                 </div>
             </div>
         </div>
