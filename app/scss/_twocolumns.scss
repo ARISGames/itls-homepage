@@ -49,6 +49,14 @@
       width: 300px;
       background-color: #F5F6F7;
       padding: 10px 30px;
+      position: -webkit-sticky;
+      position: sticky;
+      top: 20px;
+      .sticky {
+        position: -webkit-sticky;
+        position: sticky;
+        top: 20px;
+      }
       ul {
         padding: 0;
         li {

@@ -5,6 +5,9 @@
     margin: 0;
     background-color: white;
     position: relative;
+    min-height:50vh;
+    display:flex;
+    align-items: center;
   }
   .jumbotron-breadcrumbs {
     position: absolute;
