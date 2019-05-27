@@ -70,6 +70,19 @@
     <script type="text/javascript" src="https://ouresources.usu.edu/_assets/forms/jquery.datetimepicker.full.min.js"></script>
     <!-- ARIS CSS -->
     <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <!-- ARIS JS -->
+    <script type="text/javascript">
+        $(function(){
+            var open = 'apply-collapse-open';
+            $('.apply-collapse-header').click(function(e){
+                e.preventDefault();
+                var header = $(e.target);
+                var isOpen = header.parents('article').hasClass(open);
+                header.parents('.apply-collapse-section').find('article').removeClass(open);
+                if (!isOpen) header.parents('article').addClass(open);
+            });
+        });
+    </script>
 </head>
 
 <body>
@@ -135,169 +148,183 @@
                     </section>
                     <section>
                         <h2 id="syllabi">ITLS Course Syllabi</h2>
-                        <section>
-                            <h3>Offered Every Semester</h3>
-                            <p>
-                                ITLS 4300: Clinical Experience in School Library Media<br>
-                                ITLS 4910: Undergraduate Research and Creative Opportunity<br>
-                                ITLS 5195/6195: Practicum in Distance Learning
-                                    [<a target="_blank" href="https://itls.usu.edu/files/students/syllabi/5195_summer2018.pdf">Summer 2018</a>]
-                                    [<a target="_blank" href="https://itls.usu.edu/files/students/syllabi/5195_spring2018.pdf">Spring 2018</a>]
-                                    <br>
-                                ITLS 5290/6290: Multimedia Production for Instruction and Training
-                                    [<a target="_blank" href="https://itls.usu.edu/files/students/syllabi/5290_spring2018.pdf">Spring 2018</a>]
-                                    <br>
-                                ITLS 5900/6900: Independent Study<br>
-                                ITLS 6910: Independent Research<br>
-                                ITLS 6940: Internship<br>
-                                ITLS 6960: Creative Project
-                                    [<a target="_blank" href="https://itls.usu.edu/files/students/syllabi/6960_spring2018.pdf">Spring 2018</a>]
-                                    <br>
-                                ITLS 6970: Thesis<br>
-                                ITLS 6990: Continuing Graduate Advisement<br>
-                                ITLS 7450: Internship in Program Evaluation<br>
-                                ITLS 7460: Internship in Research<br>
-                                ITLS 7820: Practicum in Instructional Technology<br>
-                                ITLS 7900: Independent Study<br>
-                                ITLS 7910: Independent Research<br>
-                                ITLS 7960: Practicum, Education Specialist<br>
-                                ITLS 7970: Dissertation<br>
-                                ITLS 7990: Continuing Graduate Advisement
-                            </p>
-                        </section>
-                        <section>
-                            <h3>Summer/Spring/Fall Rotation</h3>
-                            <p>
-                                ITLS 5000/6000: SLM Foundations & Information Management
-                                    [<a target="_blank" href="https://itls.usu.edu/files/students/syllabi/5000-6000_fall2014.pdf">Fall 2014</a>]
-                                    <br>
-                                ITLS 5015/6015: SLM Collection Development & Literature
-                                    [<a target="_blank" href="https://itls.usu.edu/files/students/syllabi/5015-6015_fall2017.pdf">Fall 2017</a>]
-                                    <br>
-                                ITLS 5025/6025: SLM Programs & Instructional Development
-                                    [<a target="_blank" href="https://itls.usu.edu/files/students/syllabi/5025-6025_spring2016.pdf">Spring 2016</a>]
-                                    <br>
-                                ITLS 5030/6030: Information Access, Literacy, & Technology
-                                    [<a target="_blank" href="https://itls.usu.edu/files/students/syllabi/5030-6030_spring2015.pdf">Spring 2015</a>]
-                                    <br>
-                                ITLS 5040/6040: SLM Center Administration & Leadership
-                                    [<a target="_blank" href="https://itls.usu.edu/files/students/syllabi/5040_summer2018.pdf">Summer 2018</a>]
-                                    <br>
-                                ITLS 5090/6090: School Library Media Practicum<br>
-                                ITLS 5105/6105: Distance Education Tools<br>
-                                ITLS 5150/6150: eLearning Trends and Issues*
-                                    [<a target="_blank" href="https://itls.usu.edu/files/students/syllabi/5150-6150_spring2015.pdf">Spring 2015</a>]
-                                    <br>
-                                ITLS 5205/6205: Computer Applications for Instruction and Training
-                                    [<a target="_blank" href="https://itls.usu.edu/files/students/syllabi/5205_summer2018.pdf">Summer 2018</a>]
-                                    [<a target="_blank" href="https://itls.usu.edu/files/students/syllabi/5205-6205_fall2017.pdf">Fall 2017</a>]
-                                    <br>
-                                INST 5215/6215: Digital Video Production
-                                    [<a target="_blank" href="https://itls.usu.edu/files/students/syllabi/5215-6215_fall2018.pdf">Fall 2018</a>]
-                                    <br>
-                                ITLS 5220/6220: Digital Video Capture and Production II*
-                                    [<a target="_blank" href="https://itls.usu.edu/files/students/syllabi/5220-6220_spring2019.pdf">Spring 2019</a>]
-                                    <br>
-                                ITLS 5230/6230: Instructional Graphic Production I
-                                    [<a target="_blank" href="http://nmsmithphotoshop1.weebly.com/syllabus.html">Fall 2017</a>]
-                                    <br>
-                                ITLS 5240/6240: Instructional Graphic Production II*
-                                    [<a target="_blank" href="http://nmsmithphotoshop.weebly.com/syllabus.html">Spring 2017</a>]
-                                    <br>
-                                ITLS 5245/6245: Interactive Multimedia Production
-                                    [<a target="_blank" href="https://itls.usu.edu/files/students/syllabi/5245-6245_spring2015.pdf">Spring 2015</a>]
-                                    <br>
-                                ITLS 5265/6265: Internet Development
-                                    [<a target="_blank" href="https://itls.usu.edu/files/students/syllabi/5265_summer2018.pdf">Summer 2018</a>]
-                                    [<a target="_blank" href="https://itls.usu.edu/files/students/syllabi/5265-6265_fall2017.pdf">Fall 2016</a>]
-                                    <br>
-                                ITLS 5270/6270: Craft Technologies*
-                                    [<a target="_blank" href="https://itls.usu.edu/files/students/syllabi/5270-6270_fall2016.pdf">Spring 2016</a>]
-                                    <br>
-                                TEAL 5500: Integration and Innovation of Technology in Education
-                                    [<a target="_blank" href="http://techintegrateed.weebly.com/syllabus.html">Fall 2017</a>]
-                                    <br>
-                                ITLS 6300: ITLS Orientation<br>
-                                ITLS 6310: Foundations of Instructional Technology and Learning Sciences
-                                    [<a target="_blank" href="https://itls.usu.edu/files/students/syllabi/6310_fall2017.pdf">Fall 2017 Campus</a>]
-                                    [<a target="_blank" href="https://itls.usu.edu/files/students/syllabi/6310_fall2016.pdf">Fall 2016 Online</a>]
-                                    <br>
-                                ITLS 6350: Instructional Design Process I
-                                    [<a target="_blank" href="https://itls.usu.edu/files/students/syllabi/6350_spring2018.pdf">Spring 2018</a>]
-                                    <br>
-                                ITLS 6390: Planning, Resources, and Implementation for Technology
-                                    [<a target="_blank" href="https://itls.usu.edu/files/students/syllabi/6390_summer2018.pdf">Summer 2018</a>]
-                                    <br>
-                                ITLS 6510: Research and Evaluation in Instructional Technology
-                                    [<a target="_blank" href="https://itls.usu.edu/files/students/syllabi/6510_spring2017.pdf">Spring 2017</a>]
-                                    <br>
-                                ITLS 6515: Evaluation and Assessment
-                                    [<a target="_blank" href="https://itls.usu.edu/files/students/syllabi/6515_fall2018.pdf">Fall 2018</a>]
-                                    <br>
-                                ITLS 6530: Instructional Design and Development Studio
-                                    [<a target="_blank" href="https://itls.usu.edu/files/students/syllabi/6530_fall2014.pdf">Fall 2014</a>]
-                                    <br>
-                                ITLS 6540: Learning Theory
-                                    [<a target="_blank" href="https://itls.usu.edu/files/students/syllabi/6540_fall2017.pdf">Fall 2017</a>]
-                                    <br>
-                                ITLS 6570: Performance Systems
-                                    [<a target="_blank" href="https://itls.usu.edu/files/students/syllabi/6570-spring-2015.pdf">Spring 2015</a>]
-                                    <br>
-                                ITLS 6720: Instructional Technology in Adult Education
-                                    [<a target="_blank" href="https://itls.usu.edu/files/students/syllabi/6720_summer2018.pdf">Summer 2018</a>]
-                                    <br>
-                                ITLS 6760: Grant Writing
-                                    [<a target="_blank" href="https://itls.usu.edu/files/students/syllabi/6760_fall2016.pdf">Fall 2016</a>]
-                                    <br>
-                                ITLS 6870/7870: Special Topics: Sociocultural Perspectives
-                                    [<a target="_blank" href="https://itls.usu.edu/files/students/syllabi/6870-7870_fall2018.pdf">Fall 2018</a>]
-                                    <br>
-                                ITLS 7000: Pro-Seminar
-                                    [<a target="_blank" href="https://itls.usu.edu/files/students/syllabi/7000_fall2016.pdf">Fall 2016</a>]
-                                    <br>
-                                ITLS 7300: Research in Instructional Technology and Learning Sciences
-                                    [<a target="_blank" href="https://itls.usu.edu/files/students/syllabi/7300_spring2017.pdf">Spring 2017</a>]
-                            </p>
-                        </section>
-                        <section>
-                            <h3>Taught On Demand</h3>
-                            <p>
-                                ITLS 1000: Information Literacy<br>
-                                ITLS 4210: Information Access and Literacy Skills<br>
-                                ITLS 4220: Introduction to Learning Theories<br>
-                                ITLS 4230: Introduction to Adult Learning<br>
-                                ITLS 4250: Instructional Design I<br>
-                                ITLS 4260: Instructional Design II<br>
-                                ITLS 4290: Applying Instructional Design<br>
-                                ITLS 4500: Integration and Innovation of Technology in Education<br>
-                                ITLS 5225/6225: Digital Audio<br>
-                                ITLS 5275/6275: Multimedia Special Topics Studio
-                                    [<a target="_blank" href="https://itls.usu.edu/files/students/syllabi/5275-6275_spring2011.pdf">Spring 2011</a>]
-                                    <br>
-                                ITLS 5285: Multimedia Special Topics Studio II<br>
-                                ITLS 5750/6250: Instructional Technology Workshop<br>
-                                ITLS 6650: Research Seminar<br>
-                                ITLS 6710: Instructional Development Tools
-                                    [<a target="_blank" href="https://itls.usu.edu/files/students/syllabi/6710_fall2018.pdf">Fall 2018</a>]
-                                    <br>
-                                ITLS 6740: Instructional Evaluation 2<br>
-                                ITLS 6750: Instructional Technology Workshop<br>
-                                ITLS 6770: Practicum in the Improvement of Instruction<br>
-                                ITLS 6775: Computers in Education for In-service Teachers<br>
-                                ITLS 6780: Instructional Technology Programs<br>
-                                ITLS 6790: Instructional Technology in Education and Training<br>
-                                ITLS 6870/7870: Current Issues Seminar:<br>
-                                [<a target="_blank" href="https://itls.usu.edu/files/students/syllabi/6870_7870_spring2014.pdf">Spring 2014</a>]
-                                    Embodiment, Communication, and Technology<br>
-                                [<a target="_blank" href="https://itls.usu.edu/files/students/syllabi/6870_7870_summer2017.pdf">Summer 2017</a>]
-                                    Games and Learning<br>
-                                [<a target="_blank" href="https://itls.usu.edu/files/students/syllabi/6870-7870_summer2014.pdf">Summer 2015</a>]
-                                    Sociocultural Perspectives<br>
-                                ITLS 7150: Advanced Seminar in Instructional Technology
-                                    [<a target="_blank" href="https://itls.usu.edu/files/students/syllabi/7150_spring2015.pdf">Spring 2015</a>]
-                                    <br>
-                                ITLS 7200: Quantitative and Design Research in Instructional Technology
-                            </p>
+                        <section class="apply-collapse-section">
+                            <article>
+                                <a href="#" class="apply-collapse-header">
+                                    <h4>Offered Every Semester</h4>
+                                </a>
+                                <div>
+                                    <p>
+                                        ITLS 4300: Clinical Experience in School Library Media<br>
+                                        ITLS 4910: Undergraduate Research and Creative Opportunity<br>
+                                        ITLS 5195/6195: Practicum in Distance Learning
+                                            [<a target="_blank" href="https://itls.usu.edu/files/students/syllabi/5195_summer2018.pdf">Summer 2018</a>]
+                                            [<a target="_blank" href="https://itls.usu.edu/files/students/syllabi/5195_spring2018.pdf">Spring 2018</a>]
+                                            <br>
+                                        ITLS 5290/6290: Multimedia Production for Instruction and Training
+                                            [<a target="_blank" href="https://itls.usu.edu/files/students/syllabi/5290_spring2018.pdf">Spring 2018</a>]
+                                            <br>
+                                        ITLS 5900/6900: Independent Study<br>
+                                        ITLS 6910: Independent Research<br>
+                                        ITLS 6940: Internship<br>
+                                        ITLS 6960: Creative Project
+                                            [<a target="_blank" href="https://itls.usu.edu/files/students/syllabi/6960_spring2018.pdf">Spring 2018</a>]
+                                            <br>
+                                        ITLS 6970: Thesis<br>
+                                        ITLS 6990: Continuing Graduate Advisement<br>
+                                        ITLS 7450: Internship in Program Evaluation<br>
+                                        ITLS 7460: Internship in Research<br>
+                                        ITLS 7820: Practicum in Instructional Technology<br>
+                                        ITLS 7900: Independent Study<br>
+                                        ITLS 7910: Independent Research<br>
+                                        ITLS 7960: Practicum, Education Specialist<br>
+                                        ITLS 7970: Dissertation<br>
+                                        ITLS 7990: Continuing Graduate Advisement
+                                    </p>
+                                </div>
+                            </article>
+                            <article>
+                                <a href="#" class="apply-collapse-header">
+                                    <h4>Summer/Spring/Fall Rotation</h4>
+                                </a>
+                                <div>
+                                    <p>
+                                        ITLS 5000/6000: SLM Foundations & Information Management
+                                            [<a target="_blank" href="https://itls.usu.edu/files/students/syllabi/5000-6000_fall2014.pdf">Fall 2014</a>]
+                                            <br>
+                                        ITLS 5015/6015: SLM Collection Development & Literature
+                                            [<a target="_blank" href="https://itls.usu.edu/files/students/syllabi/5015-6015_fall2017.pdf">Fall 2017</a>]
+                                            <br>
+                                        ITLS 5025/6025: SLM Programs & Instructional Development
+                                            [<a target="_blank" href="https://itls.usu.edu/files/students/syllabi/5025-6025_spring2016.pdf">Spring 2016</a>]
+                                            <br>
+                                        ITLS 5030/6030: Information Access, Literacy, & Technology
+                                            [<a target="_blank" href="https://itls.usu.edu/files/students/syllabi/5030-6030_spring2015.pdf">Spring 2015</a>]
+                                            <br>
+                                        ITLS 5040/6040: SLM Center Administration & Leadership
+                                            [<a target="_blank" href="https://itls.usu.edu/files/students/syllabi/5040_summer2018.pdf">Summer 2018</a>]
+                                            <br>
+                                        ITLS 5090/6090: School Library Media Practicum<br>
+                                        ITLS 5105/6105: Distance Education Tools<br>
+                                        ITLS 5150/6150: eLearning Trends and Issues*
+                                            [<a target="_blank" href="https://itls.usu.edu/files/students/syllabi/5150-6150_spring2015.pdf">Spring 2015</a>]
+                                            <br>
+                                        ITLS 5205/6205: Computer Applications for Instruction and Training
+                                            [<a target="_blank" href="https://itls.usu.edu/files/students/syllabi/5205_summer2018.pdf">Summer 2018</a>]
+                                            [<a target="_blank" href="https://itls.usu.edu/files/students/syllabi/5205-6205_fall2017.pdf">Fall 2017</a>]
+                                            <br>
+                                        INST 5215/6215: Digital Video Production
+                                            [<a target="_blank" href="https://itls.usu.edu/files/students/syllabi/5215-6215_fall2018.pdf">Fall 2018</a>]
+                                            <br>
+                                        ITLS 5220/6220: Digital Video Capture and Production II*
+                                            [<a target="_blank" href="https://itls.usu.edu/files/students/syllabi/5220-6220_spring2019.pdf">Spring 2019</a>]
+                                            <br>
+                                        ITLS 5230/6230: Instructional Graphic Production I
+                                            [<a target="_blank" href="http://nmsmithphotoshop1.weebly.com/syllabus.html">Fall 2017</a>]
+                                            <br>
+                                        ITLS 5240/6240: Instructional Graphic Production II*
+                                            [<a target="_blank" href="http://nmsmithphotoshop.weebly.com/syllabus.html">Spring 2017</a>]
+                                            <br>
+                                        ITLS 5245/6245: Interactive Multimedia Production
+                                            [<a target="_blank" href="https://itls.usu.edu/files/students/syllabi/5245-6245_spring2015.pdf">Spring 2015</a>]
+                                            <br>
+                                        ITLS 5265/6265: Internet Development
+                                            [<a target="_blank" href="https://itls.usu.edu/files/students/syllabi/5265_summer2018.pdf">Summer 2018</a>]
+                                            [<a target="_blank" href="https://itls.usu.edu/files/students/syllabi/5265-6265_fall2017.pdf">Fall 2016</a>]
+                                            <br>
+                                        ITLS 5270/6270: Craft Technologies*
+                                            [<a target="_blank" href="https://itls.usu.edu/files/students/syllabi/5270-6270_fall2016.pdf">Spring 2016</a>]
+                                            <br>
+                                        TEAL 5500: Integration and Innovation of Technology in Education
+                                            [<a target="_blank" href="http://techintegrateed.weebly.com/syllabus.html">Fall 2017</a>]
+                                            <br>
+                                        ITLS 6300: ITLS Orientation<br>
+                                        ITLS 6310: Foundations of Instructional Technology and Learning Sciences
+                                            [<a target="_blank" href="https://itls.usu.edu/files/students/syllabi/6310_fall2017.pdf">Fall 2017 Campus</a>]
+                                            [<a target="_blank" href="https://itls.usu.edu/files/students/syllabi/6310_fall2016.pdf">Fall 2016 Online</a>]
+                                            <br>
+                                        ITLS 6350: Instructional Design Process I
+                                            [<a target="_blank" href="https://itls.usu.edu/files/students/syllabi/6350_spring2018.pdf">Spring 2018</a>]
+                                            <br>
+                                        ITLS 6390: Planning, Resources, and Implementation for Technology
+                                            [<a target="_blank" href="https://itls.usu.edu/files/students/syllabi/6390_summer2018.pdf">Summer 2018</a>]
+                                            <br>
+                                        ITLS 6510: Research and Evaluation in Instructional Technology
+                                            [<a target="_blank" href="https://itls.usu.edu/files/students/syllabi/6510_spring2017.pdf">Spring 2017</a>]
+                                            <br>
+                                        ITLS 6515: Evaluation and Assessment
+                                            [<a target="_blank" href="https://itls.usu.edu/files/students/syllabi/6515_fall2018.pdf">Fall 2018</a>]
+                                            <br>
+                                        ITLS 6530: Instructional Design and Development Studio
+                                            [<a target="_blank" href="https://itls.usu.edu/files/students/syllabi/6530_fall2014.pdf">Fall 2014</a>]
+                                            <br>
+                                        ITLS 6540: Learning Theory
+                                            [<a target="_blank" href="https://itls.usu.edu/files/students/syllabi/6540_fall2017.pdf">Fall 2017</a>]
+                                            <br>
+                                        ITLS 6570: Performance Systems
+                                            [<a target="_blank" href="https://itls.usu.edu/files/students/syllabi/6570-spring-2015.pdf">Spring 2015</a>]
+                                            <br>
+                                        ITLS 6720: Instructional Technology in Adult Education
+                                            [<a target="_blank" href="https://itls.usu.edu/files/students/syllabi/6720_summer2018.pdf">Summer 2018</a>]
+                                            <br>
+                                        ITLS 6760: Grant Writing
+                                            [<a target="_blank" href="https://itls.usu.edu/files/students/syllabi/6760_fall2016.pdf">Fall 2016</a>]
+                                            <br>
+                                        ITLS 6870/7870: Special Topics: Sociocultural Perspectives
+                                            [<a target="_blank" href="https://itls.usu.edu/files/students/syllabi/6870-7870_fall2018.pdf">Fall 2018</a>]
+                                            <br>
+                                        ITLS 7000: Pro-Seminar
+                                            [<a target="_blank" href="https://itls.usu.edu/files/students/syllabi/7000_fall2016.pdf">Fall 2016</a>]
+                                            <br>
+                                        ITLS 7300: Research in Instructional Technology and Learning Sciences
+                                            [<a target="_blank" href="https://itls.usu.edu/files/students/syllabi/7300_spring2017.pdf">Spring 2017</a>]
+                                    </p>
+                                </div>
+                            </article>
+                            <article>
+                                <a href="#" class="apply-collapse-header">
+                                    <h4>Taught On Demand</h4>
+                                </a>
+                                <div>
+                                    <p>
+                                        ITLS 1000: Information Literacy<br>
+                                        ITLS 4210: Information Access and Literacy Skills<br>
+                                        ITLS 4220: Introduction to Learning Theories<br>
+                                        ITLS 4230: Introduction to Adult Learning<br>
+                                        ITLS 4250: Instructional Design I<br>
+                                        ITLS 4260: Instructional Design II<br>
+                                        ITLS 4290: Applying Instructional Design<br>
+                                        ITLS 4500: Integration and Innovation of Technology in Education<br>
+                                        ITLS 5225/6225: Digital Audio<br>
+                                        ITLS 5275/6275: Multimedia Special Topics Studio
+                                            [<a target="_blank" href="https://itls.usu.edu/files/students/syllabi/5275-6275_spring2011.pdf">Spring 2011</a>]
+                                            <br>
+                                        ITLS 5285: Multimedia Special Topics Studio II<br>
+                                        ITLS 5750/6250: Instructional Technology Workshop<br>
+                                        ITLS 6650: Research Seminar<br>
+                                        ITLS 6710: Instructional Development Tools
+                                            [<a target="_blank" href="https://itls.usu.edu/files/students/syllabi/6710_fall2018.pdf">Fall 2018</a>]
+                                            <br>
+                                        ITLS 6740: Instructional Evaluation 2<br>
+                                        ITLS 6750: Instructional Technology Workshop<br>
+                                        ITLS 6770: Practicum in the Improvement of Instruction<br>
+                                        ITLS 6775: Computers in Education for In-service Teachers<br>
+                                        ITLS 6780: Instructional Technology Programs<br>
+                                        ITLS 6790: Instructional Technology in Education and Training<br>
+                                        ITLS 6870/7870: Current Issues Seminar:<br>
+                                        [<a target="_blank" href="https://itls.usu.edu/files/students/syllabi/6870_7870_spring2014.pdf">Spring 2014</a>]
+                                            Embodiment, Communication, and Technology<br>
+                                        [<a target="_blank" href="https://itls.usu.edu/files/students/syllabi/6870_7870_summer2017.pdf">Summer 2017</a>]
+                                            Games and Learning<br>
+                                        [<a target="_blank" href="https://itls.usu.edu/files/students/syllabi/6870-7870_summer2014.pdf">Summer 2015</a>]
+                                            Sociocultural Perspectives<br>
+                                        ITLS 7150: Advanced Seminar in Instructional Technology
+                                            [<a target="_blank" href="https://itls.usu.edu/files/students/syllabi/7150_spring2015.pdf">Spring 2015</a>]
+                                            <br>
+                                        ITLS 7200: Quantitative and Design Research in Instructional Technology
+                                    </p>
+                                </div>
+                            </article>
                         </section>
                     </section>
                 </div>
