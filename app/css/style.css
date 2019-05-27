@@ -55,7 +55,8 @@
     margin-right: 10px; }
   .itls-styled .top-nav.top-nav-shadow {
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
-    margin-bottom: 15px; }
+    z-index: 1;
+    position: relative; }
 
 .itls-styled .content-columns {
   display: flex;
@@ -379,6 +380,23 @@
       max-width: 150px;
       margin: 10px;
       border-radius: 5px; }
+
+.itls-styled .person-header {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: row; }
+  .itls-styled .person-header .person-image {
+    width: 200px;
+    height: 200px;
+    background-size: cover;
+    border-radius: 999px; }
+  .itls-styled .person-header .person-details {
+    flex: 1;
+    padding: 0 30px; }
+
+.itls-styled .person-contact span {
+  display: inline-block;
+  margin: 15px; }
 
 .itls-styled .table-deadlines {
   width: 100%; }
