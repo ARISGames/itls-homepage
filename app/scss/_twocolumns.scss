@@ -8,7 +8,6 @@
     }
     font-family: Lato;
     .content-main {
-      flex: 1;
       padding: 6vw;
       section {
         padding-bottom:30px;
@@ -30,11 +29,6 @@
           font-size: 30px;
         }
       }
-
-      /*
-        styled `ol` numbers using technique from
-        https://www.456bereastreet.com/archive/201105/styling_ordered_list_numbers/
-      */
       ol.fancy-ol {
         counter-reset: li; /* Initiate a counter */
         li {
@@ -61,6 +55,15 @@
       position: -webkit-sticky;
       position: sticky;
       top: 20px;
+      section {
+        margin-bottom:40px;
+        h3 {
+          font-size:16px;
+        }
+        ul {
+          margin-top:10px;
+        }
+      }
       article {
         p {
           line-height:25px;

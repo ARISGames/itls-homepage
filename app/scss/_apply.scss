@@ -48,12 +48,14 @@
     article {
       h4 {
         background-color: #F5F6F7;
-        color: #0865BF;
         font-weight: bold;
         padding: 10px;
         font-size: 15px;
         border-radius: 5px;
         font-family: Lato;
+      }
+      a h4 {
+        color: #0865BF;
       }
       &:not(.apply-collapse-open) {
         div {
@@ -61,5 +63,19 @@
         }
       }
     }
+  }
+
+  .registration-codes {
+    width: 100%;
+    th {
+      border-bottom: 2px solid #ccc;
+    }
+    td {
+      border-top: 1px solid #ccc;
+    }
+    th, td {
+      padding: 5px;
+    }
+    margin: 20px;
   }
 }

@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Master of Education | ITLS | USU</title>
+    <title>Registration Guide | ITLS | USU</title>
     <link rel="stylesheet" type="text/css" href="https://www.usu.edu/style/classic-full-15.min.css">
     <link rel="stylesheet" type="text/css" href="https://ouresources.usu.edu/_resources/css/global-custom.css">
     <link rel="stylesheet" type="text/css" href="https://ouresources.usu.edu/_resources/css/profile-page-v0-classic.css">
@@ -70,6 +70,19 @@
     <script type="text/javascript" src="https://ouresources.usu.edu/_assets/forms/jquery.datetimepicker.full.min.js"></script>
     <!-- ARIS CSS -->
     <link rel="stylesheet" type="text/css" href="../../css/style.css">
+    <!-- ARIS JS -->
+    <script type="text/javascript">
+        $(function(){
+            var open = 'apply-collapse-open';
+            $('.apply-collapse-header').click(function(e){
+                e.preventDefault();
+                var header = $(e.target);
+                var isOpen = header.parents('article').hasClass(open);
+                header.parents('.apply-collapse-section').find('article').removeClass(open);
+                if (!isOpen) header.parents('article').addClass(open);
+            });
+        });
+    </script>
 </head>
 
 <body>
@@ -117,88 +130,111 @@
                     <a href="../../apply" class="button-apply button-apply-black">Apply</a>
                 </div>
             </nav>
-            <div class="jumbotron jumbotron-course">
-                <h1>Master of Education</h1>
+            <div class="jumbotron jumbotron-apply">
+                <h1>Registration Guide</h1>
                 <p class="jumbotron-breadcrumbs">
-                    <a href="..">Programs</a>
+                    <a href="..">Apply</a>
                     <span class="breadcrumb-arrow">»</span>
-                    <span>Master of Education</span>
+                    <span>Registration Guide</span>
                 </p>
             </div>
             <div class="content-columns">
                 <div class="content-main">
-                    <h2>Master of Education</h2>
-                    <p>The MEd is designed for classroom teachers, educators, and administrators who want to increase their understanding of the role of technology and its appropriate implementation in the teaching and learning process.  Students typically continue in careers in education but see new doors open to them, many at the district or state level.</p>
-                    <p>The MEd program helps students evaluate, integrate, and design lessons and experiences for their learners using various forms of technology and multimedia. Students who are interested in a school library career path may choose the school library media administration (SLMA) emphasis, which carries a State of Utah endorsement. The MEd does not qualify the student for a Utah teaching license, and most students in the program already have their teaching licensure complete. MEd students complete a creative project, internship.</p>
-                    <p>The Master of Education degree is available on campus at Utah State University in Logan- UT, or online (except for the on-campus orientation).</p>
-                    <section>
-                        <h3>MEd with an emphasis in School Library Media Administration (SLMA)</h3>
-                        <p>Our School Library Media Administration (SLMA) program is designed for those interested in working in a school library media center, public or private. The program includes all the coursework and practicum experience necessary for the <a target="_blank" href="http://teal.usu.edu/">Utah State Office of Education (USOE)</a> library media K-12 endorsement. Those seeking the state endorsement must currently have, or be working toward, a valid Utah teaching license. Students may choose to take these courses and not apply for state endorsement. SLMA courses are completed via web broadcast. All SLMA student complete a practicum instead of a creative project or internship.</p>
-                    </section>
-                    <section>
-                        <h3>Degree Requirements</h3>
-                        <ul>
-                            <li>Completed within six years of matriculation.</li>
-                            <li>Complete 3-day required in-person orientation course in August on the Logan campus.</li>
-                            <li>37 credits minimum.</li>
-                            <li>Complete a culminating experience: A creative project, practicum, or internship.</li>
-                            <li>Maintain a minimum GPA of 3.0.</li>
-                        </ul>
-                    </section>
-                    <section>
-                        <h3>Program Pathway</h3>
-                        <ol class="fancy-ol">
-                            <li>Acceptance to the program.</li>
-                            <li>Attend the face to face orientation in Logan, UT.</li>
-                            <li>Work with your advisor, Sheri Haderlie, on your program of study.</li>
-                            <li>Register online for courses each semester through <a target="_blank" href="http://my.usu.edu/">my.usu.edu</a>.</li>
-                            <li>Complete all required coursework.</li>
-                            <li>Throughout the program, build a professional portfolio of your projects and other deliverables. </li>
-                            <li>Complete a culminating experience, either an Internship, Creative Project, or Practicum for SLMA students.</li>
-                        </ol>
-                    </section>
+                    <p>When registering, the section designation is a three letter code, with the first letter corresponding to the local Utah center or out-of-state section. Here is a list of the USU Regional Campuses and codes:</p>
+                    <table class="registration-codes">
+                        <tr>
+                            <th>RCDE Center</th>
+                            <th>Address</th>
+                            <th>Phone</th>
+                            <th>Code</th>
+                        </tr>
+                        <tr>
+                            <td>Blanding</td>
+                            <td> 639 W  100 S  1-A   Blanding</td>
+                            <td>435-678-8500</td>
+                            <td> A**</td>
+                        </tr>
+                        <tr>
+                            <td>Brigham City</td>
+                            <td> 265 W  1100 S   Brigham City</td>
+                            <td>435-919-1200</td>
+                            <td> B**</td>
+                        </tr>
+                        <tr>
+                            <td>Kaysville</td>
+                            <td> 80 E Sego Lilly Dr   Kaysville</td>
+                            <td>801-499-5120</td>
+                            <td> K**</td>
+                        </tr>
+                        <tr>
+                            <td>Logan</td>
+                            <td> 246 Student Center   Logan</td>
+                            <td>435-797-3104</td>
+                            <td> L**</td>
+                        </tr>
+                        <tr>
+                            <td>Moab</td>
+                            <td> 125 W   200 S     Moab</td>
+                            <td>435-259-7432</td>
+                            <td> E**</td>
+                        </tr>
+                        <tr>
+                            <td>Orem</td>
+                            <td> 1875 S State  #1010   Orem</td>
+                            <td>801-226-9045</td>
+                            <td> N**</td>
+                        </tr>
+                        <tr>
+                            <td>Out of State</td>
+                            <td> 246 Student Center   Logan</td>
+                            <td>800-233-2137</td>
+                            <td> Z**</td>
+                        </tr>
+                        <tr>
+                            <td>Price</td>
+                            <td> 451 E  400 N   Price</td>
+                            <td>435-613-5000</td>
+                            <td> P**</td>
+                        </tr>
+                        <tr>
+                            <td>Salt Lake City</td>
+                            <td> 2500 S State St   SLC</td>
+                            <td>385-646-5570</td>
+                            <td> S**</td>
+                        </tr>
+                        <tr>
+                            <td>Southwest</td>
+                            <td> 325 W  100 N    Ephraim</td>
+                            <td>435-283-7529</td>
+                            <td> C**</td>
+                        </tr>
+                        <tr>
+                            <td>Southwest</td>
+                            <td> 800 W  200 S  B   Richfield</td>
+                            <td>435-893-2266</td>
+                            <td> C**</td>
+                        </tr>
+                        <tr>
+                            <td>Tooele</td>
+                            <td> 1021 W Vine St    Tooele</td>
+                            <td>435-882-6611</td>
+                            <td> T**</td>
+                        </tr>
+                        <tr>
+                            <td>Uintah Basin</td>
+                            <td> 987 E Lagoon St   Roosevelt</td>
+                            <td>435-722-2294</td>
+                            <td> U**</td>
+                        </tr>
+                        <tr>
+                            <td>Uintah Basin</td>
+                            <td> 320 N Aggie Blvd    Vernal</td>
+                            <td>435-789-6100</td>
+                            <td> U**</td>
+                        </tr>
+                    </table>
                 </div>
                 <div class="content-sidebar">
-                    <section>
-                        <h3>Planning</h3>
-                        <ul>
-                            <li><a target="_blank" href="https://itls.usu.edu/files/students/plan_sheets/med.pdf">Planning Sheet</a></li>
-                            <li><a target="_blank" href="http://itls.usu.edu/files/students/handbooks/creative-project.pdf">Creative Project Handbook</a></li>
-                            <li><a target="_blank" href="http://itls.usu.edu/files/students/handbooks/internship.pdf">Internship Handbook</a></li>
-                            <li><a target="_blank" href="https://itls.usu.edu/files/students/plan_sheets/9-steps.pdf">9 Steps to Completion</a></li>
-                            <li><a target="_blank" href="https://itls.usu.edu/courses/schedule.php">Course Schedules</a></li>
-                            <li><a target="_blank" href="https://itls.usu.edu/courses/syllabi">Recent Syllabi</a></li>
-                            <li><a target="_blank" href="http://distance.usu.edu/">USU Distance Education</a></li>
-                            <li><a href="../../apply/registration-guide">Registration Guide</a></li>
-                        </ul>
-                    </section>
-                    <section>
-                        <h3>Forms</h3>
-                        <ul>
-                            <li><a target="_blank" href="http://rgs.usu.edu/graduateschool/htm/forms">Graduate School Forms</a></li>
-                            <li><a target="_blank" href="https://itls.usu.edu/files/students/contracts/independent-study.pdf">Independent Study Contract</a></li>
-                            <li><a target="_blank" href="https://itls.usu.edu/files/students/other/incomplete.pdf">Incomplete Grade Documentation</a></li>
-                            <li><a target="_blank" href="http://itls.usu.edu/files/students/contracts/internship-agreement.pdf">Internship Agreement</a></li>
-                        </ul>
-                    </section>
-                    <section>
-                        <h3>Student Work</h3>
-                        <ul>
-                            <li>
-                                Recent Electronic Creative Projects or Internship Reports
-                            </li>
-                        </ul>
-                    </section>
-                    <section>
-                        <h3>ITLS Contact</h3>
-                        <ul>
-                            <li>435-797-2694</li>
-                            <li>toll free: 866-782-9301</li>
-                            <li>Registration Contact: <a href="mailto:deidri.nielson@usu.edu">deidri.nielson@usu.edu</a></li>
-                            <li><a target="_blank" href="http://distance.usu.edu/">Distance Education Center (RCDE)</a></li>
-                            <li><a target="_blank" href="http://distance.usu.edu/locations.cfm">USU Regional Campus & Center map</a></li>
-                        </ul>
-                    </section>
                 </div>
             </div>
         </div>
