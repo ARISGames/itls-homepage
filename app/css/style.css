@@ -79,7 +79,8 @@
     border: none;
     border-bottom: 3px solid #E1E9F0; }
   .itls-styled .content-columns .content-main {
-    padding: 6vw; }
+    padding: 6vw;
+    flex: 1; }
     .itls-styled .content-columns .content-main section {
       padding-bottom: 30px;
       margin-bottom: 50px;
