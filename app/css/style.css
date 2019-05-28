@@ -10,10 +10,19 @@
   font-family: League Spartan;
   font-weight: bold;
   letter-spacing: 0.05em;
-  line-height: 1.7em; }
+  line-height: 1.7em;
+  margin-top: 5px; }
+  .itls-styled h1.subheader, .itls-styled h2.subheader, .itls-styled h3.subheader, .itls-styled h4.subheader {
+    color: #93AEC5; }
+
+.itls-styled h2 {
+  font-size: 28px; }
+
+.itls-styled h3 {
+  font-size: 20px; }
 
 .itls-styled h4 {
-  font-size: 15px;
+  font-size: 18px;
   font-family: Lato;
   margin-top: 20px; }
 
@@ -30,6 +39,10 @@
   line-height: 28px;
   margin: 20px 0;
   letter-spacing: 0.03em; }
+
+.widthcap {
+  max-width: 1200px;
+  margin: 0 auto; }
 
 .itls-styled .top-nav {
   display: flex;
@@ -67,11 +80,18 @@
     border-bottom: 3px solid #E1E9F0; }
   .itls-styled .content-columns .content-main {
     flex: 1;
-    padding: 10px 40px;
+    padding: 6vw;
     /*
         styled `ol` numbers using technique from
         https://www.456bereastreet.com/archive/201105/styling_ordered_list_numbers/
       */ }
+    .itls-styled .content-columns .content-main section {
+      padding-bottom: 30px;
+      margin-bottom: 50px;
+      border-bottom: 3px solid #EBF2F8; }
+      .itls-styled .content-columns .content-main section:last-child {
+        border-bottom: none;
+        margin-bottom: 0px; }
     .itls-styled .content-columns .content-main ul li {
       list-style-type: none; }
       .itls-styled .content-columns .content-main ul li:before {
@@ -102,10 +122,12 @@
   .itls-styled .content-columns .content-sidebar {
     width: 300px;
     background-color: #F5F6F7;
-    padding: 10px 30px;
+    padding: 30px 40px;
     position: -webkit-sticky;
     position: sticky;
     top: 20px; }
+    .itls-styled .content-columns .content-sidebar article p {
+      line-height: 25px; }
     .itls-styled .content-columns .content-sidebar .sticky {
       position: -webkit-sticky;
       position: sticky;
@@ -114,8 +136,7 @@
       padding: 0; }
       .itls-styled .content-columns .content-sidebar ul li {
         list-style-type: none;
-        margin: 10px 0;
-        font-weight: bold; }
+        margin: 10px 0; }
 
 @media screen and (max-width: 800px) {
   .itls-styled .content-columns {
@@ -127,9 +148,15 @@
   margin: 0;
   background-color: white;
   position: relative;
-  min-height: 50vh;
+  min-height: 60vh;
   display: flex;
-  align-items: center; }
+  flex-direction: column;
+  justify-content: center;
+  background-position: right; }
+  .itls-styled .jumbotron h1 {
+    line-height: 20px; }
+  .itls-styled .jumbotron p {
+    width: 50%; }
 
 .itls-styled .jumbotron-breadcrumbs {
   position: absolute;
@@ -145,17 +172,20 @@
     margin: 0 8px; }
 
 .itls-styled .jumbotron-welcome {
+  min-height: 70vh;
   padding: 50px;
-  background-image: url("../img/mountains.png");
-  background-size: 50%;
+  background-image: url("../img/itls-homepage-hero.jpg");
+  background-size: 60%;
   background-position: bottom right;
   background-repeat: no-repeat; }
   .itls-styled .jumbotron-welcome h1 {
-    color: #0e2439; }
+    color: #0e2439;
+    margin-bottom: 20px; }
   .itls-styled .jumbotron-welcome h2 {
-    color: #93abc2; }
+    color: #93abc2;
+    font-size: 18px; }
   .itls-styled .jumbotron-welcome p {
-    padding-right: 50%; }
+    margin: 0px; }
 
 .itls-styled .jumbotron-usnews {
   padding: 50px; }
@@ -231,7 +261,7 @@
     .itls-styled .application-deadlines table th, .itls-styled .application-deadlines table td {
       padding: 20px 10px; }
     .itls-styled .application-deadlines table tr:not(:nth-child(1)) {
-      border-top: 2px solid #D8D8D8; }
+      border-top: 2px solid #EBF2F8; }
 
 .itls-styled .career-options h2 {
   text-align: center;
@@ -359,18 +389,19 @@
     color: white; }
 
 .itls-styled .people-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); }
+  display: flex;
+  flex-wrap: wrap; }
   .itls-styled .people-grid .person {
     border: 2px solid #E8E8E8;
     border-radius: 5px;
     margin: 10px;
-    text-align: center; }
+    text-align: center;
+    flex-basis: 30%;
+    flex-grow: 0; }
     .itls-styled .people-grid .person hr {
       border: none;
-      border-bottom: 1px solid #E7E7E7;
-      width: 100%;
-      margin: 5px; }
+      border-bottom: 2px solid #E7E7E7;
+      margin: 8px 0px; }
     .itls-styled .people-grid .person h3, .itls-styled .people-grid .person p {
       margin: 5px; }
     .itls-styled .people-grid .person p {

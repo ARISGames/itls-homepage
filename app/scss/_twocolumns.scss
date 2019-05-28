@@ -9,7 +9,16 @@
     font-family: Lato;
     .content-main {
       flex: 1;
-      padding: 10px 40px;
+      padding: 6vw;
+      section {
+        padding-bottom:30px;
+        margin-bottom:50px;
+        border-bottom: 3px solid $separator-gray;
+        &:last-child {
+          border-bottom:none;
+          margin-bottom:0px;
+        }
+      }
       ul li {
         list-style-type: none;
         &:before {
@@ -48,10 +57,15 @@
     .content-sidebar {
       width: 300px;
       background-color: #F5F6F7;
-      padding: 10px 30px;
+      padding: 30px 40px;
       position: -webkit-sticky;
       position: sticky;
       top: 20px;
+      article {
+        p {
+          line-height:25px;
+        }
+      }
       .sticky {
         position: -webkit-sticky;
         position: sticky;
@@ -62,7 +76,6 @@
         li {
           list-style-type: none;
           margin: 10px 0;
-          font-weight: bold;
         }
       }
     }

@@ -9,18 +9,19 @@
   }
 
   .people-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    display: flex;
+    flex-wrap:wrap;
     .person {
       border: 2px solid #E8E8E8;
       border-radius: 5px;
       margin: 10px;
       text-align: center;
+      flex-basis:30%;
+      flex-grow:0;
       hr {
         border: none;
-        border-bottom: 1px solid #E7E7E7;
-        width: 100%;
-        margin: 5px;
+        border-bottom: 2px solid #E7E7E7;
+        margin:8px 0px;
       }
       h3, p {
         margin: 5px;

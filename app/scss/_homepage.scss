@@ -5,9 +5,17 @@
     margin: 0;
     background-color: white;
     position: relative;
-    min-height:50vh;
+    min-height:60vh;
     display:flex;
-    align-items: center;
+    flex-direction:column;
+    justify-content:center;
+    background-position: right;
+    h1{
+      line-height:20px;
+    }
+    p {
+      width:50%;
+    }
   }
   .jumbotron-breadcrumbs {
     position: absolute;
@@ -25,18 +33,21 @@
     }
   }
   .jumbotron-welcome {
+    min-height:70vh;
     h1 {
       color: $dark-blue;
+      margin-bottom:20px;
     }
     h2 {
       color: $light-blue;
+      font-size:18px;
+    }
+    p {
+      margin:0px;
     }
     padding: 50px;
-    p {
-      padding-right: 50%;
-    }
-    background-image: url('../img/mountains.png');
-    background-size: 50%;
+    background-image: url('../img/itls-homepage-hero.jpg');
+    background-size: 60%;
     background-position: bottom right;
     background-repeat: no-repeat;
   }

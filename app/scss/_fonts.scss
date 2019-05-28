@@ -18,9 +18,19 @@
     font-weight: bold;
     letter-spacing: 0.05em;
     line-height: 1.7em;
+    margin-top:5px;
+    &.subheader {
+      color: $sub-gray;
+    }
+  }
+  h2 {
+    font-size: 28px;
+  }
+  h3 {
+    font-size: 20px;
   }
   h4 {
-    font-size: 15px;
+    font-size: 18px;
     font-family: Lato;
     margin-top: 20px;
   }
