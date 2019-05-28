@@ -1,10 +1,53 @@
 .itls-styled {
   .jumbotron-course {
     background-image: url('../img/course-hero.jpg');
+  }
+  .jumbotron-programs {
+    background-image: url('../img/pages-hero.jpg');
+  }
+  .jumbotron-course, .jumbotron-programs {
     background-size: cover;
     h1, p {
       color: white;
     }
     padding: 50px;
+  }
+
+  .programs-image-para {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    img {
+      max-width: 200px;
+      margin: 30px;
+    }
+  }
+
+  .programs-degree-table {
+    background-color: rgb(245,246,247);
+    th {
+      font-family: League Spartan;
+      color: #0E2439;
+    }
+    th, td {
+      padding: 14px 20px;
+    }
+    tr {
+      border-bottom: 1px solid #E1E9F0;
+    }
+    tr:first-child {
+      border-bottom: 4px solid #E9EBED;
+    }
+    tr:last-child {
+      border-bottom: none;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .itls-styled {
+    .programs-image-para {
+      flex-direction: column;
+    }
   }
 }

@@ -347,11 +347,42 @@
     padding: 5px; }
 
 .itls-styled .jumbotron-course {
-  background-image: url("../img/course-hero.jpg");
+  background-image: url("../img/course-hero.jpg"); }
+
+.itls-styled .jumbotron-programs {
+  background-image: url("../img/pages-hero.jpg"); }
+
+.itls-styled .jumbotron-course, .itls-styled .jumbotron-programs {
   background-size: cover;
   padding: 50px; }
-  .itls-styled .jumbotron-course h1, .itls-styled .jumbotron-course p {
+  .itls-styled .jumbotron-course h1, .itls-styled .jumbotron-course p, .itls-styled .jumbotron-programs h1, .itls-styled .jumbotron-programs p {
     color: white; }
+
+.itls-styled .programs-image-para {
+  display: flex;
+  flex-direction: row;
+  align-items: center; }
+  .itls-styled .programs-image-para img {
+    max-width: 200px;
+    margin: 30px; }
+
+.itls-styled .programs-degree-table {
+  background-color: #f5f6f7; }
+  .itls-styled .programs-degree-table th {
+    font-family: League Spartan;
+    color: #0E2439; }
+  .itls-styled .programs-degree-table th, .itls-styled .programs-degree-table td {
+    padding: 14px 20px; }
+  .itls-styled .programs-degree-table tr {
+    border-bottom: 1px solid #E1E9F0; }
+  .itls-styled .programs-degree-table tr:first-child {
+    border-bottom: 4px solid #E9EBED; }
+  .itls-styled .programs-degree-table tr:last-child {
+    border-bottom: none; }
+
+@media screen and (max-width: 600px) {
+  .itls-styled .programs-image-para {
+    flex-direction: column; } }
 
 .itls-styled .jumbotron-people {
   background-image: url("../img/people-hero.jpg");
