@@ -10,17 +10,17 @@
     .content-main {
       flex: 1;
       padding: 10px 40px;
-      ul li {
-        list-style-type: none;
-        &:before {
-          /* Unicode bullet symbol */
-          content: '\2022';
-          color: #9DACBA;
-          display: inline-block;
-          width: 40px;
-          font-size: 30px;
-        }
-      }
+      // ul li {
+      //   list-style-type: none;
+      //   &:before {
+      //     /* Unicode bullet symbol */
+      //     content: '\2022';
+      //     color: #9DACBA;
+      //     display: inline-block;
+      //     width: 40px;
+      //     font-size: 30px;
+      //   }
+      // }
 
       /*
         styled `ol` numbers using technique from
