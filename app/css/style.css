@@ -190,6 +190,8 @@
     margin: 0px; }
 
 .itls-styled .jumbotron-usnews {
+  flex-direction: row;
+  margin: 0 auto;
   padding: 50px; }
   .itls-styled .jumbotron-usnews h2 {
     color: #0e2439;
