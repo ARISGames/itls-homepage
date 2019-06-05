@@ -38,7 +38,8 @@
   font-size: 15px;
   line-height: 28px;
   margin: 20px 0;
-  letter-spacing: 0.03em; }
+  letter-spacing: 0.03em;
+  padding-left: 0px; }
 
 .widthcap {
   max-width: 1200px;
@@ -74,6 +75,8 @@
 .itls-styled .content-columns {
   display: flex;
   flex-direction: row;
+  max-width: 1800px;
+  margin: 0 auto;
   font-family: Lato; }
   .itls-styled .content-columns hr {
     border: none;
@@ -95,8 +98,10 @@
         content: '\2022';
         color: #9DACBA;
         display: inline-block;
-        width: 40px;
-        font-size: 30px; }
+        font-size: 21px;
+        width: 20px;
+        height: 20px;
+        line-height: 45px; }
     .itls-styled .content-columns .content-main ol.fancy-ol {
       counter-reset: li;
       /* Initiate a counter */ }
@@ -154,9 +159,11 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-position: right; }
+  background-position: right;
+  padding-left: 6vw; }
   .itls-styled .jumbotron p {
-    width: 50%; }
+    width: 50%;
+    margin: 0; }
 
 .itls-styled .jumbotron-breadcrumbs {
   position: absolute;
@@ -173,7 +180,6 @@
 
 .itls-styled .jumbotron-welcome {
   min-height: 70vh;
-  padding: 50px;
   background-image: url("../img/itls-homepage-hero.jpg");
   background-size: 60%;
   background-position: bottom right;
@@ -190,7 +196,7 @@
 .itls-styled .jumbotron-usnews {
   flex-direction: row;
   margin: 0 auto;
-  padding: 50px; }
+  align-items: center; }
   .itls-styled .jumbotron-usnews h2 {
     color: #0e2439;
     font-size: 25px; }
@@ -364,8 +370,13 @@
   .itls-styled .apply-us-news img {
     width: 150px; }
 
+.itls-styled .apply-collapse-section article div {
+  overflow-y: hidden;
+  transition: opacity .5s ease-in-out;
+  opacity: 1; }
+
 .itls-styled .apply-collapse-section article h4 {
-  background-color: #F5F6F7;
+  background-color: #EBF2F8;
   font-weight: bold;
   padding: 10px;
   font-size: 15px;
@@ -373,10 +384,31 @@
   font-family: Lato; }
 
 .itls-styled .apply-collapse-section article a h4 {
-  color: #0865BF; }
+  color: #0865BF;
+  text-decoration: none;
+  transition: opacity .5s ease-in-out;
+  position: relative; }
+  .itls-styled .apply-collapse-section article a h4:after {
+    content: '';
+    background: url(/img/down-arrow.png);
+    background-size: 28px 16px;
+    width: 28px;
+    height: 16px;
+    display: block;
+    float: right;
+    margin-top: 5px; }
+
+.itls-styled .apply-collapse-section article a:hover {
+  text-decoration: none; }
+  .itls-styled .apply-collapse-section article a:hover h4 {
+    transform: scale(1.008); }
+
+.itls-styled .apply-collapse-section article.apply-collapse-open a h4:after {
+  transform: rotate(180deg); }
 
 .itls-styled .apply-collapse-section article:not(.apply-collapse-open) div {
-  display: none; }
+  height: 0;
+  opacity: 0; }
 
 .itls-styled .registration-codes {
   width: 100%;
@@ -395,8 +427,7 @@
   background-image: url("../img/pages-hero.jpg"); }
 
 .itls-styled .jumbotron-course, .itls-styled .jumbotron-programs {
-  background-size: cover;
-  padding: 50px; }
+  background-size: cover; }
   .itls-styled .jumbotron-course h1, .itls-styled .jumbotron-course p, .itls-styled .jumbotron-programs h1, .itls-styled .jumbotron-programs p {
     color: white; }
 

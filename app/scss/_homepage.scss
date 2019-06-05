@@ -10,8 +10,10 @@
     flex-direction:column;
     justify-content:center;
     background-position: right;
+    padding-left:6vw;
     p {
       width:50%;
+      margin:0;
     }
   }
   .jumbotron-breadcrumbs {
@@ -42,7 +44,6 @@
     p {
       margin:0px;
     }
-    padding: 50px;
     background-image: url('../img/itls-homepage-hero.jpg');
     background-size: 60%;
     background-position: bottom right;
@@ -51,11 +52,11 @@
   .jumbotron-usnews {
     flex-direction:row;
     margin: 0 auto;
+    align-items: center;
     h2 {
       color: $dark-blue;
       font-size: 25px;
     }
-    padding: 50px;
     p {
       font-size: 18px;
       margin: 20px 0;

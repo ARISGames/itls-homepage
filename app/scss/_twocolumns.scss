@@ -2,6 +2,8 @@
   .content-columns {
     display: flex;
     flex-direction: row;
+    max-width:1800px;
+    margin: 0 auto;
     hr {
       border: none;
       border-bottom: 3px solid #E1E9F0;
@@ -26,8 +28,10 @@
           content: '\2022';
           color: #9DACBA;
           display: inline-block;
-          width: 40px;
-          font-size: 30px;
+          font-size: 21px;
+          width: 20px;
+          height: 20px;
+          line-height: 45px;
         }
       }
       ol.fancy-ol {

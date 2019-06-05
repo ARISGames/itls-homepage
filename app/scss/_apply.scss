@@ -46,20 +46,56 @@
 
   .apply-collapse-section {
     article {
+      div {
+        overflow-y:hidden;
+        transition: opacity .5s ease-in-out;
+        opacity:1;
+      }
       h4 {
-        background-color: #F5F6F7;
+        background-color: $separator-gray;
         font-weight: bold;
         padding: 10px;
         font-size: 15px;
         border-radius: 5px;
         font-family: Lato;
       }
-      a h4 {
-        color: #0865BF;
+      a {
+        h4 {
+          color: #0865BF;
+          text-decoration:none;
+          transition: opacity .5s ease-in-out;
+          position:relative;
+          &:after{
+            content:'';
+            background:url(/img/down-arrow.png);
+            background-size:28px 16px;
+            width:28px;
+            height:16px;
+            display:block;
+            float:right;
+            margin-top:5px;
+          }
+        }
+        &:hover {
+          text-decoration: none;
+          h4 {
+            transform: scale(1.008);
+          }
+        }
+      }
+      &.apply-collapse-open {
+        a{
+          h4 {
+            &:after{
+              transform: rotate(180deg);
+            }
+          }
+        }
       }
       &:not(.apply-collapse-open) {
         div {
-          display: none;
+          height:0;
+          opacity:0;
         }
       }
     }

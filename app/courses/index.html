@@ -83,6 +83,22 @@
             });
         });
     </script>
+    <script>
+    // smooth scroll
+      $(document).ready(function(){
+        $('a[href^="#"]:not([data-toggle="tab"])').on('click',function (e) {
+            e.preventDefault();
+
+            var target = this.hash;
+            var $target = $(target);
+
+            $('html, body').stop().animate({
+                'scrollTop': $target.offset().top-40
+            }, 500, 'swing', function () {
+            });
+        });
+      });
+  </script>
 </head>
 
 <body>
@@ -132,10 +148,10 @@
             </nav>
             <div class="jumbotron jumbotron-course" style="background:url('../img/hero-courses.jpg') no-repeat; background-size:cover;">
                 <h1>Courses</h1>
+                <p>We offer awesome courses both in-person and online. According to the <i>2019 U.S. News and World Report</i>, our online graduate program is ranked 3rd in the nation! Below you’ll find course schedules, descriptions, and syllabi, plus links to  other important courses.</p>
             </div>
             <div class="content-columns">
                 <div class="content-main">
-                    <p>We offer awesome courses both in-person and online. According to the <i>2019 U.S. News and World Report</i>, our online graduate program is ranked 3rd in the nation! Below you’ll find course schedules, descriptions, and syllabi, plus links to  other important courses.</p>
                     <section>
                         <h2 id="schedules">Schedules</h2>
                         <ul>
