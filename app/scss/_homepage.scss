@@ -11,9 +11,13 @@
     justify-content:center;
     background-position: right;
     padding-left:6vw;
+    h1 {
+      margin-bottom:0px;
+      line-height:60px;
+    }
     p {
       width:50%;
-      margin:0;
+      margin-bottom:10px;
     }
   }
   .jumbotron-breadcrumbs {

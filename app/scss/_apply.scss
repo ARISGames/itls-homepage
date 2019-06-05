@@ -1,16 +1,15 @@
 .itls-styled {
   .jumbotron-apply {
-    background-image: url('../img/apply-hero.jpg');
     background-size: cover;
     h1, p {
       color: white;
     }
-    padding: 50px;
+    padding: 6vw;
   }
 
   .button-apply {
     text-transform: uppercase;
-    padding: 4px 16px;
+    padding: 8px 16px;
     letter-spacing: 0.15em;
     border-radius: 5px;
     display: inline-block;
@@ -23,7 +22,7 @@
   }
   .button-apply-black {
     color: white;
-    background-color: black;
+    background-color: $dark-blue;
   }
   .button-apply-outline {
     color: black;

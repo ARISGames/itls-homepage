@@ -29,8 +29,8 @@
 .itls-styled p {
   font-family: Lato;
   font-size: 16px;
-  line-height: 34px;
-  margin: 20px 0;
+  line-height: 24px;
+  margin: 20px 0px 28px 0px;
   letter-spacing: 0.03em; }
 
 .itls-styled ul, .itls-styled ol:not(.carousel-indicators) {
@@ -101,7 +101,10 @@
         font-size: 21px;
         width: 20px;
         height: 20px;
-        line-height: 45px; }
+        line-height: 45px;
+        margin-left: -22px; }
+    .itls-styled .content-columns .content-main li {
+      margin-left: 22px; }
     .itls-styled .content-columns .content-main ol.fancy-ol {
       counter-reset: li;
       /* Initiate a counter */ }
@@ -131,6 +134,8 @@
       margin-bottom: 40px; }
       .itls-styled .content-columns .content-sidebar section h3 {
         font-size: 16px; }
+      .itls-styled .content-columns .content-sidebar section p {
+        margin-bottom: 5px; }
       .itls-styled .content-columns .content-sidebar section ul {
         margin-top: 10px; }
     .itls-styled .content-columns .content-sidebar article p {
@@ -161,9 +166,12 @@
   justify-content: center;
   background-position: right;
   padding-left: 6vw; }
+  .itls-styled .jumbotron h1 {
+    margin-bottom: 0px;
+    line-height: 60px; }
   .itls-styled .jumbotron p {
     width: 50%;
-    margin: 0; }
+    margin-bottom: 10px; }
 
 .itls-styled .jumbotron-breadcrumbs {
   position: absolute;
@@ -332,15 +340,14 @@
     grid-template-columns: auto; } }
 
 .itls-styled .jumbotron-apply {
-  background-image: url("../img/apply-hero.jpg");
   background-size: cover;
-  padding: 50px; }
+  padding: 6vw; }
   .itls-styled .jumbotron-apply h1, .itls-styled .jumbotron-apply p {
     color: white; }
 
 .itls-styled .button-apply {
   text-transform: uppercase;
-  padding: 4px 16px;
+  padding: 8px 16px;
   letter-spacing: 0.15em;
   border-radius: 5px;
   display: inline-block;
@@ -353,7 +360,7 @@
 
 .itls-styled .button-apply-black {
   color: white;
-  background-color: black; }
+  background-color: #0e2439; }
 
 .itls-styled .button-apply-outline {
   color: black;
