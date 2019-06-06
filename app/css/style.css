@@ -507,6 +507,9 @@
   .itls-styled .person-header .person-details {
     flex: 1;
     padding: 0 30px; }
+    .itls-styled .person-header .person-details .person-links a {
+      display: inline-block;
+      margin: 10px; }
 
 .itls-styled .person-contact span {
   display: inline-block;

@@ -51,6 +51,12 @@
     .person-details {
       flex: 1;
       padding: 0 30px;
+      .person-links {
+        a {
+          display: inline-block;
+          margin: 10px;
+        }
+      }
     }
   }
   .person-contact {
