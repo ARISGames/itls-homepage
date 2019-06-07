@@ -65,14 +65,15 @@
           transition: opacity .5s ease-in-out;
           position:relative;
           &:after{
-            content:'';
-            background:url(/img/down-arrow.png);
-            background-size:28px 16px;
-            width:28px;
-            height:16px;
-            display:block;
-            float:right;
-            margin-top:5px;
+            content: '';
+            background: url(../img/down-arrow.png);
+            background-size: 24px 13px;
+            width: 24px;
+            height: 13px;
+            display: block;
+            float: right;
+            margin-top: 6px;
+            margin-right: 5px;
           }
         }
         &:hover {

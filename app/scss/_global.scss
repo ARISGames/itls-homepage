@@ -2,3 +2,26 @@
   max-width:1200px;
   margin:0 auto;
 }
+
+.icon-document {
+  width: 30px;
+  height: 40px;
+  background: url(../img/icon-document.png);
+  background-size: cover;
+  display: inline-block;
+  margin: 0px 15px;
+  vertical-align: middle;
+  margin-top: -8px;
+}
+
+section {
+  &.centered {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  img {
+    width:100%;
+    height:auto;
+  }
+}

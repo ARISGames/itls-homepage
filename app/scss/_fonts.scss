@@ -40,6 +40,9 @@
     line-height: 24px;
     margin: 20px 0px 28px 0px;
     letter-spacing: 0.03em;
+    .bold {
+      font-weight: 600;
+    }
   }
   ul, ol:not(.carousel-indicators) {
     font-family: Lato;

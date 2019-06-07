@@ -4,10 +4,24 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: stretch;
+    background:#fff;
+    z-index:1000;
+    position:sticky;
+    top:0px;
+    box-shadow: 0 2px 100px 0 rgba(1,15,91,0.19);
     a {
-      font-family: Futura;
+      font-family: Lato,sans-serif;
       letter-spacing: 0.15em;
-      font-size: 13px;
+      font-size: 12px;
+      &.button-apply{
+        &:hover {
+          background:$light-blue;
+        }
+      }
+      &:hover {
+        background:$separator-gray;
+        text-decoration: none;
+      }
     }
     .top-nav-left, .top-nav-right {
       display: flex;
