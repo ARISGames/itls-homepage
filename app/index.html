@@ -77,10 +77,13 @@
                 path = $(path);
                 var details = path.find('.career-details');
                 details.hide();
+                var btn = path.find('.career-button');
                 path.find('.career-button').click(function(e){
                     e.preventDefault();
+                    var b = details.is(':visible');
                     $('.career-details').hide();
-                    details.show();
+                    if (!b) details.show();
+                    btn.html(b ? 'Learn more' : 'Hide');
                 });
             });
         });
