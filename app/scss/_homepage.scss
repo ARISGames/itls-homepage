@@ -160,16 +160,14 @@
         display: flex;
         flex-direction: row;
         padding: 50px;
+        align-items: center;
         & > * {
           display: flex;
           flex-direction: row;
           flex: 1;
         }
         h4 {
-          font-family: Lato;
-          font-size: 16px;
-          color: #72767D;
-          font-style: italic;
+          margin-top:0px;
         }
         .career-icon {
           img {
@@ -187,7 +185,6 @@
         }
       }
       .career-details {
-        background-image: url('../img/mountain-background-dark.png');
         background-size: cover;
         background-position: center;
         display: flex;

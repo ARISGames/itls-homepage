@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Lato");
 .button {
   text-transform: uppercase;
-  padding: 12px 16px;
+  padding: 8px 12px;
   letter-spacing: 0.15em;
   border-radius: 5px;
   display: inline-block;
@@ -9,18 +9,31 @@
   transition: all .1s ease-in-out;
   color: #fff; }
   .button.black {
-    background-color: #0e2439; }
+    border: 1px solid #0e2439;
+    color: #0e2439; }
     .button.black:hover {
-      background-color: rgba(14, 36, 57, 0.6);
-      text-decoration: none;
+      background-color: #0e2439;
+      color: #fff;
+      text-decoration: none; }
+    .button.black.filled {
+      background-color: #0e2439;
       color: #fff; }
+      .button.black.filled:hover {
+        background-color: #2875c0;
+        border: 1px solid #2875c0; }
   .button.light-blue {
-    background-color: #93abc2;
-    color: #fff; }
+    border: 1px solid #93abc2;
+    color: #93abc2; }
     .button.light-blue:hover {
-      background-color: rgba(147, 171, 194, 0.8);
-      text-decoration: none;
-      color: #0e2439; }
+      background-color: #93abc2;
+      color: #fff;
+      text-decoration: none; }
+    .button.light-blue.filled {
+      background-color: #93abc2;
+      color: #fff; }
+      .button.light-blue.filled:hover {
+        background-color: rgba(147, 171, 194, 0.8);
+        border: 1px solid rgba(147, 171, 194, 0.8); }
 
 @font-face {
   font-family: 'League Spartan';
@@ -337,16 +350,14 @@ section img {
 .itls-styled .career-options article .career-option {
   display: flex;
   flex-direction: row;
-  padding: 50px; }
+  padding: 50px;
+  align-items: center; }
   .itls-styled .career-options article .career-option > * {
     display: flex;
     flex-direction: row;
     flex: 1; }
   .itls-styled .career-options article .career-option h4 {
-    font-family: Lato;
-    font-size: 16px;
-    color: #72767D;
-    font-style: italic; }
+    margin-top: 0px; }
   .itls-styled .career-options article .career-option .career-icon img {
     width: 50px;
     margin: 10px; }
@@ -358,7 +369,6 @@ section img {
       padding-left: 40px; }
 
 .itls-styled .career-options article .career-details {
-  background-image: url("../img/mountain-background-dark.png");
   background-size: cover;
   background-position: center;
   display: flex;
