@@ -10,7 +10,16 @@
   &.black {
     background-color: $dark-blue;
     &:hover {
-      background-color: $light-blue;
+      background-color: $dark-blue-hover;
+      text-decoration: none;
+      color:#fff;
+    }
+  }
+  &.light-blue {
+    background-color:$light-blue;
+    color:#fff;
+    &:hover {
+      background-color: $light-blue-hover;
       text-decoration: none;
       color:$dark-blue;
     }

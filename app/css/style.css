@@ -11,7 +11,14 @@
   .button.black {
     background-color: #0e2439; }
     .button.black:hover {
-      background-color: #93abc2;
+      background-color: rgba(14, 36, 57, 0.6);
+      text-decoration: none;
+      color: #fff; }
+  .button.light-blue {
+    background-color: #93abc2;
+    color: #fff; }
+    .button.light-blue:hover {
+      background-color: rgba(147, 171, 194, 0.8);
       text-decoration: none;
       color: #0e2439; }
 
@@ -98,9 +105,6 @@ section img {
     font-size: 12px; }
     .itls-styled .top-nav a.button-apply:hover {
       background: #93abc2; }
-    .itls-styled .top-nav a:hover {
-      background: #EBF2F8;
-      text-decoration: none; }
   .itls-styled .top-nav .top-nav-left, .itls-styled .top-nav .top-nav-right {
     display: flex;
     flex-direction: row;
@@ -110,14 +114,13 @@ section img {
     color: black;
     padding: 20px;
     display: inline-block; }
+    .itls-styled .top-nav .top-nav-left a:hover {
+      background: #EBF2F8;
+      text-decoration: none; }
   .itls-styled .top-nav .top-nav-right a {
     margin: 5px; }
   .itls-styled .top-nav .top-nav-right {
     margin-right: 10px; }
-  .itls-styled .top-nav.top-nav-shadow {
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
-    z-index: 1;
-    position: relative; }
 
 .itls-styled .content-columns {
   display: flex;

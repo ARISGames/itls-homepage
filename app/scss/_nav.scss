@@ -18,10 +18,6 @@
           background:$light-blue;
         }
       }
-      &:hover {
-        background:$separator-gray;
-        text-decoration: none;
-      }
     }
     .top-nav-left, .top-nav-right {
       display: flex;
@@ -33,17 +29,16 @@
       color: black;
       padding: 20px;
       display: inline-block;
+      &:hover {
+        background:$separator-gray;
+        text-decoration: none;
+      }
     }
     .top-nav-right a {
       margin: 5px;
     }
     .top-nav-right {
       margin-right: 10px;
-    }
-    &.top-nav-shadow {
-      box-shadow: 0 0 15px rgba(0,0,0,0.3);
-      z-index: 1; // so shadow goes over content
-      position: relative; // needed for z-index to work
     }
   }
 }
