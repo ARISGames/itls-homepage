@@ -563,6 +563,9 @@ section img {
   display: inline-block;
   margin: 15px; }
 
+.itls-styled .keywords-list li {
+  font-style: italic; }
+
 .itls-styled .news-content {
   display: flex;
   flex-direction: row; }
