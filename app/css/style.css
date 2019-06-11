@@ -563,6 +563,31 @@ section img {
   display: inline-block;
   margin: 15px; }
 
+.itls-styled .news-content {
+  display: flex;
+  flex-direction: row; }
+  .itls-styled .news-content .news-text {
+    flex: 3; }
+    .itls-styled .news-content .news-text p {
+      line-height: 35px; }
+  .itls-styled .news-content .news-image {
+    flex: 2;
+    padding: 20px; }
+
+.itls-styled .news-header .news-subheader {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  letter-spacing: 0.08em; }
+
+.itls-styled .news-image {
+  float: left;
+  text-align: center;
+  margin-right: 20px;
+  margin-bottom: 20px; }
+  .itls-styled .news-image img {
+    max-width: 400px; }
+
 .itls-styled .table-deadlines {
   width: 100%; }
   .itls-styled .table-deadlines td {

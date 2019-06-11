@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>School Library Media Administration | ITLS | USU</title>
+    <title>News | ITLS | USU</title>
     <link rel="stylesheet" type="text/css" href="https://www.usu.edu/style/classic-full-15.min.css">
     <link rel="stylesheet" type="text/css" href="https://ouresources.usu.edu/_resources/css/global-custom.css">
     <link rel="stylesheet" type="text/css" href="https://ouresources.usu.edu/_resources/css/profile-page-v0-classic.css">
@@ -69,14 +69,31 @@
     <script type="text/javascript" src="https://ouresources.usu.edu/_assets/forms/ouforms.js"></script>
     <script type="text/javascript" src="https://ouresources.usu.edu/_assets/forms/jquery.datetimepicker.full.min.js"></script>
     <!-- ARIS CSS -->
-    <link rel="stylesheet" type="text/css" href="../../css/style.css">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <!-- ARIS JS -->
+    <script>
+      // smooth scroll
+        $(document).ready(function(){
+          $('a[href^="#"]:not([data-toggle="tab"])').on('click',function (e) {
+              e.preventDefault();
+
+              var target = this.hash;
+              var $target = $(target);
+
+              $('html, body').stop().animate({
+                  'scrollTop': $target.offset().top-40
+              }, 500, 'swing', function () {
+              });
+          });
+        });
+    </script>
 </head>
 
 <body>
     <div id="global-header">
         <div id="global-header-wrapper">
             <div class="row">
-                <div class="brand"><a href="../.."><img class="img-responsive" src="https://itls.usu.edu/_resources/includes/itls@2x.png" alt="ITLS Logo" /></a>
+                <div class="brand"><a href=".."><img class="img-responsive" src="https://itls.usu.edu/_resources/includes/itls@2x.png" alt="ITLS Logo" /></a>
                 </div>
                 <div class="header-right">
                     <div class="row">
@@ -106,112 +123,90 @@
             <!-- ARIS section -->
             <nav class="top-nav">
                 <div class="top-nav-left">
-                    <a href="../../about">About</a>
-                    <a href="../../people">People</a>
-                    <a href="../../programs">Programs</a>
-                    <a href="../../courses">Courses</a>
-                    <a href="../../current-students">Current Students</a>
-                    <a href="../../news">News</a>
+                    <a href="../about">About</a>
+                    <a href="../people">People</a>
+                    <a href="../programs">Programs</a>
+                    <a href="../courses">Courses</a>
+                    <a href="../current-students">Current Students</a>
+                    <a href="../news">News</a>
                 </div>
                 <div class="top-nav-right">
-                    <a href="../../apply" class="button-apply button-apply-black">Apply</a>
+                    <a href="../apply" class="button-apply button-apply-black">Apply</a>
                 </div>
             </nav>
-            <div class="jumbotron jumbotron-course">
-                <h1>School Library Media Administration</h1>
-                <p class="jumbotron-breadcrumbs">
-                    <a href="..">Programs</a>
-                    <span class="breadcrumb-arrow">»</span>
-                    <span>School Library Media Administration</span>
-                </p>
+            <div class="carousel slide" data-ride="carousel" id="the-carousel">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                    <li data-target="#the-carousel" data-slide-to="0" class="active"></li>
+                </ol>
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner" role="listbox">
+                    <div class="item active">
+                        <div class="itls-carousel-image" style="background-image: linear-gradient(90deg, #0C1A2E 45%, rgba(255,255,255,0) 100%), url(http://itls.usu.edu/images/news/other/original/2019-world-report-award-icon.jpg); background-position: 0, 35vw 0;"></div>
+                        <div class="carousel-caption" style="padding-right: 25%; margin-left: -8%; bottom: auto; top: 50px;">
+                            <h2>USU Online Graduate Education Program Ranked Third in the Nation</h2>
+                            <p>Competing against 311 universities, U.S. News & World Report ranked Utah State University Online’s graduate education program third in the nation. Since 2015, USU Online’s graduate degrees in education have been ranked in the top 15 and continues to...</p>
+                            <p>
+                                <a target="_blank" href="https://www.usu.edu/today/index.cfm?id=58220" class="button-apply button-apply-white">Read more</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Controls -->
+                <a class="left carousel-control" href="#the-carousel" role="button" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#the-carousel" role="button" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
             </div>
             <div class="content-columns">
                 <div class="content-main">
-                    <h2>School Library Media Administration Emphasis or Minor or Endorsement</h2>
-                    <p>The School Library Media Administration (SLMA) program at <a target="_blank" href="http://usu.edu/">Utah State University (USU)</a> is designed for those interested in working in a school library media center, public or private. The program includes all the course work and practicum experiences necessary to apply for the <a target="_blank" href="http://teal.usu.edu/">Utah State Board of Education (USBE)</a> library media K-12 endorsement. Those seeking the USBE endorsement must have, or be working toward, a current and valid Utah teaching license. This program is offered through the Department of Instructional Technology and Learning Sciences (ITLS) in the <a target="_blank" href="http://cehs.usu.edu/">Emma Eccles Jones College of Education and Human Services (CEHS)</a>.</p>
-                    <section>
-                        <h3>What is the SLMA?</h3>
-                        <ul>
-                            <li>a USBE library media K-12 endorsement</li>
-                            <li>a USU undergraduate minor</li>
-                            <li>an emphasis in the ITLS Master of Education (MEd) degree</li>
-                            <li>professional development - not seeking an endorsement or degree</li>
-                            <li>personal interest as a lifelong learner</li>
-                        </ul>
-                        <p>Courses are taught via broadcast (IVC) on Tuesday evenings. Check with your local USU Regional Campus or Distance Education Center for the receive site nearest you. There is also an online component for each course.</p>
+                    <section class="news-item">
+                        <h3>Utah State Today: ITLS & TEAL Professors Receive Award from AERA</h3>
+                        <div class="news-content">
+                            <div class="news-text">
+                                <p>Utah State University’s David Feldon, of the Instructional Technology and Learning Sciences Department, and Colby Tofel-Grehl, from the School of Teacher Education and Leadership, both from the Emma Eccles Jones College of Education and Human Services...</p>
+                            </div>
+                            <div class="news-image">
+                                <img src="http://www.usu.edu/today/images/large/AERA.jpg">
+                            </div>
+                        </div>
                     </section>
-                    <section>
-                        <h3>Degree Requirements</h3>
-                        <p>The program is designed for students to begin the course work fall semester and complete in summer semester. Students can complete in one year if they take 2 courses each semester (fall, spring, summer) or complete in two years if they take 1 course each semester.</p>
-                        <ul>
-                            <li>The SLMA program is eighteen (18) semester credit hours.</li>
-                            <li>A minimum of fifteen (15) of the eighteen (18) total credit hours must be taken through USU to count as the minor or for USU to recommend endorsement through the USBE.</li>
-                            <li>All coursework must be completed within six (6) years of the date of acceptance. To work toward the USBE library media endorsement, applicant must have, or be working toward, a current and valid Utah Educator License with an Elementary or Secondary area of concentration.</li>
-                            <li>
-                                Completion of the course work does not automatically guarantee a recommendation by the ITLS department for the USBE endorsement in library media K-12. A recommendation for endorsement will be made when the student has:
-                                <ul>
-                                    <li>successfully completed all coursework, including the SLMA practicum (ITLS 5090 or ITLS 6090)</li>
-                                    <li>completed a minimum of 15 credits through USU</li>
-                                    <li>demonstrated competency in course work</li>
-                                    <li>demonstrated potential to work effectively with both students and teachers</li>
-                                    <li>maintained a grade point average (GPA) of 3.0 or higher</li>
-                                    <li>the approval of the practicum advisor and course instructors</li>
-                                    <li>a current and valid Utah teaching license</li>
-                                    <li>completed the appropriate forms and submitted the required fees</li>
-                                </ul>
-                            </li>
-                        </ul>
+                    <section class="news-item">
+                        <a href="article">
+                            <h3>Megan Hamilton Won "Shark Tank" Research Funding Competition at AERA 2019</h3>
+                        </a>
+                        <div class="news-content">
+                            <div class="news-text">
+                                <p>Megan Hamilton, a doctoral student in the Instructional Technology and Learning Sciences Department, won $1,500 in a "Shark Tank" presentation on April 8th in Toronto. This event was a part of the American Educational Research Association (AERA) Annual...</p>
+                            </div>
+                            <div class="news-image">
+                                <img src="http://itls.usu.edu/images/news/other/original/hamilton-wins-shark-tank.jpg">
+                            </div>
+                        </div>
                     </section>
-                    <section>
-                        <h3>Admission Process</h3>
-                        <p>You must first be admitted as a student to USU. If you have not been admitted, start with the <a target="_blank" href="http://usu.edu/apply/">undergraduate online application process</a> or the <a target="_blank" href="https://rgs.usu.edu/gradguide/htm/apply">graduate online application process</a>.</p>
-                        <p>If you already have a degree (including a graduate degree) and only want the USBE endorsement, apply to USU as an undergraduate. Do not use the graduate school application unless you are seeking a graduate degree. One of the items on the undergraduate application asks for the reason you are applying to USU. If you choose the certificate/endorsement option, the application fee is waived.</p>
-                        <p>Once you are admitted, if you are:</p>
-                        <ul>
-                            <li>
-                                <strong>Endorsement only</strong>
-                                <br>
-                                Work with your local USU Regional Campus or Distance Education Center to register for courses each semester.
-                            </li>
-                            <li>
-                                <strong>Minor in the teacher education program or other USU major</strong>
-                                <br>
-                                Work with your advisor to schedule and register for courses each semester.
-                            </li>
-                            <li>
-                                <strong>Using the coursework for the emphasis in the ITLS MEd degree</strong>
-                                <br>
-                                Work with the ITLS advisor for program schedules and concerns, but work with your local USU Regional Campus or Distance  Education Center to register for courses each semester.
-                            </li>
-                            <li>
-                                <strong>Professional development or personal interest</strong>
-                                <br>
-                                Work with your local USU Regional Campus or Distance Education Center to register for courses each semester.
-                            </li>
-                        </ul>
+                    <section class="news-item">
+                        <h3>Dr. David Feldon and Dr. Colby Tofel-Grehl to Receive the Significant Contribution to Educational Measurement and Research Methodology Award at AERA</h3>
+                        <div class="news-content">
+                            <div class="news-text">
+                                <p>Dr. David Feldon (ITLS Department) and Dr. Colby Tofel-Grehl (TEAL Department) will be awarded the Significant Contribution to Educational Measurement and Research Methodology Award at the AERA Annual Meeting in Toronto this week. According to the...</p>
+                            </div>
+                            <div class="news-image">
+                                <img src="http://itls.usu.edu/images/news/portraits/others/feldon-tofel-grehl.jpg">
+                            </div>
+                        </div>
                     </section>
                 </div>
                 <div class="content-sidebar">
-                    <p>
-                        <a href="../../apply" class="button-apply button-apply-black">Apply</a>
-                    </p>
-                    <section>
-                        <h3>Planning</h3>
-                        <ul>
-                            <li><a target="_blank" href="https://itls.usu.edu/files/students/plan_sheets/slma.pdf">SLMA Planning Sheet</a></li>
-                            <li><a target="_blank" href="https://itls.usu.edu/files/students/plan_sheets/med-slma.pdf">SLMA Planning Sheet (MEd)</a></li>
-                            <li><a target="_blank" href="https://itls.usu.edu/files/students/other/slma-practicum.pdf">SLMA Practicum Handbook</a></li>
-                            <li><a target="_blank" href="https://itls.usu.edu/files/students/other/ala-aasl-standards.pdf">ALA/AASL SLMA Preparation Guide</a></li>
-                            <li><a href="../../apply/registration-guide">Registration Guide</a></li>
-                        </ul>
-                    </section>
-                    <section>
-                        <h3>Forms</h3>
-                        <ul>
-                            <li><a target="_blank" href="https://itls.usu.edu/files/students/other/slma-signature.pdf">Signature Form</a></li>
-                            <li><a target="_blank" href="https://itls.usu.edu/files/students/other/incomplete.pdf">Incomplete Grade Documentation</a></li>
-                        </ul>
-                    </section>
+                    <h3>Additional Links</h3>
+                    <ul>
+                        <li><a href="../people">ITLS Faculty</a></li>
+                        <li><a href="../apply">Apply</a></li>
+                        <li><a href="../current-students">Current Students</a></li>
+                    </ul>
                 </div>
             </div>
         </div>
