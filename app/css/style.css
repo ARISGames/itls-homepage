@@ -663,3 +663,32 @@ section img {
       max-width: 170px;
       margin: 10px;
       border: 1px solid #979797; }
+
+.itls-styled .student-projects-grid {
+  display: flex;
+  flex-wrap: wrap; }
+  .itls-styled .student-projects-grid .student-project {
+    border: 2px solid #E8E8E8;
+    border-radius: 5px;
+    margin: 10px;
+    text-align: center;
+    flex-basis: 30%;
+    flex-grow: 0; }
+    .itls-styled .student-projects-grid .student-project h3, .itls-styled .student-projects-grid .student-project p {
+      margin: 5px; }
+    .itls-styled .student-projects-grid .student-project img {
+      background-color: #ddd;
+      max-width: 150px;
+      margin: 10px;
+      border-radius: 5px; }
+    .itls-styled .student-projects-grid .student-project h3 {
+      font-size: 16px; }
+    .itls-styled .student-projects-grid .student-project .student-project-details {
+      border-top: 2px solid #E7E7E7;
+      margin: 0;
+      padding: 10px;
+      text-align: left; }
+      .itls-styled .student-projects-grid .student-project .student-project-details li {
+        list-style-type: none; }
+      .itls-styled .student-projects-grid .student-project .student-project-details p {
+        font-size: 14px; }
