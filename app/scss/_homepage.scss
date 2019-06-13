@@ -35,6 +35,16 @@
       margin: 0 8px;
     }
   }
+  .people-breadcrumbs {
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: 0.07em;
+    .breadcrumb-arrow img {
+      width: 8px;
+      margin: 4px;
+      vertical-align: bottom;
+    }
+  }
   .jumbotron-welcome {
     min-height:70vh;
     h1 {
