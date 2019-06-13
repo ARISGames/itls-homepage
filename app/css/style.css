@@ -588,6 +588,17 @@ section img {
 .itls-styled .keywords-list li {
   font-style: italic; }
 
+.itls-styled .person-content-image {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start; }
+  .itls-styled .person-content-image img {
+    max-width: 250px;
+    margin-right: 25px;
+    margin-bottom: 40px; }
+  .itls-styled .person-content-image .person-content-image-text {
+    flex: 1; }
+
 .itls-styled .news-content {
   display: flex;
   flex-direction: row; }
