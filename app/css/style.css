@@ -483,7 +483,6 @@ section img {
 .itls-styled .career-options article .career-option {
   display: flex;
   flex-direction: row;
-  padding: 50px;
   align-items: center;
   flex-wrap: wrap-reverse; }
   @media screen and (max-width: 700px) {
