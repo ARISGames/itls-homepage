@@ -71,34 +71,7 @@
     <!-- ARIS CSS -->
     <link rel="stylesheet" type="text/css" href="../css/style.css">
     <!-- ARIS JS -->
-    <script type="text/javascript">
-        $(function(){
-            var open = 'apply-collapse-open';
-            $('.apply-collapse-header').click(function(e){
-                e.preventDefault();
-                var header = $(e.target);
-                var isOpen = header.parents('article').hasClass(open);
-                header.parents('.apply-collapse-section').find('article').removeClass(open);
-                if (!isOpen) header.parents('article').addClass(open);
-            });
-        });
-    </script>
-    <script>
-    // smooth scroll
-      $(document).ready(function(){
-        $('a[href^="#"]:not([data-toggle="tab"])').on('click',function (e) {
-            e.preventDefault();
-
-            var target = this.hash;
-            var $target = $(target);
-
-            $('html, body').stop().animate({
-                'scrollTop': $target.offset().top-40
-            }, 500, 'swing', function () {
-            });
-        });
-      });
-  </script>
+    <script type="text/javascript" src="../../../common.js"></script>
 </head>
 
 <body>
@@ -152,7 +125,9 @@
             </div>
             <div class="content-columns">
                 <div class="content-main">
-                    Find what you need to plan out your degree program. Current students can find planning sheets, important dates and deadlines, project information, building resources, tuition, and funding and internship resources right here. 
+                    <p>
+                        Find what you need to plan out your degree program. Current students can find planning sheets, important dates and deadlines, project information, building resources, tuition, and funding and internship resources right here.
+                    </p>
                     <section id="deadlines">
                         <h2>Dates and Deadlines</h2>
                         <section>
@@ -209,7 +184,7 @@
                             <div class="row">
                               <div class="col-sm-8">
                                 <h2>Choose your Courses</h2>
-                                <a class="button black" href="../courses">Go to Courses</a>
+                                <a class="button-apply button-apply-black" href="../courses">Go to Courses</a>
                               </div>
                               <div class="col-sm-4">
                                 <img src="../img/circle-online.png">
@@ -243,7 +218,7 @@
                                     <a target="_blank" href="http://itls.usu.edu/files/students/contracts/independent-study.pdf">Independent Study Contract</a>
                                 </li>
                             </ul>
-                             <a class="button black" href="student-projects">Go to Student Projects</a>
+                             <a class="button-apply button-apply-black" href="student-projects">Go to Student Projects</a>
                         </section>
                     </section>
                     <section id="community">

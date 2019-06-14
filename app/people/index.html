@@ -71,22 +71,7 @@
     <!-- ARIS CSS -->
     <link rel="stylesheet" type="text/css" href="../css/style.css">
     <!-- ARIS JS -->
-    <script>
-      // smooth scroll
-        $(document).ready(function(){
-          $('a[href^="#"]:not([data-toggle="tab"])').on('click',function (e) {
-              e.preventDefault();
-
-              var target = this.hash;
-              var $target = $(target);
-
-              $('html, body').stop().animate({
-                  'scrollTop': $target.offset().top-40
-              }, 500, 'swing', function () {
-              });
-          });
-        });
-    </script>
+    <script type="text/javascript" src="../../../common.js"></script>
 </head>
 
 <body>
@@ -258,6 +243,7 @@
                                     <img class="person-image" src="faculty/swanson/images/image2.jpg">
                                     <h3>Hillary Swanson</h3>
                                 </a>
+                                <p>Incoming Faculty Spring 2020</p>
                                 <hr>
                             </article>
                             <article class="person">

@@ -1,0 +1,12 @@
+.itls-styled {
+  .historic-photo {
+    float: right;
+    max-width: 275px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    @media screen and (max-width: 700px) {
+      float: none;
+      display: block;
+    }
+  }
+}

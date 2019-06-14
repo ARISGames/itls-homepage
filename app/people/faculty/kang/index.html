@@ -71,14 +71,7 @@
     <!-- ARIS CSS -->
     <link rel="stylesheet" type="text/css" href="../../../css/style.css">
     <!-- ARIS JS -->
-    <script type="text/javascript">
-    $(function() {
-        var toc = $('#table-of-contents');
-        $('.itls-styled').find('h2').each(function(i, x) {
-            toc.append(`<li><a href="#${x.id}">${$(x).text()}</a></li>`);
-        });
-    });
-    </script>
+    <script type="text/javascript" src="../../../common.js"></script>
 </head>
 
 <body>
@@ -139,7 +132,6 @@
                         <div class="person-details">
                             <h1>Jina Kang</h1>
                             <p>Assistant Professor of Instructional Technology and Learning Sciences</p>
-                            <hr>
                             <p class="person-links">
                                 <a target="_blank" href="http://itls.usu.edu/files/faculty/cv/kang_cv.pdf">Curriculum Vitae</a>
                                 <a target="_blank" href="https://scholar.google.com/citations?hl=en&user=YGAWIEcAAAAJ">Google Scholar</a>
@@ -148,6 +140,7 @@
                         </div>
                     </header>
                     <section class="person-contact">
+                        <hr>
                         <span>
                             Office Hours: By Appointment
                         </span>
@@ -157,36 +150,33 @@
                         <span>
                             Email: <a href="mailto:jina.kang@usu.edu">jina.kang@usu.edu</a>
                         </span>
-                        <span>
-                            Website: <a target="_blank" href="http://jinakang.webflow.io/">jinakang.webflow.io</a>
-                        </span>
                     </section>
                     <section>
                         <h2 class="c12" id="h.l0fbb42vtf5k"><span>Bio</span></h2>
                         <p class="c0"><span class="c1">Dr. Jina Kang loves to experience the world through travel, story, and photography. She encourages her students to take care of themselves and to set goals that will help them define the story of their career. </span></p>
-                        <p class="c0"><span class="c1">Dr. Kang&rsquo;s professional story started in South Korea, where she studied Astronomy and Space Science. Then she joined the Learning Technologies program at the University of Texas, where she worked as a game developer on Alien Rescue. </span></p>
+                        <p class="c0"><span class="c1">Dr. Kang&rsquo;s professional story started in South Korea, where she studied Astronomy and Space Science. Then she joined the Learning Technologies program at the University of Texas at Austin, where she worked as a game designer on Alien Rescue. </span></p>
                         <p class="c0"><span class="c1">Jina&rsquo;s research focuses on how we can help students practice data literacy skills, and how we can use emerging technologies to understand STEM learning. Jina designs serious games and simulations, as well as studying how students interact with these technologies. </span></p>
                         <p class="c0"><span class="c1">Dr. Kang is looking for research students interested in STEM education, learning analytics, and educational data mining, as well as students interested in designing and developing games and simulations. </span></p>
                     </section>
                     <section>
                         <h2 class="c12" id="h.bro87q3kq52z"><span class="c7">Featured Work</span></h2>
-                        <div class="person-content-image">
-                            <img src="images/image3.jpg">
-                            <div class="person-content-image-text">
-                                <h3 class="c10" id="h.suhp1aak63b"><span class="c15">An Embodied Cyberlearning Platform for Gestural Interaction</span></h3>
-                                <p class="c0"><span>Embodied notions of cognition state that learning is supported by the physical movements of the learner. Advances in motion capture technology afford new learning environment design where learners to create and manipulate digital representations of core ideas in a variety of domains using their movements. Kang and team have developed a new platform, called ELASTIC3S, to develop and research such cyberleanring experiences.</span></p>
-                                <p class="c0"><span>Lindgren, R., Morphew, J., Kang, J., &amp; Junokas, M. (2019). An Embodied Cyberlearning Platform for Gestural Interaction with Cross&#8208;Cutting Science Concepts. Mind, Brain, and Education, 13(1), 53-61. </span></p>
-                            </div>
-                        </div>
                         <div>
                             <h3 class="c10" id="h.k8lx63lkldz9"><span class="c15">Connection of Earth and Sky with Augmented Reality (CEASAR)</span></h3>
                             <p class="c0"><span>In this project, small groups are tasked with designing solutions to engineering problems in future workplace scenarios. The project aims to develop a robust collaborative learning scenario and apply analytics to understand and measure the success </span><span>of collaborative learning interactions within the CEASAR environment. See more at </span><span class="c11"><a class="c5" href="https://www.google.com/url?q=https://www.nsf.gov/awardsearch/showAward?AWD_ID%3D1822796&amp;sa=D&amp;ust=1559787642375000">https://www.nsf.gov/awardsearch/showAward?AWD_ID=1822796</a></span></p>
                         </div>
                         <div class="person-content-image">
+                            <img src="images/image3.jpg">
+                            <div class="person-content-image-text">
+                                <h3 class="c10" id="h.suhp1aak63b"><span class="c15">An Embodied Cyberlearning Platform for Gestural Interaction</span></h3>
+                                <p class="c0"><span>Embodied notions of cognition state that learning is supported by the physical movements of the learner. Advances in motion capture technology afford new learning environment design where learners create and manipulate digital representations of core ideas in a variety of domains using their movements. Dr. Kang and her team at the University of Illinois at Urbana-Champaign have developed a new platform, called ELASTIC³S, to develop and research such cyberlearning experiences.</span></p>
+                                <p class="c0"><span>Lindgren, R., Morphew, J., Kang, J., &amp; Junokas, M. (2019). An Embodied Cyberlearning Platform for Gestural Interaction with Cross&#8208;Cutting Science Concepts. Mind, Brain, and Education, 13(1), 53-61. </span></p>
+                            </div>
+                        </div>
+                        <div class="person-content-image">
                             <img src="images/image4.jpg">
                             <div class="person-content-image-text">
                                 <h3 class="c10" id="h.t1xw94tgsclf"><span class="c15">Student&rsquo;s Full-Body Experience with a Science Learning Simulation</span></h3>
-                                <p class="c0"><span class="c1">The goal of this project is to analyze volume and speed of student movement generated from Kinect. The project investigates whether the massive amounts of dynamic data recorded from students can generate personalized artifacts that could be leveraged to improve an individual&rsquo;s learning experience and system performance. &nbsp;(Embodied Science Learning SImulations Kang, J., Lindgren, R., &amp; Planey, J. (2018). Exploring emergent features of student interaction within an embodied science learning simulation. Multimodal Technologies and Interaction, 2(3), 39.)</span></p>
+                                <p class="c0"><span class="c1">This project is part of Dr. Kang's Embodied Cyberlearning project, above. The goal is to analyze volume and speed of student movement generated from Kinect. The project investigates whether the massive amounts of dynamic data recorded from students can generate personalized artifacts that could be leveraged to improve an individual&rsquo;s learning experience and system performance. &nbsp;(Embodied Science Learning SImulations Kang, J., Lindgren, R., &amp; Planey, J. (2018). Exploring emergent features of student interaction within an embodied science learning simulation. Multimodal Technologies and Interaction, 2(3), 39.)</span></p>
                             </div>
                         </div>
                         <div class="person-content-image">
@@ -227,14 +217,11 @@
                         <h2 class="c12" id="h.f3uy4tvnlbep"><span class="c7">Selected Publications</span></h2>
                         <p class="c0"><span class="c8 c13">See C.V or Google Scholar for a comprehensive list of publications.</span></p>
                         <p class="c0 c2"><span class="c20"></span></p>
+                        <p>Kang, J., Moon, J. & Wood, M. (in press). Educational Games and Gamification: From Foundations to Applications of Data Analytics. In M. Chang (Ed.). Smart Computing and Intelligence. Springer.</p>
                         <p class="c0"><span>Junokas, M., Lindgren, R., Kang, J., &amp; Morphew, J. (2018). Enhancing multimodal learning through personalized gesture recognition. Journal of Computer Assisted Learning. 1&ndash;8. doi: </span><span class="c11"><a class="c5" href="https://www.google.com/url?q=https://doi.org/10.1111/jcal.12262&amp;sa=D&amp;ust=1559787642387000">https://doi.org/10.1111/jcal.12262</a></span></p>
                         <p class="c0"><span class="c1">Kang, J., Liu, M., &amp; Qu, W. (2017). Using gameplay data to examine learning behavior patterns in a serious game. Computers in Human Behavior, 72, 757-770. doi: 10.1016/j.chb.2016.09.062</span></p>
                         <p class="c0"><span class="c1">Liu, M., Kang, J., Zou, E., Lee, H., &amp; Pan, C. (2017). Using data to understand how to better design adaptive learning. The Technology, Knowledge and Learning, 1-28. doi: 10.1007/s10758-017-9326-z</span></p>
                         <p class="c0"><span class="c1">Liu, M., Lee, J., Kang, J., &amp; Liu, S. (2016) What we can learn from the data: A multiple-case study examining behavior patterns by students with different characteristics in using a serious game. The Technology, Knowledge and Learning, 21(1), 33-57. doi: 10.1007/s10758-015-9263-7</span></p>
-                        <p class="c0"><span class="c1">Liu, M., Kang, J., &amp; McKelroy, E. (2015). Examining learners&rsquo; perspective of taking a MOOC: Reasons, excitement, and perception of usefulness. Educational Media International, 52(2). doi:10.1080/09523987.2015.1053289</span></p>
-                        <p class="c0"><span class="c1">Liu, M., Kang, J., Cao, M., Lim, M., Ko, Y., Myers, R., &amp; Weiss, A. S. (2014). Understanding MOOCs as an emerging online learning tool: Perspectives from the students. The American Journal of Distance Education, 28(3).</span></p>
-                        <p class="c0"><span class="c1">Liu, M., Rosenblum, J., Horton, L., &amp; Kang, J. (2014). Designing science learning with game-based approaches. Computers in the Schools, 31(1-2), 84-102. doi:10.1080/07380569.2014.879776</span></p>
-                        <p class="c0 c2"><span class="c6"><a class="c5" href="https://www.google.com/url?q=http://itls.usu.edu/faculty/kang.php&amp;sa=D&amp;ust=1559787642390000"></a></span></p>
                     </section>
                 </div>
                 <div class="content-sidebar">
@@ -243,6 +230,7 @@
                     <h3>Keywords</h3>
                     <ul class="keywords-list">
                         <li>Learning Analytics</li>
+                        <li>Data Literacy</li>
                         <li>Simulations</li>
                         <li>Serious Games</li>
                         <li>STEM Education</li>

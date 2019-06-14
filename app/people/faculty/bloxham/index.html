@@ -71,14 +71,7 @@
     <!-- ARIS CSS -->
     <link rel="stylesheet" type="text/css" href="../../../css/style.css">
     <!-- ARIS JS -->
-    <script type="text/javascript">
-    $(function() {
-        var toc = $('#table-of-contents');
-        $('.itls-styled').find('h2').each(function(i, x) {
-            toc.append(`<li><a href="#${x.id}">${$(x).text()}</a></li>`);
-        });
-    });
-    </script>
+    <script type="text/javascript" src="../../../common.js"></script>
 </head>
 
 <body>
@@ -140,7 +133,6 @@
                             <h1>Kristy Bloxham</h1>
                             <p>Professional Practice Associate Professor</p>
                             <p>Graduate Advisor</p>
-                            <hr>
                             <p class="person-links">
                                 <a target="_blank" href="http://itls.usu.edu/files/faculty/cv/bloxham_cv.pdf">Curriculum Vitae</a>
                                 <a target="_blank" href="https://www.linkedin.com/in/kristybloxhamphd/">LinkedIn</a>
@@ -148,6 +140,7 @@
                         </div>
                     </header>
                     <section class="person-contact">
+                        <hr>
                         <span>
                             Office Hours: By Appointment
                         </span>
