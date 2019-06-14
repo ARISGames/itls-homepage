@@ -24,6 +24,12 @@
         $('.selectpicker').selectpicker();
         $('[data-toggle="tooltip"]').tooltip();
     });
+
+    $(document).ready(function() {
+        $('.nav-toggle').click(function(){
+          $('.nav-wrap, .nav-icon').toggleClass('nav-open');
+      });
+    });
     </script>
     <script>
     $(".pop").popover({ animation: false })
@@ -71,47 +77,7 @@
     <!-- ARIS CSS -->
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <!-- ARIS JS -->
-<<<<<<< HEAD
-    <script type="text/javascript">
-        $(function(){
-            $('.career-options article').each(function(i, path){
-                path = $(path);
-                var details = path.find('.career-details');
-                details.hide();
-                var btn = path.find('.career-button');
-                path.find('.career-button').click(function(e){
-                    e.preventDefault();
-                    var b = details.is(':visible');
-                    $('.career-details').hide();
-                    if (!b) details.show();
-                    btn.html(b ? 'Learn more' : 'Hide');
-                });
-            });
-        });
-    </script>
-    <script>
-    // smooth scroll
-      $(document).ready(function(){
-        $('a[href^="#"]:not([data-toggle="tab"]):not(.career-button)').on('click',function (e) {
-            e.preventDefault();
-
-            var target = this.hash;
-            var $target = $(target);
-
-            $('html, body').stop().animate({
-                'scrollTop': $target.offset().top-40
-            }, 500, 'swing', function () {
-            });
-        });
-        // mobile navigation
-          $('.nav-toggle').click(function(){
-            $('.nav-wrap, .nav-icon').toggleClass('nav-open');
-        });
-      });
-  </script>
-=======
     <script type="text/javascript" src="../../../common.js"></script>
->>>>>>> 9f0491de0a4b8244f68fc0bc1de749ef7f0aafbc
 </head>
 
 <body>
