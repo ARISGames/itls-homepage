@@ -71,34 +71,7 @@
     <!-- ARIS CSS -->
     <link rel="stylesheet" type="text/css" href="../css/style.css">
     <!-- ARIS JS -->
-    <script type="text/javascript">
-        $(function(){
-            var open = 'apply-collapse-open';
-            $('.apply-collapse-header').click(function(e){
-                e.preventDefault();
-                var header = $(e.target);
-                var isOpen = header.parents('article').hasClass(open);
-                header.parents('.apply-collapse-section').find('article').removeClass(open);
-                if (!isOpen) header.parents('article').addClass(open);
-            });
-        });
-    </script>
-    <script>
-    // smooth scroll
-      $(document).ready(function(){
-        $('a[href^="#"]:not([data-toggle="tab"])').on('click',function (e) {
-            e.preventDefault();
-
-            var target = this.hash;
-            var $target = $(target);
-
-            $('html, body').stop().animate({
-                'scrollTop': $target.offset().top-40
-            }, 500, 'swing', function () {
-            });
-        });
-      });
-  </script>
+    <script type="text/javascript" src="../../../common.js"></script>
 </head>
 
 <body>
