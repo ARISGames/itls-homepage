@@ -125,6 +125,9 @@
   }
   .application-deadlines {
     margin: 50px 100px;
+    @media screen and (max-width: 700px) {
+      margin: 10px;
+    }
     box-shadow: 0 0 50px rgba(0,0,0,0.2);
     h2 {
       background-image: url('../img/mountain-background.png');
@@ -143,6 +146,9 @@
     }
     table {
       margin: 40px;
+      @media screen and (max-width: 700px) {
+        margin: 10px;
+      }
       width: calc(100% - 80px);
       th {
         font-family: League Spartan;
@@ -169,6 +175,9 @@
       .career-option {
         display: flex;
         flex-direction: row;
+        @media screen and (max-width: 700px) {
+          flex-direction: column;
+        }
         padding: 50px;
         align-items: center;
         & > * {
@@ -199,6 +208,9 @@
         background-position: center;
         display: flex;
         flex-direction: row;
+        @media screen and (max-width: 700px) {
+          flex-direction: column;
+        }
         .career-quote {
           flex: 1;
           color: white;

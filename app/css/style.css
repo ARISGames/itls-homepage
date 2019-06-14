@@ -213,7 +213,7 @@ section img {
         list-style-type: none;
         margin: 10px 0; }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 850px) {
   .itls-styled .content-columns {
     flex-direction: column; }
     .itls-styled .content-columns .content-sidebar {
@@ -327,6 +327,9 @@ section img {
 .itls-styled .application-deadlines {
   margin: 50px 100px;
   box-shadow: 0 0 50px rgba(0, 0, 0, 0.2); }
+  @media screen and (max-width: 700px) {
+    .itls-styled .application-deadlines {
+      margin: 10px; } }
   .itls-styled .application-deadlines h2 {
     background-image: url("../img/mountain-background.png");
     background-size: cover;
@@ -342,6 +345,9 @@ section img {
   .itls-styled .application-deadlines table {
     margin: 40px;
     width: calc(100% - 80px); }
+    @media screen and (max-width: 700px) {
+      .itls-styled .application-deadlines table {
+        margin: 10px; } }
     .itls-styled .application-deadlines table th {
       font-family: League Spartan;
       font-weight: bold;
@@ -361,6 +367,9 @@ section img {
   flex-direction: row;
   padding: 50px;
   align-items: center; }
+  @media screen and (max-width: 700px) {
+    .itls-styled .career-options article .career-option {
+      flex-direction: column; } }
   .itls-styled .career-options article .career-option > * {
     display: flex;
     flex-direction: row;
@@ -382,6 +391,9 @@ section img {
   background-position: center;
   display: flex;
   flex-direction: row; }
+  @media screen and (max-width: 700px) {
+    .itls-styled .career-options article .career-details {
+      flex-direction: column; } }
   .itls-styled .career-options article .career-details .career-quote {
     flex: 1;
     color: white;
@@ -592,6 +604,9 @@ section img {
   display: flex;
   flex-direction: row;
   align-items: flex-start; }
+  @media screen and (max-width: 800px) {
+    .itls-styled .person-content-image {
+      flex-direction: column; } }
   .itls-styled .person-content-image img {
     max-width: 250px;
     margin-right: 25px;
@@ -602,6 +617,9 @@ section img {
 .itls-styled .news-content {
   display: flex;
   flex-direction: row; }
+  @media screen and (max-width: 700px) {
+    .itls-styled .news-content {
+      flex-direction: column; } }
   .itls-styled .news-content .news-text {
     flex: 3; }
     .itls-styled .news-content .news-text p {
@@ -712,3 +730,13 @@ section img {
         list-style-type: none; }
       .itls-styled .student-projects-grid .student-project .student-project-details p {
         font-size: 14px; }
+
+.itls-styled .historic-photo {
+  float: right;
+  max-width: 275px;
+  margin-left: 20px;
+  margin-bottom: 20px; }
+  @media screen and (max-width: 700px) {
+    .itls-styled .historic-photo {
+      float: none;
+      display: block; } }
