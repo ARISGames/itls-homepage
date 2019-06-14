@@ -102,16 +102,77 @@ section img {
   width: 100%;
   height: auto; }
 
+.content-wrap {
+  max-width: 1200px;
+  margin: 0 auto !important; }
+
+.spacer {
+  width: 100%;
+  border-top: 3px solid #EBF2F8;
+  margin: 8vw 0vw;
+  display: block; }
+
 .itls-styled .top-nav {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
   align-items: stretch;
   background: #fff;
   z-index: 1000;
   position: sticky;
   top: 0px;
   box-shadow: 0 2px 100px 0 rgba(1, 15, 91, 0.19); }
+  .itls-styled .top-nav .nav-icon {
+    display: none;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    width: 40px;
+    height: 40px;
+    background: url(../img/menu-open.png) no-repeat;
+    background-size: 18px 18px;
+    background-position: center;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 20px 0 rgba(1, 15, 91, 0.3);
+    z-index: 1000;
+    cursor: pointer; }
+    .itls-styled .top-nav .nav-icon:hover {
+      transform: scale(1.08); }
+    .itls-styled .top-nav .nav-icon.nav-open {
+      background: url(../img/menu-close.png) no-repeat;
+      background-size: 18px 18px;
+      background-position: center;
+      position: fixed; }
+    @media only screen and (max-width: 950px) {
+      .itls-styled .top-nav .nav-icon {
+        display: block; } }
+  .itls-styled .top-nav .nav-wrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    transition: all .3s ease-in-out; }
+    @media only screen and (max-width: 950px) {
+      .itls-styled .top-nav .nav-wrap {
+        position: fixed;
+        width: 100vw;
+        height: 100vh;
+        top: 0;
+        left: 0;
+        background: #fff;
+        z-index: 1000;
+        display: block;
+        padding: 50px 80px;
+        opacity: 0;
+        transform: translateX(100vw); }
+        .itls-styled .top-nav .nav-wrap.nav-open {
+          transform: translateX(0);
+          opacity: 1; }
+        .itls-styled .top-nav .nav-wrap .top-nav-left, .itls-styled .top-nav .nav-wrap .top-nav-right {
+          display: block;
+          text-align: center; }
+          .itls-styled .top-nav .nav-wrap .top-nav-left a, .itls-styled .top-nav .nav-wrap .top-nav-right a {
+            display: block; }
+            .itls-styled .top-nav .nav-wrap .top-nav-left a.button, .itls-styled .top-nav .nav-wrap .top-nav-right a.button {
+              margin: 10px 10px; } }
   .itls-styled .top-nav a {
     font-family: Lato,sans-serif;
     letter-spacing: 0.15em;
@@ -219,6 +280,53 @@ section img {
     .itls-styled .content-columns .content-sidebar {
       width: auto; } }
 
+.itls-styled .footer {
+  background-color: #0e2439;
+  color: #fff; }
+  .itls-styled .footer .footer-col {
+    padding: 0px 50px 50px 50px;
+    margin-top: 50px;
+    font-size: 16px;
+    position: relative;
+    height: 100%; }
+    .itls-styled .footer .footer-col h3 {
+      color: #fff;
+      margin-bottom: 0px; }
+    .itls-styled .footer .footer-col p {
+      margin-top: 10px; }
+    .itls-styled .footer .footer-col img {
+      width: 80%;
+      height: auto;
+      margin: 0 auto;
+      display: inline-block; }
+    .itls-styled .footer .footer-col .social_links {
+      position: absolute;
+      bottom: 0; }
+      .itls-styled .footer .footer-col .social_links .social_link img {
+        display: inline;
+        height: 50px;
+        width: auto; }
+      .itls-styled .footer .footer-col .social_links .social_link:hover {
+        opacity: 0.8; }
+    .itls-styled .footer .footer-col.footer-logos {
+      text-align: center; }
+      .itls-styled .footer .footer-col.footer-logos img {
+        margin-bottom: 20px; }
+      .itls-styled .footer .footer-col.footer-logos .footerbadge {
+        width: 70%; }
+    .itls-styled .footer .footer-col.site-map a {
+      display: block;
+      line-height: 26px; }
+  .itls-styled .footer .global-footer {
+    text-align: center; }
+    .itls-styled .footer .global-footer ul {
+      list-style: none; }
+      .itls-styled .footer .global-footer ul li {
+        display: inline; }
+        .itls-styled .footer .global-footer ul li a {
+          color: #fff;
+          margin-right: 20px; }
+
 .itls-styled .jumbotron {
   margin: 0;
   background-color: white;
@@ -229,12 +337,17 @@ section img {
   justify-content: center;
   background-position: right;
   padding-left: 6vw; }
-  .itls-styled .jumbotron h1 {
-    margin-bottom: 0px;
-    line-height: 60px; }
-  .itls-styled .jumbotron p {
-    width: 50%;
-    margin-bottom: 10px; }
+  .itls-styled .jumbotron .info {
+    margin-top: -5vw; }
+    @media only screen and (max-width: 768px) {
+      .itls-styled .jumbotron .info {
+        margin-top: 5vw; } }
+    .itls-styled .jumbotron .info h1 {
+      margin-bottom: 0px;
+      line-height: 60px;
+      font-size: 45px; }
+    .itls-styled .jumbotron .info p {
+      margin-bottom: 10px; }
 
 .itls-styled .jumbotron-breadcrumbs {
   position: absolute;
@@ -261,7 +374,7 @@ section img {
 .itls-styled .jumbotron-welcome {
   min-height: 70vh;
   background-image: url("../img/itls-homepage-hero.jpg");
-  background-size: 60%;
+  background-size: 75%;
   background-position: bottom right;
   background-repeat: no-repeat; }
   .itls-styled .jumbotron-welcome h1 {
@@ -272,6 +385,11 @@ section img {
     font-size: 18px; }
   .itls-styled .jumbotron-welcome p {
     margin: 0px; }
+  @media only screen and (max-width: 768px) {
+    .itls-styled .jumbotron-welcome {
+      background-size: 100%;
+      justify-content: flex-start;
+      min-height: 80vh; } }
 
 .itls-styled .jumbotron-usnews {
   flex-direction: row;
@@ -328,8 +446,8 @@ section img {
   margin: 50px 100px;
   box-shadow: 0 0 50px rgba(0, 0, 0, 0.2); }
   .itls-styled .application-deadlines h2 {
-    background-image: url("../img/mountain-background.png");
-    background-size: cover;
+    background-image: url("../img/mountain-background.jpg");
+    background-size: contain;
     background-position: top center;
     background-repeat: no-repeat;
     padding: 150px 20px 50px 20px;
@@ -359,8 +477,9 @@ section img {
 .itls-styled .career-options article .career-option {
   display: flex;
   flex-direction: row;
-  padding: 50px;
-  align-items: center; }
+  padding: 0px 50px;
+  align-items: center;
+  flex-wrap: wrap-reverse; }
   .itls-styled .career-options article .career-option > * {
     display: flex;
     flex-direction: row;
@@ -375,7 +494,8 @@ section img {
     .itls-styled .career-options article .career-option .career-person img {
       width: 100%;
       object-fit: contain;
-      padding-left: 40px; }
+      padding-left: 40px;
+      max-width: 600px; }
 
 .itls-styled .career-options article .career-details {
   background-size: cover;

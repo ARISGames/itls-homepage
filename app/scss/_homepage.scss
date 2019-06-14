@@ -11,13 +11,19 @@
     justify-content:center;
     background-position: right;
     padding-left:6vw;
-    h1 {
-      margin-bottom:0px;
-      line-height:60px;
-    }
-    p {
-      width:50%;
-      margin-bottom:10px;
+    .info {
+      margin-top:-5vw;
+      @media #{$break-sm} {
+        margin-top:5vw;
+      }
+      h1 {
+        margin-bottom:0px;
+        line-height:60px;
+        font-size:45px;
+      }
+      p {
+        margin-bottom:10px;
+      }
     }
   }
   .jumbotron-breadcrumbs {
@@ -59,9 +65,14 @@
       margin:0px;
     }
     background-image: url('../img/itls-homepage-hero.jpg');
-    background-size: 60%;
+    background-size: 75%;
     background-position: bottom right;
     background-repeat: no-repeat;
+    @media #{$break-sm} {
+      background-size: 100%;
+      justify-content: flex-start;
+      min-height:80vh;
+    }
   }
   .jumbotron-usnews {
     flex-direction:row;
@@ -127,8 +138,8 @@
     margin: 50px 100px;
     box-shadow: 0 0 50px rgba(0,0,0,0.2);
     h2 {
-      background-image: url('../img/mountain-background.png');
-      background-size: cover;
+      background-image: url('../img/mountain-background.jpg');
+      background-size: contain;
       background-position: top center;
       background-repeat: no-repeat;
       padding: 150px 20px 50px 20px;
@@ -169,8 +180,9 @@
       .career-option {
         display: flex;
         flex-direction: row;
-        padding: 50px;
+        padding: 0px 50px;
         align-items: center;
+        flex-wrap:wrap-reverse;
         & > * {
           display: flex;
           flex-direction: row;
@@ -191,6 +203,7 @@
             width: 100%;
             object-fit: contain;
             padding-left: 40px;
+            max-width:600px;
           }
         }
       }

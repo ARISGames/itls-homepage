@@ -25,3 +25,15 @@ section {
     height:auto;
   }
 }
+
+.content-wrap {
+  max-width:1200px;
+  margin:0 auto !important;
+}
+
+.spacer {
+  width:100%;
+  border-top:3px solid $separator-gray;
+  margin:8vw 0vw;
+  display:block;
+}

@@ -102,6 +102,10 @@
             }, 500, 'swing', function () {
             });
         });
+        // mobile navigation
+          $('.nav-toggle').click(function(){
+            $('.nav-wrap, .nav-icon').toggleClass('nav-open');
+        });
       });
   </script>
 </head>
@@ -139,31 +143,36 @@
         <div class="itls-styled">
             <!-- ARIS section -->
             <nav class="top-nav">
-                <div class="top-nav-left">
-                    <a href="about">About</a>
-                    <a href="people">People</a>
-                    <a href="programs">Programs</a>
-                    <a href="courses">Courses</a>
-                    <a href="current-students">Current Students</a>
-                    <a href="news">News</a>
+                <div class="nav-wrap">
+                  <div class="top-nav-left">
+                      <a href="about">About</a>
+                      <a href="people">People</a>
+                      <a href="programs">Programs</a>
+                      <a href="courses">Courses</a>
+                      <a href="current-students">Current Students</a>
+                      <a href="news">News</a>
+                  </div>
+                  <div class="top-nav-right">
+                      <a target="_blank" href="https://cehs.usu.edu/giving/" class="button light-blue">Give</a>
+                      <a href="apply" class="button black filled">Apply</a>
+                  </div>
                 </div>
-                <div class="top-nav-right">
-                    <a target="_blank" href="https://cehs.usu.edu/" class="button light-blue">Give</a>
-                    <a href="apply" class="button black filled">Apply</a>
-                </div>
+                <span class="nav-icon nav-toggle"></span>
             </nav>
-            <div class="jumbotron jumbotron-welcome">
+            <div class="jumbotron jumbotron-welcome row">
+              <div class="col-sm-6 info">
                 <h1>Welcome to ITLS</h1>
                 <h2>Prepare for a career at the cutting edge of learning design</h2>
-                <p>Technology is changing the way people learn. In both the private and public sectors, the world needs learning designers more than ever. We've developed a unique curriculum that combines research and practice. Our students become leaders, known for their ability to adapt, grow and guide others.</p>
+                <p>Technology is changing the way people learn. In both the private and public sectors, the world needs learning designers more than ever. We've developed a unique curriculum that combines research and practice.</p>
+              </div>
             </div>
-            <div class="jumbotron jumbotron-usnews container">
+            <div class="jumbotron jumbotron-usnews container content-wrap breathe">
                 <div class="col-sm-4 usnews-pic">
                     <img src="img/usnews-grad.png">
                 </div>
                 <div class="col-sm-8">
                     <h2>97% of our students work in a related field within three months of graduation.</h2>
-                    <p>Our online graduate program was ranked third in the nation by the 2019 U.S. News and World Report.</p>
+                    <p>Our online graduate program was ranked third in the nation by the 2019 U.S. News and World Report. Our students become leaders, known for their ability to adapt, grow and guide others.</p>
                     <p>
                         <a href="apply" class="button black filled">Apply</a>
                     </p>
@@ -244,7 +253,7 @@
             <div class="what-program">
                 <h2>Start your career in learning design.</h2>
             </div>
-            <div class="program-grid">
+            <div class="program-grid content-wrap">
                 <div class="program-cell">
                     <img src="img/circle-city.png">
                     <h3>Full time or part time</h3>
@@ -256,7 +265,7 @@
                     <p>Master’s students can study online to help accommodate full or part time jobs. Online students benefit from our close-knit community, even while abroad. </p>
                 </div>
             </div>
-            <section class="application-deadlines">
+            <section class="application-deadlines content-wrap">
                 <h2>Application Deadlines</h2>
                 <p>The ITLS graduate orientation is held on the USU Logan campus each fall. All incoming graduate students at both the master's and doctoral level are required to attend. We offer two sections of orientation. Students are required to attend only one of the sections.</p>
                 <table>
@@ -287,7 +296,8 @@
                     </a>
                 </p>
             </section>
-            <section class="career-options">
+            <span class="spacer"></span>
+            <section class="career-options content-wrap">
                 <h2>Careers in Learning Design</h2>
                 <article>
                     <div class="career-option">
@@ -431,74 +441,66 @@
                     </div>
                 </article>
             </section>
-        </div>
-    </div>
-    <div id="footer">
-        <div id="footer-wrapper">
-            <div class="contentFooter">
-                <!-- Footer Navigation -->
-                <div class="footer-navigation">
-                    <div class="col-nav" style="position: static;"><a href="https://www.facebook.com/usuitls" target="_blank"><img class="img-border" style="margin: 3px 2.5px;" src="https://itls.usu.edu/images/logos-icons/socialmedia/white/facebook.png" alt="Facebook icon" width="35" height="35" /></a> <a href="http://www.linkedin.com/groups/USU-Instructional-Technology-Learning-Sciences-4204328" target="_blank"><img class="img-border" style="margin: 3px 2.5px;" src="https://itls.usu.edu/images/logos-icons/socialmedia/white/linkedin.png" alt="LinkedIn icon" height="35" /></a> <a href="http://www.youtube.com/user/UtahStateITLS?feature=watch" target="_blank"><img class="img-border" style="margin: 3px 2.5px;" src="https://itls.usu.edu/images/logos-icons/socialmedia/white/youtube.png" alt="YouTube icon" height="35" /></a> <a href="https://twitter.com/utahstateITLS" target="_blank"><img class="img-border" style="margin: 3px 2.5px;" src="https://itls.usu.edu/images/logos-icons/socialmedia/white/twitter.png" alt="Twitter icon" height="35" /></a> <a href="/news/index.php" target="_blank"><img class="img-border" style="margin: 3px 2.5px;" src="https://itls.usu.edu/images/logos-icons/socialmedia/white/news.png" alt="news icon" width="35" height="35" /></a>
-                        <div class="clearfix">&nbsp;</div>
-                        <div class="clearfix"></div>
-                        <a href="http://cehs.usu.edu/giving/?area=Instructional%20Technology%20&amp;%20Learning%20Sciences" target="_blank"><img class="img-border" src="https://itls.usu.edu/images/logos-icons/socialmedia/white/donate.png" alt="donate button" height="35" /></a>
-                    </div>
-                    <div class="col-nav" style="position: static;">
-                        <h4>Academic Programs</h4>
-                        <ul>
-                            <li><a href="/programs/online.php">Online Programs</a></li>
-                            <li><a href="/programs/phd.php">Doctor of Philosophy</a></li>
-                            <li><a href="/programs/eds.php">Education Specialist</a></li>
-                            <li><a href="/programs/ms.php">Master of Science</a></li>
-                            <li><a href="/programs/med.php">Master of Education</a></li>
-                            <li><a href="/programs/ma.php">Master of Arts</a></li>
-                            <li><a href="/programs/undergrad.php">Undergraduate Offerings</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-nav" style="position: static;">
-                        <h4>Other Links</h4>
-                        <ul>
-                            <li><a href="/faculty/index.php">Faculty Profiles</a></li>
-                            <li><a href="/research/index.php">Research</a></li>
-                            <li><a href="/about/organizations.php">Professional Organizations</a></li>
-                            <li><a href="/current/itsa.php">ITSA (Instructional Technology Student Association)</a></li>
-                            <li><a href="/current/labs.php">Computer Labs</a></li>
-                            <li><a href="/current/index.php">Additional Resources</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-nav" style="position: static;">
-                        <h4>Contact or Questions</h4>
-                        <ul>
-                            <li><a href="/about/contact.php">Contact Us</a></li>
-                            <li><a href="/about/faq.php">FAQ</a></li>
-                            <li><a href="http://cehs.usu.edu/">College of Education and Human Services</a></li>
-                        </ul>
-                    </div>
+            <div class="footer">
+              <div class="row">
+                <div class="col-sm-3 footer-col footer-logos">
+                  <img class="footerlogo" src="img/itls-logo.png" />
+                  <img class="footerbadge" src="img/usnews-grad.png" />
                 </div>
-                <!-- /Footer Navigation -->
-                <div class="global-footer">
-                    <div class="col-xs-12">
-                        <ul>
-                            <li>Instructional Technology and Learning Sciences | 2830 Old Main Hill, Logan, UT 84322-2830 | Phone: 435 797-2694 | Fax: 435 797-2693</li>
-                        </ul>
-                    </div>
+                <div class="col-sm-2 footer-col site-map">
+                  <h3>Site Map</h3>
+                  <a href="about">About</a>
+                  <a href="people">People</a>
+                  <a href="programs">Programs</a>
+                  <a href="courses">Courses</a>
+                  <a href="current-students">Current Students</a>
+                  <a href="news">News</a>
+                  <a target="_blank" href="https://cehs.usu.edu/">CEHS</a>
+                  <a target="_blank" href="https://www.usu.edu/map/index.cfm?id=61">Campus Map</a>
                 </div>
-            </div>
-            <hr>
-            <div class="global-footer">
-                <div class="col-xs-12">
-                    <ul>
-                        <li><a href="https://www.usu.edu/copyright">© Utah State University</a></li>
-                        <li><a href="https://www.usu.edu/privacy/">Privacy</a></li>
-                        <li><a href="https://www.usu.edu/campus-life/safety">Safety</a></li>
-                        <li><a href="https://accessibility.usu.edu/">Accessibility</a></li>
-                        <li><a href="https://aaeo.usu.edu/non-discrimination">Non-discrimination</a></li>
-                        <li><a href="https://it.usu.edu/web/feedback">Website Feedback</a></li>
-                        <li>
-                            <a id="de" href="http://a.cms.omniupdate.com/10?skin=usu&amp;account=usu&amp;site=ITLS&amp;action=de&amp;path=/index.pcf">Admin</a>
-                        </li>
-                    </ul>
+                <div class="col-sm-4 footer-col">
+                  <article>
+                    <h3>Mailing Address</h3>
+                    <p>2830 Old Main Hill<br />Logan, UT 84322</p>
+                  </article>
+                  <article>
+                    <h3>Street Address</h3>
+                    <p>Room 215 <br />Emma Eccles Jones Education Building<br />953 E 700 N<br />Logan, UT 84322</p>
+                  </article>
                 </div>
+                <div class="col-sm-3 footer-col">
+                  <article>
+                    <h3>Contact Information</h3>
+                    <p>Phone: 435-797-2694<br />Toll-Free: 866-782-9301<br />Fax: 435-797-2693<br />E-mail: <a href="mailto:itls@usu.edu">itls@usu.edu</a></p>
+                  </article>
+                  <article class="social_links">
+                    <a class="social_link" target="_blank" href="https://www.youtube.com/channel/UC9f8BgYKgpC_aGjcK-fjqTg">
+                      <img src="img/icon-youtube.png" />
+                    </a>
+                    <a class="social_link" target="_blank" href="https://www.facebook.com/usuitls/?ref=page_internal">
+                      <img src="img/icon-facebook.png" />
+                    </a>
+                    <a class="social_link" target="_blank" href="https://twitter.com/utahstateitls?lang=en">
+                      <img src="img/icon-twitter.png" />
+                    </a>
+                  </article>
+                </div>
+              </div>
+              <div class="global-footer">
+                  <div class="col-xs-12">
+                      <ul>
+                          <li><a href="https://www.usu.edu/copyright">© Utah State University</a></li>
+                          <li><a href="https://www.usu.edu/privacy/">Privacy</a></li>
+                          <li><a href="https://www.usu.edu/campus-life/safety">Safety</a></li>
+                          <li><a href="https://accessibility.usu.edu/">Accessibility</a></li>
+                          <li><a href="https://aaeo.usu.edu/non-discrimination">Non-discrimination</a></li>
+                          <li><a href="https://it.usu.edu/web/feedback">Website Feedback</a></li>
+                          <li>
+                              <a id="de" href="http://a.cms.omniupdate.com/10?skin=usu&amp;account=usu&amp;site=ITLS&amp;action=de&amp;path=/index.pcf">Admin</a>
+                          </li>
+                      </ul>
+                  </div>
+              </div>
             </div>
         </div>
     </div>
