@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Lato");
-.button {
+.itls-styled .button {
   text-transform: uppercase;
   padding: 8px 12px;
   letter-spacing: 0.15em;
@@ -8,30 +8,30 @@
   font-size: 13px;
   transition: all .1s ease-in-out;
   color: #fff; }
-  .button.black {
+  .itls-styled .button.black {
     border: 1px solid #0e2439;
     color: #0e2439; }
-    .button.black:hover {
+    .itls-styled .button.black:hover {
       background-color: #0e2439;
       color: #fff;
       text-decoration: none; }
-    .button.black.filled {
+    .itls-styled .button.black.filled {
       background-color: #0e2439;
       color: #fff; }
-      .button.black.filled:hover {
+      .itls-styled .button.black.filled:hover {
         background-color: #2875c0;
         border: 1px solid #2875c0; }
-  .button.light-blue {
+  .itls-styled .button.light-blue {
     border: 1px solid #93abc2;
     color: #93abc2; }
-    .button.light-blue:hover {
+    .itls-styled .button.light-blue:hover {
       background-color: #93abc2;
       color: #fff;
       text-decoration: none; }
-    .button.light-blue.filled {
+    .itls-styled .button.light-blue.filled {
       background-color: #93abc2;
       color: #fff; }
-      .button.light-blue.filled:hover {
+      .itls-styled .button.light-blue.filled:hover {
         background-color: rgba(147, 171, 194, 0.8);
         border: 1px solid rgba(147, 171, 194, 0.8); }
 
@@ -79,11 +79,11 @@
   letter-spacing: 0.03em;
   padding-left: 0px; }
 
-.widthcap {
+.itls-styled .widthcap {
   max-width: 1200px;
   margin: 0 auto; }
 
-.icon-document {
+.itls-styled .icon-document {
   width: 30px;
   height: 40px;
   background: url(../img/icon-document.png);
@@ -93,20 +93,20 @@
   vertical-align: middle;
   margin-top: -8px; }
 
-section.centered {
+.itls-styled section.centered {
   display: flex;
   flex-direction: row;
   align-items: center; }
 
-section img {
+.itls-styled section img {
   width: 100%;
   height: auto; }
 
-.content-wrap {
+.itls-styled .content-wrap {
   max-width: 1200px;
   margin: 0 auto !important; }
 
-.spacer {
+.itls-styled .spacer {
   width: 100%;
   border-top: 3px solid #EBF2F8;
   margin: 8vw 0vw;
