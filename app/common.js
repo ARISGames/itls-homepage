@@ -45,4 +45,11 @@ $(function(){
         toc.append(`<li><a href="#${x.id}">${$(x).text()}</a></li>`);
     });
 
+    // mobile navigation
+    $(document).ready(function() {
+        $('.nav-toggle').click(function(){
+          $('.nav-wrap, .nav-icon').toggleClass('nav-open');
+      });
+    });
+
 });
