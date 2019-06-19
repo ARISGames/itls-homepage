@@ -289,6 +289,9 @@
     font-size: 16px;
     position: relative;
     height: 100%; }
+    @media only screen and (max-width: 768px) {
+      .itls-styled .footer .footer-col {
+        margin-top: 0px; } }
     .itls-styled .footer .footer-col h3 {
       color: #fff;
       margin-bottom: 0px; }
@@ -314,6 +317,9 @@
         margin-bottom: 20px; }
       .itls-styled .footer .footer-col.footer-logos .footerbadge {
         width: 70%; }
+        @media only screen and (max-width: 768px) {
+          .itls-styled .footer .footer-col.footer-logos .footerbadge {
+            width: 40%; } }
     .itls-styled .footer .footer-col.site-map a {
       display: block;
       line-height: 26px; }
@@ -395,6 +401,9 @@
   flex-direction: row;
   margin: 0 auto;
   align-items: center; }
+  @media only screen and (max-width: 768px) {
+    .itls-styled .jumbotron-usnews {
+      flex-direction: column; } }
   .itls-styled .jumbotron-usnews h2 {
     color: #0e2439;
     font-size: 25px; }
@@ -405,7 +414,8 @@
     text-align: center; }
     .itls-styled .jumbotron-usnews .usnews-pic img {
       width: 100%;
-      max-width: 250px; }
+      max-width: 250px;
+      margin: 20px; }
 
 .itls-styled .itls-carousel-image {
   height: 500px;
@@ -449,9 +459,8 @@
     .itls-styled .application-deadlines {
       margin: 10px; } }
   .itls-styled .application-deadlines h2 {
-    background-image: url("../img/mountain-background.jpg");
-    background-size: contain;
-    background-position: top center;
+    background-image: url(../img/mountain-background.jpg);
+    background-size: cover;
     background-repeat: no-repeat;
     padding: 150px 20px 50px 20px;
     color: white;
@@ -485,9 +494,11 @@
   flex-direction: row;
   align-items: center;
   flex-wrap: wrap-reverse; }
-  @media screen and (max-width: 700px) {
+  @media only screen and (max-width: 768px) {
     .itls-styled .career-options article .career-option {
-      flex-direction: column; } }
+      flex-direction: column-reverse;
+      padding: 30px;
+      box-shadow: 0 12px 30px 0 rgba(1, 15, 91, 0.19); } }
   .itls-styled .career-options article .career-option > * {
     display: flex;
     flex-direction: row;
@@ -499,11 +510,19 @@
     margin: 10px; }
   .itls-styled .career-options article .career-option .career-person {
     flex: 0.8; }
+    @media only screen and (max-width: 768px) {
+      .itls-styled .career-options article .career-option .career-person {
+        display: block;
+        margin-bottom: 20px; } }
     .itls-styled .career-options article .career-option .career-person img {
       width: 100%;
       object-fit: contain;
       padding-left: 40px;
       max-width: 600px; }
+      @media only screen and (max-width: 768px) {
+        .itls-styled .career-options article .career-option .career-person img {
+          margin: auto;
+          padding-left: 0px; } }
 
 .itls-styled .career-options article .career-details {
   background-size: cover;
