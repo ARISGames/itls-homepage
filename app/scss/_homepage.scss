@@ -64,7 +64,7 @@
     p {
       margin:0px;
     }
-    background-image: url('../img/itls-homepage-hero.jpg');
+    background-image: url('https://itls.usu.edu/ariswork/img/itls-homepage-hero.jpg');
     background-size: 75%;
     background-position: bottom right;
     background-repeat: no-repeat;
@@ -145,7 +145,7 @@
     }
     box-shadow: 0 0 50px rgba(0,0,0,0.2);
     h2 {
-      background-image: url(../img/mountain-background.jpg);
+      background-image: url(https://itls.usu.edu/ariswork/img/mountain-background.jpg);
       background-size: cover;
       background-repeat: no-repeat;
       padding: 150px 20px 50px 20px;
@@ -185,7 +185,7 @@
       margin: 15px;
       font-size: 25px;
     }
-    article {
+    .html5-article {
       .career-option {
         display: flex;
         flex-direction:row;
@@ -245,7 +245,7 @@
           line-height: 50px;
           padding: 60px;
           border: none;
-          background-image: url('../img/quote.png');
+          background-image: url('https://itls.usu.edu/ariswork/img/quote.png');
           background-repeat: no-repeat;
           background-position: 30px 30px;
           background-size: 120px;

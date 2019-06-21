@@ -46,7 +46,7 @@
   }
 
   .apply-collapse-section {
-    article {
+    .html5-article {
       div {
         overflow-y:hidden;
         transition: opacity .5s ease-in-out;
@@ -68,7 +68,7 @@
           position:relative;
           &:after{
             content: '';
-            background: url(../img/down-arrow.png);
+            background: url(https://itls.usu.edu/ariswork/img/down-arrow.png);
             background-size: 24px 13px;
             width: 24px;
             height: 13px;

@@ -37,8 +37,8 @@
 
 @font-face {
   font-family: 'League Spartan';
-  src: url("../fonts/leaguespartan-bold.eot");
-  src: url("../fonts/leaguespartan-bold.eot?#iefix") format("embedded-opentype"), url("../fonts/leaguespartan-bold.woff2") format("woff2"), url("../fonts/leaguespartan-bold.woff") format("woff"), url("../fonts/leaguespartan-bold.ttf") format("truetype"), url("../fonts/leaguespartan-bold.svg#league_spartanbold") format("svg");
+  src: url("https://itls.usu.edu/ariswork/fonts/leaguespartan-bold.eot");
+  src: url("https://itls.usu.edu/ariswork/fonts/leaguespartan-bold.eot?#iefix") format("embedded-opentype"), url("https://itls.usu.edu/ariswork/fonts/leaguespartan-bold.woff2") format("woff2"), url("https://itls.usu.edu/ariswork/fonts/leaguespartan-bold.woff") format("woff"), url("https://itls.usu.edu/ariswork/fonts/leaguespartan-bold.ttf") format("truetype"), url("https://itls.usu.edu/ariswork/fonts/leaguespartan-bold.svg#league_spartanbold") format("svg");
   font-weight: bold;
   font-style: normal; }
 
@@ -79,6 +79,13 @@
   letter-spacing: 0.03em;
   padding-left: 0px; }
 
+.main-container-wrapper {
+  width: 100%; }
+
+.itls-styled img {
+  display: inline;
+  max-width: unset; }
+
 .itls-styled .widthcap {
   max-width: 1200px;
   margin: 0 auto; }
@@ -86,19 +93,19 @@
 .itls-styled .icon-document {
   width: 30px;
   height: 40px;
-  background: url(../img/icon-document.png);
+  background: url(https://itls.usu.edu/ariswork/img/icon-document.png);
   background-size: cover;
   display: inline-block;
   margin: 0px 15px;
   vertical-align: middle;
   margin-top: -8px; }
 
-.itls-styled section.centered {
+.itls-styled .html5-section.centered {
   display: flex;
   flex-direction: row;
   align-items: center; }
 
-.itls-styled section img {
+.itls-styled .html5-section img {
   width: 100%;
   height: auto; }
 
@@ -126,7 +133,7 @@
     top: 10px;
     width: 40px;
     height: 40px;
-    background: url(../img/menu-open.png) no-repeat;
+    background: url(https://itls.usu.edu/ariswork/img/menu-open.png) no-repeat;
     background-size: 18px 18px;
     background-position: center;
     padding: 10px;
@@ -138,7 +145,7 @@
     .itls-styled .top-nav .nav-icon:hover {
       transform: scale(1.08); }
     .itls-styled .top-nav .nav-icon.nav-open {
-      background: url(../img/menu-close.png) no-repeat;
+      background: url(https://itls.usu.edu/ariswork/img/menu-close.png) no-repeat;
       background-size: 18px 18px;
       background-position: center;
       position: fixed; }
@@ -208,11 +215,11 @@
   .itls-styled .content-columns .content-main {
     padding: 6vw;
     flex: 1; }
-    .itls-styled .content-columns .content-main section {
+    .itls-styled .content-columns .content-main .html5-section {
       padding-bottom: 30px;
       margin-bottom: 50px;
       border-bottom: 3px solid #EBF2F8; }
-      .itls-styled .content-columns .content-main section:last-child {
+      .itls-styled .content-columns .content-main .html5-section:last-child {
         border-bottom: none;
         margin-bottom: 0px; }
     .itls-styled .content-columns .content-main ul li {
@@ -254,15 +261,15 @@
     position: -webkit-sticky;
     position: sticky;
     top: 20px; }
-    .itls-styled .content-columns .content-sidebar section {
+    .itls-styled .content-columns .content-sidebar .html5-section {
       margin-bottom: 40px; }
-      .itls-styled .content-columns .content-sidebar section h3 {
+      .itls-styled .content-columns .content-sidebar .html5-section h3 {
         font-size: 16px; }
-      .itls-styled .content-columns .content-sidebar section p {
+      .itls-styled .content-columns .content-sidebar .html5-section p {
         margin-bottom: 5px; }
-      .itls-styled .content-columns .content-sidebar section ul {
+      .itls-styled .content-columns .content-sidebar .html5-section ul {
         margin-top: 10px; }
-    .itls-styled .content-columns .content-sidebar article p {
+    .itls-styled .content-columns .content-sidebar .html5-article p {
       line-height: 25px; }
     .itls-styled .content-columns .content-sidebar .sticky {
       position: -webkit-sticky;
@@ -379,7 +386,7 @@
 
 .itls-styled .jumbotron-welcome {
   min-height: 70vh;
-  background-image: url("../img/itls-homepage-hero.jpg");
+  background-image: url("https://itls.usu.edu/ariswork/img/itls-homepage-hero.jpg");
   background-size: 75%;
   background-position: bottom right;
   background-repeat: no-repeat; }
@@ -459,7 +466,7 @@
     .itls-styled .application-deadlines {
       margin: 10px; } }
   .itls-styled .application-deadlines h2 {
-    background-image: url(../img/mountain-background.jpg);
+    background-image: url(https://itls.usu.edu/ariswork/img/mountain-background.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     padding: 150px 20px 50px 20px;
@@ -489,50 +496,50 @@
   margin: 15px;
   font-size: 25px; }
 
-.itls-styled .career-options article .career-option {
+.itls-styled .career-options .html5-article .career-option {
   display: flex;
   flex-direction: row;
   align-items: center;
   flex-wrap: wrap-reverse; }
   @media only screen and (max-width: 768px) {
-    .itls-styled .career-options article .career-option {
+    .itls-styled .career-options .html5-article .career-option {
       flex-direction: column-reverse;
       padding: 30px;
       box-shadow: 0 12px 30px 0 rgba(1, 15, 91, 0.19); } }
-  .itls-styled .career-options article .career-option > * {
+  .itls-styled .career-options .html5-article .career-option > * {
     display: flex;
     flex-direction: row;
     flex: 1; }
-  .itls-styled .career-options article .career-option h4 {
+  .itls-styled .career-options .html5-article .career-option h4 {
     margin-top: 0px; }
-  .itls-styled .career-options article .career-option .career-icon img {
+  .itls-styled .career-options .html5-article .career-option .career-icon img {
     width: 50px;
     margin: 10px; }
-  .itls-styled .career-options article .career-option .career-person {
+  .itls-styled .career-options .html5-article .career-option .career-person {
     flex: 0.8; }
     @media only screen and (max-width: 768px) {
-      .itls-styled .career-options article .career-option .career-person {
+      .itls-styled .career-options .html5-article .career-option .career-person {
         display: block;
         margin-bottom: 20px; } }
-    .itls-styled .career-options article .career-option .career-person img {
+    .itls-styled .career-options .html5-article .career-option .career-person img {
       width: 100%;
       object-fit: contain;
       padding-left: 40px;
       max-width: 600px; }
       @media only screen and (max-width: 768px) {
-        .itls-styled .career-options article .career-option .career-person img {
+        .itls-styled .career-options .html5-article .career-option .career-person img {
           margin: auto;
           padding-left: 0px; } }
 
-.itls-styled .career-options article .career-details {
+.itls-styled .career-options .html5-article .career-details {
   background-size: cover;
   background-position: center;
   display: flex;
   flex-direction: row; }
   @media screen and (max-width: 700px) {
-    .itls-styled .career-options article .career-details {
+    .itls-styled .career-options .html5-article .career-details {
       flex-direction: column; } }
-  .itls-styled .career-options article .career-details .career-quote {
+  .itls-styled .career-options .html5-article .career-details .career-quote {
     flex: 1;
     color: white;
     font-family: League Spartan;
@@ -541,17 +548,17 @@
     line-height: 50px;
     padding: 60px;
     border: none;
-    background-image: url("../img/quote.png");
+    background-image: url("https://itls.usu.edu/ariswork/img/quote.png");
     background-repeat: no-repeat;
     background-position: 30px 30px;
     background-size: 120px; }
-  .itls-styled .career-options article .career-details .career-details-main {
+  .itls-styled .career-options .html5-article .career-details .career-details-main {
     flex: 1;
     color: white;
     margin: 30px; }
-    .itls-styled .career-options article .career-details .career-details-main h3 {
+    .itls-styled .career-options .html5-article .career-details .career-details-main h3 {
       color: white; }
-  .itls-styled .career-options article .career-details .career-details-hidden {
+  .itls-styled .career-options .html5-article .career-details .career-details-hidden {
     display: none; }
 
 @media screen and (max-width: 800px) {
@@ -596,12 +603,12 @@
   .itls-styled .apply-us-news img {
     width: 150px; }
 
-.itls-styled .apply-collapse-section article div {
+.itls-styled .apply-collapse-section .html5-article div {
   overflow-y: hidden;
   transition: opacity .5s ease-in-out;
   opacity: 1; }
 
-.itls-styled .apply-collapse-section article h4 {
+.itls-styled .apply-collapse-section .html5-article h4 {
   background-color: #EBF2F8;
   font-weight: bold;
   padding: 10px;
@@ -609,14 +616,14 @@
   border-radius: 5px;
   font-family: Lato; }
 
-.itls-styled .apply-collapse-section article a h4 {
+.itls-styled .apply-collapse-section .html5-article a h4 {
   color: #0865BF;
   text-decoration: none;
   transition: opacity .5s ease-in-out;
   position: relative; }
-  .itls-styled .apply-collapse-section article a h4:after {
+  .itls-styled .apply-collapse-section .html5-article a h4:after {
     content: '';
-    background: url(../img/down-arrow.png);
+    background: url(https://itls.usu.edu/ariswork/img/down-arrow.png);
     background-size: 24px 13px;
     width: 24px;
     height: 13px;
@@ -625,15 +632,15 @@
     margin-top: 6px;
     margin-right: 5px; }
 
-.itls-styled .apply-collapse-section article a:hover {
+.itls-styled .apply-collapse-section .html5-article a:hover {
   text-decoration: none; }
-  .itls-styled .apply-collapse-section article a:hover h4 {
+  .itls-styled .apply-collapse-section .html5-article a:hover h4 {
     transform: scale(1.008); }
 
-.itls-styled .apply-collapse-section article.apply-collapse-open a h4:after {
+.itls-styled .apply-collapse-section .html5-article.apply-collapse-open a h4:after {
   transform: rotate(180deg); }
 
-.itls-styled .apply-collapse-section article:not(.apply-collapse-open) div {
+.itls-styled .apply-collapse-section .html5-article:not(.apply-collapse-open) div {
   height: 0;
   opacity: 0; }
 
@@ -648,10 +655,10 @@
     padding: 5px; }
 
 .itls-styled .jumbotron-course {
-  background-image: url("../img/course-hero.jpg"); }
+  background-image: url("https://itls.usu.edu/ariswork/img/course-hero.jpg"); }
 
 .itls-styled .jumbotron-programs {
-  background-image: url("../img/pages-hero.jpg"); }
+  background-image: url("https://itls.usu.edu/ariswork/img/pages-hero.jpg"); }
 
 .itls-styled .jumbotron-course, .itls-styled .jumbotron-programs {
   background-size: cover; }
@@ -685,7 +692,7 @@
     flex-direction: column; } }
 
 .itls-styled .jumbotron-people {
-  background-image: url("../img/people-hero.jpg");
+  background-image: url("https://itls.usu.edu/ariswork/img/people-hero.jpg");
   background-size: cover;
   padding: 50px; }
   .itls-styled .jumbotron-people h1, .itls-styled .jumbotron-people p {
@@ -790,14 +797,14 @@
     background-color: #cfe2f3; }
 
 .itls-styled .jumbotron-rooms {
-  background-image: url("../img/design-lab-hero.jpg");
+  background-image: url("https://itls.usu.edu/ariswork/img/design-lab-hero.jpg");
   background-size: cover;
   padding: 50px; }
   .itls-styled .jumbotron-rooms h1, .itls-styled .jumbotron-rooms p {
     color: white; }
 
 .itls-styled .design-lab {
-  background-image: url("../img/design-lab-area.jpg");
+  background-image: url("https://itls.usu.edu/ariswork/img/design-lab-area.jpg");
   background-size: cover;
   padding: 50px;
   border: none !important;

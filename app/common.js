@@ -1,7 +1,7 @@
 $(function(){
 
     // homepage: career drawers
-    $('.career-options article').each(function(i, path){
+    $('.career-options .html5-article').each(function(i, path){
         path = $(path);
         var details = path.find('.career-details');
         details.hide();
@@ -34,9 +34,9 @@ $(function(){
     $('.apply-collapse-header').click(function(e){
         e.preventDefault();
         var header = $(e.target);
-        var isOpen = header.parents('article').hasClass(open);
-        header.parents('.apply-collapse-section').find('article').removeClass(open);
-        if (!isOpen) header.parents('article').addClass(open);
+        var isOpen = header.parents('.html5-article').hasClass(open);
+        header.parents('.apply-collapse-section').find('.html5-article').removeClass(open);
+        if (!isOpen) header.parents('.html5-article').addClass(open);
     });
 
     // faculty pages: tables of contents

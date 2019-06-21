@@ -1,6 +1,17 @@
 @import "colors";
 
+// hacks to break out of narrow view
+.main-container-wrapper {
+  width: 100%;
+}
+
 .itls-styled {
+
+  // hacks to override OU wrapper
+  img {
+    display: inline;
+    max-width: unset;
+  }
 
   .widthcap {
     max-width:1200px;
@@ -10,7 +21,7 @@
   .icon-document {
     width: 30px;
     height: 40px;
-    background: url(../img/icon-document.png);
+    background: url(https://itls.usu.edu/ariswork/img/icon-document.png);
     background-size: cover;
     display: inline-block;
     margin: 0px 15px;
@@ -18,7 +29,7 @@
     margin-top: -8px;
   }
 
-  section {
+  .html5-section {
     &.centered {
       display: flex;
       flex-direction: row;
