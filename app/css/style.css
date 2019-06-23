@@ -7,15 +7,18 @@
   display: inline-block;
   font-size: 13px;
   transition: all .1s ease-in-out;
-  color: #fff; }
+  color: #fff;
+  text-decoration: none; }
   .itls-styled .button.black {
     border: 1px solid #0e2439;
-    color: #0e2439; }
+    color: #0e2439;
+    text-decoration: none; }
     .itls-styled .button.black:hover {
       background-color: #0e2439;
       color: #fff;
       text-decoration: none; }
     .itls-styled .button.black.filled {
+      text-decoration: none;
       background-color: #0e2439;
       color: #fff; }
       .itls-styled .button.black.filled:hover {
@@ -23,14 +26,16 @@
         border: 1px solid #2875c0; }
   .itls-styled .button.light-blue {
     border: 1px solid #93abc2;
-    color: #93abc2; }
+    color: #93abc2;
+    text-decoration: none; }
     .itls-styled .button.light-blue:hover {
       background-color: #93abc2;
       color: #fff;
       text-decoration: none; }
     .itls-styled .button.light-blue.filled {
       background-color: #93abc2;
-      color: #fff; }
+      color: #fff;
+      text-decoration: none; }
       .itls-styled .button.light-blue.filled:hover {
         background-color: rgba(147, 171, 194, 0.8);
         border: 1px solid rgba(147, 171, 194, 0.8); }
@@ -129,7 +134,7 @@
   .itls-styled .top-nav .nav-icon {
     display: none;
     position: absolute;
-    right: 10px;
+    right: 0px;
     top: 10px;
     width: 40px;
     height: 40px;
@@ -148,7 +153,8 @@
       background: url(https://itls.usu.edu/ariswork/img/menu-close.png) no-repeat;
       background-size: 18px 18px;
       background-position: center;
-      position: fixed; }
+      position: fixed;
+      right: 15px; }
     @media only screen and (max-width: 950px) {
       .itls-styled .top-nav .nav-icon {
         display: block; } }
@@ -177,13 +183,15 @@
           display: block;
           text-align: center; }
           .itls-styled .top-nav .nav-wrap .top-nav-left a, .itls-styled .top-nav .nav-wrap .top-nav-right a {
-            display: block; }
+            display: block;
+            text-decoration: none; }
             .itls-styled .top-nav .nav-wrap .top-nav-left a.button, .itls-styled .top-nav .nav-wrap .top-nav-right a.button {
               margin: 10px 10px; } }
   .itls-styled .top-nav a {
     font-family: Lato,sans-serif;
     letter-spacing: 0.15em;
-    font-size: 12px; }
+    font-size: 12px;
+    text-decoration: none; }
     .itls-styled .top-nav a.button-apply:hover {
       background: #93abc2; }
   .itls-styled .top-nav .top-nav-left, .itls-styled .top-nav .top-nav-right {

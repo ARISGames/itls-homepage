@@ -11,7 +11,7 @@
     .nav-icon {
       display:none;
       position: absolute;
-      right:10px;
+      right:0px;
       top:10px;
       width:40px;
       height:40px;
@@ -32,6 +32,7 @@
         background-size:18px 18px;
         background-position: center;
         position:fixed;
+        right:15px;
       }
       @media #{$break-nav} {
         display:block;
@@ -63,6 +64,7 @@
           text-align: center;
           a {
             display:block;
+            text-decoration: none;
             &.button {
               margin: 10px 10px;
             }
@@ -74,6 +76,7 @@
       font-family: Lato,sans-serif;
       letter-spacing: 0.15em;
       font-size: 12px;
+      text-decoration: none;
       &.button-apply{
         &:hover {
           background:$light-blue;

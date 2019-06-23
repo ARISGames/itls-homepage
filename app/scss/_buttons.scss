@@ -10,15 +10,18 @@
     font-size: 13px;
     transition: all .1s ease-in-out;
     color:#fff;
+    text-decoration: none;
     &.black {
       border: 1px solid $dark-blue;
       color:$dark-blue;
+      text-decoration: none;
       &:hover {
         background-color: $dark-blue;
         color:#fff;
         text-decoration:none;
       }
       &.filled {
+        text-decoration: none;
         background-color: $dark-blue;
         color:#fff;
         &:hover {
@@ -31,6 +34,7 @@
     &.light-blue {
       border: 1px solid $light-blue;
       color:$light-blue;
+      text-decoration: none;
       &:hover {
         background-color: $light-blue;
         color:#fff;
@@ -39,6 +43,7 @@
       &.filled {
         background-color: $light-blue;
         color:#fff;
+        text-decoration: none;
         &:hover {
           background-color: $light-blue-hover;
           border:1px solid $light-blue-hover;
