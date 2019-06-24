@@ -737,7 +737,7 @@
   margin-top: 30px;
   display: flex;
   flex-direction: row; }
-  @media only screen and (max-device-width: 600px), only screen and (max-width: 600px) {
+  @media only screen and (max-width: 600px) {
     .itls-styled .person-header {
       display: block; } }
   .itls-styled .person-header .person-image {
@@ -752,7 +752,7 @@
     padding: 0 30px; }
     .itls-styled .person-header .person-details p {
       margin: 5px 0px 5px 0px; }
-    @media only screen and (max-device-width: 600px), only screen and (max-width: 600px) {
+    @media only screen and (max-width: 600px) {
       .itls-styled .person-header .person-details {
         padding: 0; } }
     .itls-styled .person-header .person-details .person-links a {
